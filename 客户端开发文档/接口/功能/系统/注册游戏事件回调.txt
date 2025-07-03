@@ -1,0 +1,23 @@
+RegisterLUAEvent
+注册游戏事件回调
+
+游戏事件ID
+
+语法
+
+SL:RegisterLUAEvent(eventID, eventTag, eventCB)
+
+参数
+参数名	必选	类型	说明
+eventID	是	string	事件ID
+eventTag	是	string	事件描述
+eventCB	是	fun	回调函数
+返回值
+
+无返回值
+
+示例代码
+
+    SL:RegisterLUAEvent(LUA_EVENT_ONPLAYLEVELUP, "属性刷新", shuxing)
+
+
