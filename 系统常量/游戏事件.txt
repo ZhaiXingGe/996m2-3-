@@ -1,0 +1,106 @@
+|— 点我查看具体用法 —|
+
+• 游戏事件:
+事件ID	说明	参数	描述
+LUA_EVENT_ROLE_PROPERTY_INITED	玩家角色属性初始化完毕	
+LUA_EVENT_ROLE_PROPERTY_CHANGE	玩家属性变化时	
+LUA_EVENT_LEVELCHANGE	等级改变(包括转生)	table — {currlevel = 当前等级, lastlevel = 上次等级,currReinLevel = 当前转生等级, lastReinLevel = 上次转生等级}
+LUA_EVENT_HPMPCHANGE	HP/MP改变	table — {curHP = curHP, maxHP = maxHP, curMP = curMP, maxMP = maxMP}
+LUA_EVENT_EXPCHANGE	EXP改变	table — {currexp = 当前经验值, changed = 改变值}
+LUA_EVENT_BATTERYCHANGE	电池电量改变	int — 电池容量百分比值
+LUA_EVENT_NETCHANGE	网络状态改变	int — 网络类型
+-1: 未知 0: wifi 1: 蜂窝
+LUA_EVENT_REFBASEATTR	刷新基础属性	tabel — (eventTag: “PlayerAttr”, “HeroAttr”, “PlayerExtraAttr”, HeroExtraAttr)
+LUA_EVENT_PKMODECHANGE	pk模式改变	int — 当前PK模式
+LUA_EVENT_AFKBEGIN	自动挂机开始	
+LUA_EVENT_AFKEND	自动挂机结束	
+LUA_EVENT_AUTOMOVEBEGIN	自动寻路开始	table — {map=map,x=x,y=y}
+LUA_EVENT_AUTOMOVEEND	自动寻路结束	
+LUA_EVENT_AUTOPICKBEGIN	自动捡物开始	
+LUA_EVENT_AUTOPICKEND	自动捡物结束	
+LUA_EVENT_MAINBUFFUPDATE	主玩家buff刷新	table — {actorID = 玩家id}
+LUA_EVENT_BUFFUPDATE	通用buff刷新	table — {actorID = 玩家id}
+LUA_EVENT_TALKTONPC	与NPC对话	table — {UserID = npcID, index = NPC配置ID, name = NPC名称}
+LUA_EVENT_PETPKMODECHANGE	宠物PC模式改变	
+LUA_EVENT_CHANGESCENE	切换地图(包含同地图)	table — {mapID = mapID}
+LUA_EVENT_MAPINFOCHANGE	切换地图(不同地图)	table — {mapID = mapID, lastMapID = lastMapID}
+LUA_EVENT_CLOSEWIN	关闭界面	string — GUI界面ID
+LUA_EVENT_WINDOW_CHANGE	窗体尺寸改变时	
+LUA_EVENT_MONEYCHANGE	货币变化时	table — {id = 货币ID, num = 货币值}
+LUA_EVENT_JOIN_GUILD	加入行会	
+LUA_EVENT_LEAVE_GUILD	离开行会	
+LUA_EVENT_ADDFIREND	添加好友	
+LUA_EVENT_REMFIREND	删除好友	
+LUA_EVENT_JOINTEAM	加入队伍	
+LUA_EVENT_LEAVETEAM	离开队伍	
+LUA_EVENT_REF_ITEM_LIST	刷新道具列表 背包	
+LUA_EVENT_ITEM_POS_CHANGE	道具位置发生变化时	
+LUA_EVENT_PLAYER_EQUIP_CHANGE	角色装备数据操作	table — {MakeIndex = 唯一ID, Where = 装备位置, opera = 操作类型 ( 0:初始化 1:增加 2:删除 3:改变), ItemData = 装备数据}
+LUA_EVENT_BAG_ITEM_CHANGE	背包数据变化	{opera = 操作类型 ( 0:初始化 1:增加 2:删除 3:改变), operID = 物品数据(table)}
+LUA_EVENT_REF_HERO_ITEM_LIST	刷新道具列表 英雄背包	
+LUA_EVENT_HERO_ITEM_POS_CHANGE	道具位置发生变化时	
+LUA_EVENT_HERO_EQUIP_CHANGE	英雄装备变化	table — {MakeIndex = 唯一ID, Where = 装备位置, opera = 操作类型 ( 0:初始化 1:增加 2:删除 3:改变), ItemData = 装备数据}
+LUA_EVENT_HERO_BAG_ITEM_CAHNGE	英雄背包数据变化	{opera = 操作类型 ( 0:初始化 1:增加 2:删除 3:改变), operID = 物品数据(table)}
+LUA_EVENT_DISCONNECT	断线	
+LUA_EVENT_RECONNECT	重连	
+LUA_EVENT_TAKE_ON_EQUIP	玩家穿戴装备	table — {isSuccess = 是否成功}
+LUA_EVENT_TAKE_OFF_EQUIP	玩家脱掉装备	table — {isSuccess = 是否成功}
+LUA_EVENT_HERO_TAKE_ON_EQUIP	英雄穿戴装备	table — {isSuccess = 是否成功}
+LUA_EVENT_HERO_TAKE_OFF_EQUIP	英雄脱掉装备	table — {isSuccess = 是否成功}
+LUA_EVENT_TASK_CHANGE	任务发生变化	table — (ADD：增加任务、DEL：删除、CHANGE：任务替换)
+LUA_EVENT_SETTING_CAHNGE	设置项发生变化	
+LUA_EVENT_NPC_STORAGE_PUTOUT_FAIL	仓库取数据失败	
+LUA_EVENT_NPC_STORAGE_UPDATE	仓库数据发生变化	
+LUA_EVENT_BESTRINGBOX_STATE	首饰盒状态变化	
+LUA_EVENT_HERO_ANGER_CAHNGE_WIN32	英雄怒气改变	
+LUA_EVENT_PLAYER_IN_OF_VIEW	进视野	table — {actorID = 对象ID}
+LUA_EVENT_PLAYER_OUT_OF_VIEW	出视野	table — {actorID = 对象ID}
+LUA_EVENT_PLAYER_BEHAVIOR_STATE_CAHNGE	玩家行为状态改变（站立、走、跑等）	
+LUA_EVENT_SKILL_INIT	初始化技能	table — 技能数据
+LUA_EVENT_SKILL_ADD	新增技能	table — 技能数据
+LUA_EVENT_SKILL_DEL	删除技能	table — 技能数据
+LUA_EVENT_SKILL_UPDATE	技能更新	table — 技能数据
+LUA_EVENT_MINI_MAP_CLICK	小地图点击寻路事件	table — {map=map,x=x,y=y}
+LUA_EVENT_LEAVE_WORLD	小退事件	
+LUA_TRIGGER_NOTICE_TASK_BAR	任务栏单击	
+LUA_TRIGGER_NOTICE_ITEM_CLICK	道具框单击	
+LUA_EVENT_RANK_UPDATE	排行榜变化	
+LUA_EVENT_RANK_UPDATE_MODEL	排行榜模型变化	
+LUA_EVENT_RANK_SELECT_COLLECT	点击采集怪	唯一id，怪物id
+LUA_EVENT_MAIN_PLAYER_REVIVE	主玩家复活	
+LUA_EVENT_MAIN_PLAYER_DIE	主玩家死亡	
+LUA_EVENT_SKILL_CHANGE_KEY	技能键改变	
+LUA_EVENT_SKILL_DELETE_KEY	删除技能键	
+LUA_EVENT_SUMMON_MODE_CHANGE	召唤物 状态改变	
+LUA_EVENT_SUMMON_ALIVE_CHANGE	召唤物 存活状态改变	
+LUA_EVENT_RESPONSE_GUILD_CREATE_COST	行会创建消耗响应	
+LUA_EVENT_RESPONSE_ALLY_APPLY_LIST	结盟申请列表响应	
+LUA_EVENT_RESPONSE_APPLY_LIST	行会申请列表响应	
+LUA_EVENT_RESPONSE_GUILD_INFO	自己的行会信息响应	
+LUA_EVENT_RESPONSE_GUILD_LIST	行会列表响应	
+LUA_EVENT_RESPONSE_ALLY_APPLY_SUCCESS	行会结盟成功响应	
+LUA_EVENT_DELETE_ROLE_STATE	删除登录角色时	
+LUA_EVENT_ENTER_WORLD	选角界面进入游戏世界时	
+LUA_EVENT_GUILD_MEMBER_REFRESH	行会成员列表更新	
+LUA_EVENT_TEAM_FRIEND_UPDATE	好友更新	
+LUA_EVENT_TEAM_APPLY_LIST	队伍申请列表	
+LUA_EVENT_TEAM_NEAR_UPDATE	附近队伍更新	
+LUA_EVENT_TEAM_MEMBER_UPDATE	队伍成员更新	
+LUA_EVENT_MAIL_LIST_REFRESH	邮件列表更新	
+LUA_EVENT_MAIL_DELETE	删除邮件操作	
+LUA_EVENT_TARGET_CAHNGE	目标改变	int — 目标ID
+LUA_EVENT_TARGET_HP_CHANGE	目标血量变化	table — {actorID = 目标ID}
+LUA_EVENT_ACTOR_OWNER_CHANGE	目标归属改变	table — {actorID = 目标ID}
+LUA_EVENT_NOTICE_SERVER	顶部跑马灯公告（Type4）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_SERVER_EVENT	屏幕跑马灯公告 系统公告（Type11）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_SYSYTEM	屏幕跑马灯公告 可控制Y轴（Type5）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_SYSYTEM_TIPS	systemtips系统 提示弹窗（Type9）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_SYSYTEM_SCALE	系统公告缩放（Type13）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_SYSYTEM_XY	可控制xy坐标广播（Type10）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_TIMER	聊天上方公告（Type6）或者 发送屏幕中间大字体信息（sendcentermsg）	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_DELETE_TIMER	移除发送屏幕中间大字体信息（sendcentermsg参数flag填5）		支持版本4.1.7以上
+LUA_EVENT_NOTICE_ITEM_TIPS	飘字 物品拾取获得消耗	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_ATTRIBUTE	飘字 属性变化	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_NOTICE_EXP	飘字 经验值变化	table — 消息参数内容	支持版本4.1.7以上
+LUA_EVENT_RICHTEXT_OPEN_URL	富文本超链(href)点击触发	table — {widget = 控件对象， text = href内容}	支持版本4.1.7以上
+LUA_EVENT_STORE_REFRESH	商城刷新	int — page页签	支持版本4.1.7以上
