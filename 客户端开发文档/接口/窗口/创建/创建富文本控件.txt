@@ -1,0 +1,47 @@
+RichText_Create
+创建富文本控件
+
+语法
+
+GUI:RichText_Create(parent, ID, x, y, str, width, Size, Color, vspace, hyperlinkCB, defaultFontFace)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+str	是	string	文本内容
+width	是	int	控件的宽
+Size	否	int	字体大小
+Color	否	int	颜色
+vspace	否	int	间距
+hyperlinkCB	否	fun	超链回调
+defaultFontFace	否	路径	字体样式
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+
+
+        local text ="<font color='#C0C0C0' size='16'>证明：</font>" 
+        text = text .."<br>".. "<a href='openwin#boss'><font color = '#ff0000'> 证明： </font> </a>"    --链接
+        text = text .."<br>".. "<outline size='2' color='#ff0000' >证明：</outline>"                    --描边 
+        text = text .."<br>".. "<small>证明：</small>"                                                  --小
+        text = text .."<br>".. "<big>证明：</big>"                                                      --大
+        text = text .."<br>".. "<u>证明：</u>"                                                          --下划线
+        text = text .."<br>".. "<i>证明：</i>"                                                          --斜体
+        text = text .."<br>".. "<b>证明：</b>"                                                          --加粗
+        text = text .."<br>".. "<del>证明：</del>"                                                      --中划线
+        text = text .."<br>".. "<shadow size='2' color='#4169E1'  offsetWidth='8' offsetHeight='-8'  blurRadius='2'>证明：</shadow>" --阴影
+        text = text .."<br>".. "<glow color='#AFEEEE'>证明：</glow>"                                    --高亮
+
+        local rtx_xiaohao = GUI:RichText_Create(Handle, "xiaohao", 550, 180, text, 500, nil, nil, nil, function (tstr, rt)
+            local slices = string.split(tstr, "#")
+            if slices[1] == "openwin" then
+                GUI:Win_Open(slices[2])
+            end
+        end)

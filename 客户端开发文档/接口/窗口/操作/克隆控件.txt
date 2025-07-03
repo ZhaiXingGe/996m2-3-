@@ -1,0 +1,19 @@
+Clone
+克隆控件
+
+语法
+
+GUI:Clone(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+反回克隆的新控件id int
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,21 @@
+LoadExport
+加载 GUIExport文件
+
+语法
+
+GUI:LoadExport(widget,filename)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+filename	是	string	GUIExport路径下文件名
+返回值
+
+无返回值
+
+示例代码
+
+     --加载 GUIExport 接口 ,dev\GUIExport\ActivityMainWnd.lua
+        GUI:LoadExport(GUIparent, "ActivityMainWnd")
+
+

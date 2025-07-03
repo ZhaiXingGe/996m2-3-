@@ -1,0 +1,20 @@
+removeAllChildren
+移除其下所有子控件
+
+语法
+
+GUI:removeAllChildren(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local bg_di = GUI:GetWindow(nil,"QSQ_challengeboss/bg_bagua")
+    GUI:removeAllChildren(bg_di)
+
+

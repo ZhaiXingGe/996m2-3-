@@ -1,0 +1,23 @@
+RemoveAllWidgetClickEventListener
+移除对象上所有点击事件
+
+语法
+
+GUI:RemoveAllWidgetClickEventListener(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local btn = GUI:Button_Create(parent, "btn_test", 400, 200, "res/public/00000361.png")
+    GUI:addOnClickEvent(btn, function()
+        SL:Print("移除对象上所有点击事件")
+        GUI:RemoveAllWidgetClickEventListener(btn)  
+    end)
+
+

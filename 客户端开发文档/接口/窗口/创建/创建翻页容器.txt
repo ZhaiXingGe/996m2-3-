@@ -1,0 +1,31 @@
+PageView_Create
+创建翻页容器
+
+语法
+
+GUI:PageView_Create(parent, ID, x, y, width, height)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+width	是	int	控件的宽
+height	是	int	控件的高
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+        local pageView = GUI:PageView_Create(Hand, "pageView", 0, 0, 300, 300, 1)
+    for i = 1, 10, 1 do
+        local cc = GUI:Layout_Create(pageView, "pageew"..i, 0, 0, 0, 0, true)
+        GUI:Layout_debug(cc)
+        GUI:Button_Create(cc, "GMMain_UI_Close", 0, 0, "res/gmmain/02.png")
+        GUI:Text_Create(cc, "Text_name", 0, 100, 16, "#ffffff", "测试="..i)
+    end
+
+

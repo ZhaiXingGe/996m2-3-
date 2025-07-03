@@ -1,0 +1,27 @@
+Timeline_FadeOut
+设置控件渐隐
+
+语法
+
+GUI:Timeline_FadeOut(widget, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	过程耗时
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Timeline_FadeOut(_parent,1,function()
+        ceshi.test()
+    end)
+
+    function ceshi.test()
+        SL:Print("11111111")
+    end
+
+

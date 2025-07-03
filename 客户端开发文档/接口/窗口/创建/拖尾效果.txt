@@ -1,0 +1,34 @@
+MotionStreak_Create
+拖尾效果
+
+语法
+
+GUI:MotionStreak_Create(parent, ID, x, y, time, light, width, color, path)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+time	是	int	时间
+light	是	int	亮度
+width	是	int	控件的宽
+color	是	str	颜色
+path	是	str	路径
+返回值
+
+无返回值
+
+示例代码
+
+    -- 拖尾效果
+    local tw_handle = GUI:Node_Create(parent, "tw_handle", 200, 100)
+
+    local mStreak = GUI:MotionStreak_Create(tw_handle, "mStreak", 0, 0, 2, 10, 20, cc.c3b(0, 255, 0), "res/public/1900000510.png")
+
+    GUI:runAction(mStreak, GUI:ActionMoveTo(2, 400, 400))
+
+
+
+示例展示

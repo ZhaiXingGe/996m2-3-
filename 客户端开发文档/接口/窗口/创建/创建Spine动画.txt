@@ -1,0 +1,33 @@
+SpineAnim_Create
+创建Spine动画
+
+语法
+
+GUI:SpineAnim_Create(parent, ID, x, y, jsonPath, atlasPath, trackIndex, name, loop)
+
+参数
+参数名	必选	类型	说明
+parent	是	obj	父节点对象
+ID	是	string	唯一ID
+x	是	int	位置 横坐标
+y	是	int	位置 纵坐标
+jsonPath	是	string	json文件路径
+atlasPath	是	string	atlas文件路径
+trackIndex	是	int	索引值
+name	是	string	动画名
+loop	是	boolean	动画是否循环
+返回值
+
+无返回值
+
+示例代码
+
+示例资源： nandaoshi.zip
+
+
+    local nj = "res/custom/nandaoshi/nandaoshi.json"
+    local na = "res/custom/nandaoshi/nandaoshi.atlas"
+    GUI:SpineAnim_Create(GUI:Attach_LeftBottom(), "Spine_1", 200, 100, nj, na, 1, "animation", true)
+
+
+

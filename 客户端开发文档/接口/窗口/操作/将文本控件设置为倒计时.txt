@@ -1,0 +1,22 @@
+Text_COUNTDOWN
+将文本控件设置为倒计时
+
+语法
+
+GUI:Text_COUNTDOWN(widget, time, timeCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	倒计时时间
+timeCB	是	fun	结束时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+    local x = GUI:Text_Create(_parent, "time", 268, 330, 16, "#C0C0C0", "")
+    GUI:Text_COUNTDOWN(x, 200)
+
+

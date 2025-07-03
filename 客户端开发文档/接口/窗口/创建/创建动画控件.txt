@@ -1,0 +1,42 @@
+Frames_Create
+创建动画控件
+
+语法
+
+GUI:Frames_Create(parent, ID, x, y, prefix, suffix, beginframe, finishframe, ext)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+prefix	是	string	前缀
+suffix	是	string	后缀
+beginframe	是	int	开始帧
+finishframe	是	int	结束帧
+ext	是	table	附加参数 {speed = 播放速度(毫秒),
+count = 图片数量,
+loop = 播放次数(-1: 循环),
+finishhide = 播放结束是否隐藏(1: 隐藏)
+callback = 播放结束回调
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+local ext = {
+    count = 10,
+    speed = 100,
+    loop  =  1,
+    finishhide = 1,
+    callback  = function ()
+        print("11111111111")
+    end
+}
+local frames = GUI:Frames_Create(parent, "Frames_1", 200, 200, "res/public/word_fubentg_", ".png", 1, 10, ext)
+
+
+

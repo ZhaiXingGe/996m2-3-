@@ -1,0 +1,28 @@
+TextInput_Create
+创建输入框控件
+
+语法
+
+GUI:TextInput_Create(parent, ID, x, y, width, height, fontSize)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+width	是	int	控件的宽
+height	是	int	控件的高
+fontSize	是	int	字体大小
+返回值
+
+创建成功则返回新建按钮控件的对象
+创建失败则返回空
+
+示例代码
+
+    --------具体参考 GUIUtil文件 SLGeneralInput 通用输入框 代码-------
+    --------Client\cache\mod_fgcqlua\stab\scripts\GUILayout\
+   GUI:TextInput_Create(QSQ_Layout_img, "QSQ_Layout_img_input", 61, 15.4, 116, 22, 16)
+
+

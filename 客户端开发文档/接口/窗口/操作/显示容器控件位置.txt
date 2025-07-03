@@ -1,0 +1,19 @@
+Layout_debug
+显示容器控件位置
+
+语法
+
+GUI:Layout_debug(filename)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Layout_debug(item)
+
+

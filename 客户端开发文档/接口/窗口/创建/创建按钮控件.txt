@@ -1,0 +1,24 @@
+Button_Create
+创建按钮控件
+
+语法
+
+GUI:Button_Create( _Parent, _ID, _PosX, _PosY, _nimg)
+
+参数
+参数名	必选	类型	说明
+_Parent	是	parent	父控件对象
+_ID	是	string	控件ID
+_PosX	是	int	控件位置的横坐标
+_PosY	是	int	控件位置的纵坐标
+_nimg	否	bool	图片路径
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+        local btn_close = GUI:Button_Create(_parent, "btn_close", 870, 515, "res/01/010008.png")
+
+

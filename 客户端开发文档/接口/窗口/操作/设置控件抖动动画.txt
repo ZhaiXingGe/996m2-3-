@@ -1,0 +1,29 @@
+Timeline_Shake
+设置控件抖动
+
+语法
+
+GUI:Timeline_Shake(widget, value, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	int	X轴抖动幅度
+value	是	int	Y轴抖动幅度
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        local function shakeBy()
+            SL:ShowSystemTips(“抖动结束触发”)
+        end
+        GUI:Timeline_Shake(btn_zs,1, 10,10, shakeBy)
+
+
+
+

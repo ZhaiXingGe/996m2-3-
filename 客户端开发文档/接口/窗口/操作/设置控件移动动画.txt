@@ -1,0 +1,23 @@
+Timeline_MoveBy
+设置控件移动动画
+
+语法
+
+GUI:Timeline_MoveBy(widget, value, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	table	移动坐标{x=int,y=int}
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+local bg_bg = GUI:GetWindow(Parent, "bg_bg")
+GUI:Timeline_MoveBy(bg_bg, {x=200, y = 0}, 0.3)
+
+

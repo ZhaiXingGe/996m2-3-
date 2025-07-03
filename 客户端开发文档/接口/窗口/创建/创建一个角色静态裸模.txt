@@ -1,0 +1,51 @@
+UINodeModel_Create
+创建一个角色静态裸模
+
+语法
+
+GUI:UINodeModel_Create( _parent, _ID, _PosX, _PosY, sex, feature, scale )
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+_ID	是	string	控件ID
+_PosX	是	int	控件位置的横坐标
+_PosY	是	int	控件位置的纵坐标
+sex	是	int	性别
+feature	是	table	特征 table值 为{}时为裸模
+scale	是	bool	模型缩放比例
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+clothID —时装ID
+clothEffectID —时装特效ID
+weaponID —武器ID
+weaponEffectID —武器特效ID
+headID —头盔ID
+headEffectID —头盔特效ID
+capID —斗笠
+capEffectID —斗笠特效ID
+shieldID —盾牌
+shieldEffectID —盾牌特效ID
+tDressID
+tDressEffectID
+tWeaponID
+tWeaponEffectID
+veilID —时装面巾
+veilEffectID —时装面巾特效
+hairID —发型
+showNodeModel —boolean: 是否显示裸模(true则显示)
+showHair —boolean: true则显示头发
+
+
+示例代码
+
+    local feature = {}
+    feature.hairID = 0
+    feature.showNodeModel = true
+    feature.showHair = true
+    GUI:UINodeModel_Create(parent, "model", 0, 0, 1, feature, 1)
+
+

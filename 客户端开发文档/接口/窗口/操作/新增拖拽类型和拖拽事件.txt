@@ -1,0 +1,51 @@
+AddMoveWidgetTypeEvent
+新增拖拽类型和拖拽事件
+
+特殊:fromToEvent/toFromEvent 起码实现一个
+语法
+
+GUI:AddMoveWidgetTypeEvent(fromType, toType, fromToEvent, toFromEvent)
+
+参数
+参数名	必选	类型	说明
+fromType	是	string	控件来自位置类型名
+toType	是	string	控件到达位置类型名
+fromToEvent	否	function	从fromType类型控件 拖拽到 toType类型控件 触发的函数
+toFromEvent	否	function	从toType类型控件 拖拽到 fromType类型控件 触发的函数
+返回值
+
+无返回值
+
+示例代码
+
+        -- 自新增移动类型 来自/去达
+        local function fromToEvent(_, data)
+            SL:Print("++++++FromToEvent  111 -> 222")
+        end
+        local function toFromEvent(_, data)
+            SL:Print("++++++ToFromEvent  222 -> 111")
+        end
+        GUI:AddMoveWidgetTypeEvent("from", "to", fromToEvent, toFromEvent)
+        local moveWidget11 = GUI:MoveWidget_Create(GUI:Attach_LeftBottom(), "moveWidget11", 500, 300, 70, 70, SL:GetItemForm().from, {cancelMoveCB = cancelMoveCallBack, endMoveCB = endMoveCallBack})
+        local img = GUI:Image_Create(moveWidget11, "img", 0, 0, "res/public/word_fubentg_1.png")
+        local tt11 = GUI:Text_Create(moveWidget11, "tt", 0, 35, 18, "#000000", "111")
+
+
+        local moveWidget22 = GUI:MoveWidget_Create(GUI:Attach_LeftBottom(), "moveWidget22", 300, 300, 70, 70, SL:GetItemForm().to, {cancelMoveCB = cancelMoveCallBack, endMoveCB = endMoveCallBack})
+        local img = GUI:Image_Create(moveWidget22, "img", 0, 0, "res/public/word_fubentg_2.png")
+        local tt11 = GUI:Text_Create(moveWidget22, "tt", 0, 35, 18, "#000000", "222")
+
+
+        local CloseLayout = GUI:Layout_Create(GUI:Attach_LeftBottom(), "CloseLayout", 600, 300, 60, 60, true)
+        GUI:Layout_debug(CloseLayout)
+        GUI:setTouchEnabled(CloseLayout, true)
+        GUI:addOnClickEvent(CloseLayout, function ()
+            GUI:removeFromParent(moveWidget11)
+            GUI:removeFromParent(moveWidget22)
+            GUI:removeFromParent(CloseLayout)
+        end)
+        GUI:Text_Create(CloseLayout, "closeText", 0, 0, 18, "#FFFFFF", "关闭")
+
+
+
+示例展示

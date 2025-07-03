@@ -1,0 +1,25 @@
+CheckBox_Create
+创建复选框控件
+
+语法
+
+GUI:CheckBox_Create(parent, ID, x, y, nimg, pimg)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+nimg	是	string	图片背景图片
+pimg	是	string	打勾图片路径
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    GUI:CheckBox_Create(parent, "huishou", 300, 355, "res/01/010028.png", "res/01/010029.png")
+
+

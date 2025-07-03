@@ -1,0 +1,39 @@
+Timeline_DelayTime
+设置为控件开启单次定时器
+
+语法
+
+GUI:Timeline_DelayTime(widget, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+local function DelayTime()
+    if countTime ~= 0 then
+        local text_miao = GUI:GetWindow(nil, "revive/text_miao")
+        if text_miao then
+            countTime = countTime - 1
+            GUI:Text_setString(text_miao, countTime .. "秒")
+            if countTime > 0 then
+                GUI:Timeline_DelayTime(text_miao, 1, DelayTime)
+            end
+            if countTime <= 0 then
+                GUI:Win_Close(GUIparent)
+            end
+        end
+    end
+end
+local text_miao = GUI:Text_Create(_parent, "text_miao", 500, 225, 18, "#33CC00", countTime .. "秒") --定时关闭
+if text_miao then
+     GUI:Timeline_DelayTime(text_miao, 1, DelayTime())
+end
+
+

@@ -1,0 +1,81 @@
+MoveWidget_Create
+创建拖拽容器
+
+语法
+
+GUI:MoveWidget_Create(parent, ID, x, y, width, height, from, ext)
+
+参数
+参数名	必选	类型	说明
+parent	是	obj	父节点对象
+ID	是	string	唯一ID
+x	是	int	位置 横坐标
+y	是	int	位置 纵坐标
+width	是	int	宽
+height	是	int	高
+from	是	int	控件来自(界面位置)，自定义类型的示例 : SL:GetItemForm().xxx
+[xxx: 自定义类型名]
+ext	否	table	额外参数
+beginMoveCB : 开始移动回调
+endMoveCB : 结束移动回调
+cancelMoveCB : 取消移动回调
+equipPos: 放置装备的装备位置【来源 SL:GetItemForm().PALYER_EQUIP 时生效】
+返回值
+
+无返回值
+
+示例代码
+
+        local bg = GUI:Image_Create(GUI:Attach_LeftBottom(), "bg_TT", 400, 300, "res/public/btn_npcsm_01.png")
+
+        local CloseLayout = GUI:Layout_Create( bg, "CloseLayout", 100, 0, 60, 60, true)
+        GUI:Layout_debug(CloseLayout)
+        GUI:setTouchEnabled(CloseLayout, true)
+        GUI:addOnClickEvent(CloseLayout, function ()
+            GUI:removeFromParent(bg)
+        end)
+        GUI:Text_Create(CloseLayout, "closeText", 0, 0, 18, "#FFFFFF", "关闭")
+
+        local function beginMoveCallBack(node)
+            GUI:setVisible(node, false)
+        end
+        local function endMoveCallBack(node)
+            GUI:setVisible(node, true)
+        end
+        local function cancelMoveCallBack(node)
+            GUI:setVisible(node, true)
+        end
+        local moveWidget = GUI:MoveWidget_Create(bg, "moveWidget", 35, 35, 70, 70, SL:GetItemForm().PALYER_EQUIP, {equipPos = 1, beginMoveCB = beginMoveCallBack, cancelMoveCB = cancelMoveCallBack, endMoveCB = endMoveCallBack})
+        local itemData = SL:GetMetaValue("M.EQUIP_DATA", 1) -- 武器装备数据 
+        if itemData then
+            local item = GUI:ItemShow_Create(moveWidget, "equipItem", 35, 35, {index = itemData.Index, itemData = itemData, look = true})
+            GUI:ItemShow_setItemTouchSwallow(item, false)
+            GUI:setAnchorPoint(item, 0.5, 0.5)
+        end
+        -- 穿戴触发
+        local function takeOnEquip(data)
+            if data.isSuccess then
+                GUI:removeAllChildren(moveWidget)
+                GUI:setVisible(moveWidget, true)
+                local itemData = SL:GetMetaValue("M.EQUIP_DATA", 1)
+                if itemData then
+                    local item = GUI:ItemShow_Create(moveWidget, "equipItem", 35, 35, {index = itemData.Index, itemData=itemData, look = true})
+                    GUI:ItemShow_setItemTouchSwallow(item, false)
+                    GUI:setAnchorPoint(item, 0.5, 0.5)
+                end
+            end
+        end
+        -- 脱下触发
+        local function takeOffEquip(data)
+            if data.isSuccess then
+                GUI:removeAllChildren(moveWidget)
+                GUI:setVisible(moveWidget, true)
+            end
+        end
+
+        SL:RegisterLUAEvent(LUA_EVENT_TAKE_ON_EQUIP, "TESTMove", takeOnEquip)
+        SL:RegisterLUAEvent(LUA_EVENT_TAKE_OFF_EQUIP, "TESTMove", takeOffEquip)
+
+
+
+示例展示

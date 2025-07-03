@@ -1,0 +1,49 @@
+Effect_Create
+创建特效控件
+
+语法
+
+GUI:Effect_Create(parent, ID, x, y, effecttype, effectid, sex, act, dir, speed)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+effecttype	是	int	特效类型 0:特效
+1:NPC
+2:怪物
+3:技能
+4:人物
+5:武器
+6:翅膀
+7:发型
+effectid	是	int	特效ID
+sex	否	int	性别
+act	否	int	特效动作
+0.待机
+1.走
+2.攻击
+3.施法
+4.死亡
+5.跑步….
+dir	否	int	特效方向 特效类型为不为0时有效
+0.上
+1.右上
+2.右 …
+speed	否	int	播放速度
+返回值
+
+控件对象
+参考 Ctrl + F4 特效界面 使用
+
+示例代码
+
+
+    local Effhanld = GUI:Effect_Create(bg_di, “monster”, 400, 300, 0, 1, 0, 0, 3, 1)
+
+
+
+
+注意:锚点在cfg_model_info表里面配置stand_pos_x，stand_pos_y两个参数

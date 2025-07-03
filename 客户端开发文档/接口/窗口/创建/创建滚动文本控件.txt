@@ -1,0 +1,28 @@
+ScrollText_Create
+创建滚动文本控件
+
+语法
+
+GUI:ScrollText_Create(parent, ID, x, y, width, fontSize, fontColor, str,time)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+width	是	int	滚动的宽度
+fontSize	是	int	字体大小
+fontColor	是	string	颜色
+str	是	string	文本内容
+time	是	int	停留时间
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    GUI:ScrollText_Create(_parent, "SText", 0, 0, 20, 16, "#D6C6AD", "这是一个测试")
+
+

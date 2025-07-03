@@ -1,0 +1,20 @@
+Win_IsNotNull
+判断对象是否存在
+
+特殊：Win_IsNotNull 与 Win_IsNull 返回值互反
+语法
+
+GUI:Win_IsNotNull(hand)
+
+参数
+参数名	必选	类型	说明
+hand	是	object	对象
+返回值
+
+bool true 存在 false不存在
+
+示例代码
+
+    无示例代码
+
+

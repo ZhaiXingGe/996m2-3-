@@ -1,0 +1,30 @@
+CreateDrawLine
+创建画线
+
+语法
+
+GUI:CreateDrawLine(size, beginPos, endPos, color)
+
+参数
+参数名	必选	类型	说明
+size	是	int	大小
+beginPos	是	table	起始坐标
+endPos	是	table	结束坐标
+color	是	int	颜色
+返回值
+
+控件对象
+
+示例代码
+
+    local Node = GUI:Node_Create(parent, "nodes", 200, 200)
+
+    local size = 10
+    local beginPos = {x = 100, y = 100}
+    local endPos = {x = 200, y = 200}
+    local color = cc.c4f(0, 1, 0, 10)
+    local drawLine = GUI:CreateDrawLine(size, beginPos, endPos, color)
+
+    GUI:addChild(Node, drawLine)
+
+

@@ -1,0 +1,32 @@
+RemoveAllWidgetTouchEventListener
+移除对象上所有触摸事件
+
+语法
+
+GUI:RemoveAllWidgetTouchEventListener(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local btn_switch = GUI:Button_Create(parent, "btn_switch", 300,200, "res/01/010022.png")
+    if btn_switch then
+        GUI:addOnTouchEvent(btn_switch, function(sender, eventType)
+          if eventType == 0 then
+            SL:Print("进入")
+          elseif eventType == 1 then
+            SL:Print("移动")
+          elseif eventType == 2 or eventType == 3 then
+            SL:Print("离开")
+            SL:Print("移除对象上所有触摸事件")
+            GUI:RemoveAllWidgetTouchEventListener(sender)
+          end
+        end)
+    end
+
+

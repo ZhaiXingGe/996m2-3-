@@ -1,0 +1,27 @@
+Win_Open
+打开面板
+
+语法
+
+GUI:Win_Open(filename)
+
+参数
+参数名	必选	类型	说明
+filename	是	string	面板文件名
+返回值
+
+类型：bool
+true：执行成功
+false：执行失败
+
+示例代码
+
+    local btn_boss = GUI:Button_Create(parent, "btn_boss", -350, 80, "res/01/010013.png")
+    if btn_boss then
+        local tx_btn_zs = GUI:Text_Create(btn_boss, "tx_btn_boss", 70, 20, 18, "#D6C6AD", "挑战BOSS")
+        GUI:addOnClickEvent(btn_boss, function()
+            GUI:Win_Open("boss")
+        end)
+    end
+
+

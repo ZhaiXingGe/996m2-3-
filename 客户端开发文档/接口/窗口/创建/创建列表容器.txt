@@ -1,0 +1,39 @@
+ListView_Create
+创建列表容器
+
+语法
+
+GUI:ListView_Create(parent, ID, x, y, width, height, direction)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+width	是	int	控件的宽
+height	是	int	控件的高
+direction	是	int	滑动方向
+1:垂直
+2:水平
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    -- 创建列表容器
+    local listView = GUI:ListView_Create(parent, "listView",  350, 200, 400, 200, 1)
+    GUI:Layout_debug(listView)
+
+    -- 设置列表容器对齐方式
+    GUI:ListView_setGravity(listView, 2)
+    -- 设置列表容器间隔
+    GUI:ListView_setItemsMargin(listView, 5)
+
+    for i = 1, 10, 1 do
+        local btn = GUI:Button_Create(listView, "btn" .. i, 0, 0, "res/public/00000361.png")
+    end
+
+

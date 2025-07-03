@@ -1,0 +1,28 @@
+Win_Close
+关闭面板
+
+语法
+
+GUI:Win_Close(parent)
+
+参数
+参数名	必选	类型	说明
+parent	是	string	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local _parent = GUI:Win_Create("QSQ_zhuansheng", 0, 0, 0, 0, false, false, true, false)
+    if _parent then
+    local btn_close = GUI:Button_Create(_parent, "btn_close", 870, 515, "res/01/010008.png")
+        if btn_close then
+            GUI:Button_loadTexturePressed(btn_close, "res/01/010009.png")
+            GUI:addOnClickEvent(btn_close, function()
+                GUI:Win_Close(_parent)
+            end)
+        end
+    end
+
+

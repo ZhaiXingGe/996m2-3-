@@ -1,0 +1,26 @@
+Timeline_ScaleTo
+设置控件缩放至一个值
+
+语法
+
+GUI:Timeline_ScaleTo(widget, value, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	int	缩放值
+time	是	int	过程耗时
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+   GUI:setCascadeOpacityEnabled(_parent, true)
+
+   GUI:Timeline_ScaleTo(_parent,0.5,1,function()
+        ceshi.test()
+   end)
+
+

@@ -1,0 +1,42 @@
+ScrollView_Create
+创建滚动容器
+
+特殊：要设置滚动范围大小比容器大才能滚动
+语法
+
+GUI:ScrollView_Create(parent, ID, x, y, width, height, direction)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+width	是	int	控件的宽
+height	是	int	控件的高
+direction	是	int	滑动方向：
+1:垂直
+2:水平
+3:垂直与水平
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    -- 创建滚动容器
+    local ScrollView = GUI:ScrollView_Create(parent, "ScrollView", 350, 200, 400, 200, 1)
+    GUI:Layout_debug(ScrollView)
+
+    local scrollSize = GUI:getContentSize(ScrollView)
+    local count = 10
+    local innerW, innerH = scrollSize.width, math.max(scrollSize.height, 50 * count)
+    for i = 1, count, 1 do
+        local btn = GUI:Button_Create(ScrollView, "btn" .. i, 150, innerH - 50 * i, "res/public/00000361.png") 
+    end
+
+    -- 设置滚动控件滚动区域大小
+    GUI:ScrollView_setInnerContainerSize(ScrollView, innerW, innerH)
+
+

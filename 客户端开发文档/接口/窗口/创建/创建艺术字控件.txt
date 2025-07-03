@@ -1,0 +1,33 @@
+TextAtlas_Create
+创建艺术字控件
+
+语法
+
+GUI:TextAtlas_Create(parent, ID, x, y, stringValue, charMapFile, Width, Height, startCharMap)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+stringValue	是	int	当前显示数字
+charMapFile	是	string	艺术字图片路径
+Width	是	int	字符宽
+Height	是	int	字符高
+startCharMap	是	str	首字符
+返回值
+
+创建成功则返回新建按钮控件的对象
+创建失败则返回空
+
+示例代码
+
+    local tx_atlsas = GUI:TextAtlas_Create(_parent, "tx_atlsas", 572, 482, 0, "res/01/010007.png", 19, 25, "0")
+    if tx_atlsas then
+        GUI:setAnchorPoint(tx_atlsas, 0.5, 0.5)
+    end
+
+
+
+示例图片

@@ -1,0 +1,49 @@
+RichTextCustom_Create
+创建多功能富文本控件
+
+语法
+
+GUI:RichTextCustom_Create(parent, ID, x, y, str, width)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+str	是	string	文本内容
+width	是	int	控件的宽
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+ local text1 = "<font color='#C0C0C0' size='16'>一转证明：</font>{{item,id=10965,width=50,height=50,bgvisible=1}}"
+
+        -- {{item,id=10965,width=50,height=50,bgvisible=1}} 
+        -- item
+        -- //第一个参数标识该段文本为创建物品框
+        -- id=10965
+        -- //该键值为物品模板id
+        -- width=50,height=50
+        -- //该键值为物品框大小
+        -- bgvisible=1
+        -- //该键值为物品框是否显示背景0：不显示，1显示
+
+        local text2 = "<font color='#4AE74A'>0/5</font>{{effect,id=1, scale=50,x=100,y=100, speed=1.5}}"
+
+        -- {{effect,id=1, scale=1,x=100,y=100, speed=1.5}}
+        -- effect
+        -- //第一个参数标识该段文本为创建特效
+        -- id=1
+        -- //该键值为特效id
+        -- scale=1
+        -- //该键值为特效的缩放大小
+        -- x=100,y=100
+        -- //该键值为特效的坐标可不填
+        -- speed=1.5
+        -- //该键值为特效的播放速度
+
+        local str = text1.."<br>"..text2
+        local rtx_xiaohao = GUI:RichTextCustom_Create(this, "xiaohao", 600, 30, str, 500)

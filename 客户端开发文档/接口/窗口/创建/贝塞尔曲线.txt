@@ -1,0 +1,30 @@
+TimeLine_BezierTo
+贝塞尔曲线
+
+语法
+
+GUI:TimeLine_BezierTo(time, ...)
+
+参数
+参数名	必选	类型	说明
+time	是	int	时间
+…	是	table	坐标点
+返回值
+
+无返回值
+
+示例代码
+
+    -- 贝塞尔曲线效果
+    local startPos = {x = 200, y = 100}
+    local endPos   = {x = 600, y = 100}
+    local ctrlPos  = {x = 400, y= 500}
+
+    local bsr_handle = GUI:Text_Create(parent, "bsr_handle", startPos.x, startPos.y, 18, "#FFFFFF", "贝塞尔曲线")
+    local bezier = GUI:TimeLine_BezierTo(2, startPos, ctrlPos, endPos)
+
+    GUI:runAction(bsr_handle, bezier)
+
+
+
+示例展示

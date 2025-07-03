@@ -1,0 +1,33 @@
+Timeline_RotateBy
+设置控件旋转动画
+
+语法
+
+GUI:Timeline_RotateBy(widget, value, time, timelineCB)
+
+旋转动画以控件锚点顺时针旋转,可以设置负值逆时针旋转
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	float	旋转角度
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        GUI:setAnchorPoint(btn_zs,0.5,0.5)
+        local function rotateBy()
+            GUI:setAnchorPoint(btn_zs,0,0)
+            SL:ShowSystemTips(“切换锚点,再次旋转”)
+            GUI:Timeline_RotateBy(btn_zs,360, 1)
+        end
+        GUI:Timeline_RotateBy(btn_zs,-360, 2, rotateBy)
+
+
+
+

@@ -1,0 +1,31 @@
+ItemShow_RDItem
+根据道具信息填充物品框
+
+语法
+
+GUI:ItemShow_RDItem(widget, itemData)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+itemData	是	table	道具信息
+返回值
+
+无返回值
+
+示例代码
+
+    --伪清除物品框数据
+    function GUI:ItemShow_CtrlClear(parent)
+        GUI:ItemShow_RDItem(parent, {index=20019,bgVisible=true})
+    end
+
+
+
+
+
+
+
+|— 点我下载马甲图片 —|
+
+

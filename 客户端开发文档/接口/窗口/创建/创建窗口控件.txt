@@ -1,0 +1,36 @@
+Win_Create
+创建窗口控件
+
+此接口创建控件只作父控件使用
+此控件ID唯一且不可重复
+语法
+
+GUI:Win_Create(ID,PosX,PosY,Width,Height,Main,Last,NeedVoice,EscClose,isRevmsg,npcID, resetpos, uiType)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	控件ID
+PosX	是	int	控件位置的横坐标
+PosY	是	int	控件位置的纵坐标
+Width	是	int	控件的宽
+Height	是	int	控件的高
+Main	是	bool	是否隐藏主界面
+Last	是	bool	是否隐藏上一个界面
+NeedVoice	是	bool	是否点击时有音效
+EscClose	是	bool	是否esc关闭
+(客户端)
+isRevmsg	否	bool	是否pc鼠标经过吞噬，默认true
+npcID	否	int	绑定npcid
+resetpos	否	bool	是否不记录关闭位置，true为初始位置，false为上次关闭位置
+uiType	否	int	窗口创建层 0主界面层 -1普通面板层 2通知层 默认-1
+注意：该参数4.1.5版本及以上有效
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+local _parent = GUI:Win_Create("QSQ_zhuansheng", 0, 0, 0, 0, false, false, true, true,true,32)
+
+

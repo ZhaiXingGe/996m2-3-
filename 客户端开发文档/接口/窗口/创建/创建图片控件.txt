@@ -1,0 +1,24 @@
+Image_Create
+创建图片控件
+
+语法
+
+GUI:Image_Create( _Parent, _ID, _PosX, _PosY, _nimg)
+
+参数
+参数名	必选	类型	说明
+_Parent	是	parent	父控件对象
+_ID	是	string	控件ID
+_PosX	是	int	控件位置的横坐标
+_PosY	是	int	控件位置的纵坐标
+_nimg	是	string	图片路径
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    local bg_close = GUI:Image_Create(_parent, "bg_close", 0, 0, "res/01/010010.png")
+
+

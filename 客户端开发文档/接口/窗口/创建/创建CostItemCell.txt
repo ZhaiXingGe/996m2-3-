@@ -1,0 +1,39 @@
+CreateCostItemCell
+创建CostItemCell
+
+语法
+
+GUI:CreateCostItemCell(data, extra)
+
+参数
+参数名	必选	类型	说明
+data	是	str	“ItemID#ItemCount”
+extra	是	table	extra.abbr — 数量是否简称
+extra.pointBit — 数量保留几位小数（abbr必须为true）
+extra.noShowTip — 是否显示描述文本
+extra.titleText — 描述文本
+extra.cutLineData — 下划线
+extra.enbaled — 点击查看tips
+返回值
+
+控件对象
+
+示例代码
+
+    local node = GUI:Node_Create(parent, "nodes", 400, 200)
+
+    local extra = {
+        abbr = true, -- 数量是否简称
+        pointBit = 2, -- 数量保留几位小数（abbr必须为true）
+        noShowTip = false, -- 是否显示描述文本(false 显示 true 不显示)
+        titleText = "描述文本", -- 描述文本
+        cutLineData = {}, -- 下划线  不要下划线填nil  {size = 3, beginPos = cc.p(0, 0), endPos = cc.p(60,3), color = cc.c4f(0, 1, 0, 50)}
+        enbaled = true,-- 点击查看tips
+    }
+
+    local priceCell = GUI:CreateCostItemCell("1#9999992223993", extra)
+    GUI:addChild(node, priceCell)
+
+
+
+示例展示

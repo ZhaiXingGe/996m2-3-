@@ -1,0 +1,31 @@
+ParticleEffect_Create
+创建粒子特效
+
+语法
+
+GUI:ParticleEffect_Create(parent, ID, x, y, res)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+ID	是	string	控件ID
+x	是	int	控件位置的横坐标
+y	是	int	控件位置的纵坐标
+res	是	string	粒子特效资源路径 plist文件
+返回值
+
+无返回值
+
+示例代码
+
+示例粒子特效资源particles.zip（需要png plist 不支持 plist整合）
+
+
+local widget = GUI:ParticleEffect_Create(GUI:Attach_LeftBottom(), "TT", 568, 320, "res/private/particles/petal_1.plist")
+GUI:ParticleEffect_setDuration(widget, -1)
+GUI:ParticleEffect_setTotalParticles(widget, 999)
+
+
+
+
+示例展示

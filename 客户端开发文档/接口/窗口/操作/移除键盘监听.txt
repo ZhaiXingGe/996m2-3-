@@ -1,0 +1,19 @@
+removeKeyboardEvent
+移除键盘监听 （快捷键）
+
+语法
+
+GUI:removeKeyboardEvent(codeKeys)
+
+参数
+参数名	必选	类型	说明
+codeKeys	是	string / table	要移除监听的键盘键key
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:removeKeyboardEvent("KEY_F7")
+
+

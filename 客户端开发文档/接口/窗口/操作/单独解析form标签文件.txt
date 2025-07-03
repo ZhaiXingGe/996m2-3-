@@ -1,0 +1,21 @@
+Win_AddFile
+单独解析form标签文件
+
+单from标签文件不可使用dialog词条
+语法
+
+GUI:Win_AddFile(parent, filename)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+filename	是	string	from标签文件名
+返回值
+
+无返回值
+
+示例代码
+
+     GUI:Win_AddFile(Panel, "CommonDescTips")
+
+

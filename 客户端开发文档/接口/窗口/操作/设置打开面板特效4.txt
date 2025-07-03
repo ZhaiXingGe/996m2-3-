@@ -1,0 +1,19 @@
+Timeline_Window4
+设置打开面板特效(大-小)4
+
+语法
+
+GUI:Timeline_Window4(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	父控件对象
+返回值
+
+无返回值
+
+示例代码
+
+        GUI:Timeline_Window4(_parent)
+
+

@@ -1,0 +1,34 @@
+Timeline_MoveTo
+设置控件移动至一个值
+
+语法
+
+GUI:Timeline_MoveTo(widget, value, time, timelineCB)
+
+通过修改 x 和 y 的位置属性，它们是绝对坐标。可以同时调用几个 MoveTo 操作，由此产生的移动将是各个移动的总和。
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	table	移动坐标{x=int,y=int}
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        local function moveBy1()
+            SL:ShowSystemTips(“移动结束触发1”)
+        end
+        local function moveBy2()
+            SL:ShowSystemTips(“移动结束触发2”)
+        end
+        GUI:Timeline_MoveBy(btn_zs, {x = 0,y = 100}, 1, moveBy1)
+        GUI:Timeline_MoveBy(btn_zs, {x = 100,y = 0}, 5, moveBy2)
+
+
+
+

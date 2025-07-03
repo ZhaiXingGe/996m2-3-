@@ -1,0 +1,29 @@
+Timeline_ScaleBy
+控件缩放动画
+
+语法
+
+GUI:Timeline_ScaleBy(widget, value, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	float	缩放大小
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        local function scaleBy()
+            SL:ShowSystemTips(“缩放结束触发,开始放大”)
+            GUI:Timeline_ScaleBy(btn_zs,2, 1)
+        end
+        GUI:Timeline_ScaleBy(btn_zs,0.5, 1, scaleBy)
+
+
+
+

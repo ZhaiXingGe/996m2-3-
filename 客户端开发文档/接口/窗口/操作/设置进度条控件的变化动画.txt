@@ -1,0 +1,71 @@
+Timeline_Progress
+设置进度条控件的变化动画
+
+语法
+
+GUI:Timeline_Progress(widget, widgetBg, params)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	进度条对象
+widgetBg	是	obj	进度条背景
+a. 对象是LoadingBar，type等于1或者nil；
+b.该对象是Layout， type必须要传一个值，并且该值不能等于1	
+params	是	table	type：进度条类型
+num：剩余数量(血量)
+count：滚动的条数
+to：目标进度值
+step: 动画步长
+interval: 增长速度,默认0.01
+colors: 颜色变化顺序
+callback: 回调函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        local idx = 0
+        local function progress()
+            idx = idx + 1
+            SL:ShowSystemTips(“进度条触发第”..idx..”次进入”)
+        end
+        local params = {}
+        params.count    = 3           — 重置次数
+        params.to       = 100         — 目标进度值
+        params.step     = 1           — 动画步长
+        params.interval = 0.02        — 增长的速度， 默认0.01
+        params.type     = 2,          — 进度条类型
+        params.colors   = {           — 血条颜色变化顺序,可不填
+            [0] = “#0000FF”,
+            [1] = “#00FF00”,
+            [2] = “#0000FF”,
+            [3] = “#00FF00”,
+            [4] = “#0000FF”,
+        }
+        params.callback = progress    —回调函数
+
+
+
+    local widgetBg = GUI:Layout_Create(_parent, "layout_widgetBg", 228, 245, 200, 14)
+    GUI:Layout_setBackGroundColor(widgetBg, "#0000FF")
+    GUI:Layout_setBackGroundColorType(widgetBg, 1)
+
+    local widget = GUI:LoadingBar_Create(widgetBg, "bar_widget",0, 0, "Default/LoadingBarFile.png",0)
+    GUI:LoadingBar_setPercent(widget, 0)
+    GUI:LoadingBar_setDirection(widget, 1)
+
+    widget:setColor(SL:ConvertColorFromHexString(data.colors[1]))
+
+    GUI:Timeline_Progress(widget, widgetBg, params)
+
+
+
+
+
+" class="reference-link">
+友情提手
+
+1. 上面的进度条是 widgetBg 对象是 Layout_Create 创建的情况
+2. 如果 widgetBg 是 LoadingBar_Create 创建的，具体参考 GUILayout/MainTarget.lua 文件中的用法

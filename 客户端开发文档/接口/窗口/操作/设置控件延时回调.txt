@@ -1,0 +1,28 @@
+Timeline_CallFunc
+控件延时回调
+
+语法
+
+GUI:Timeline_CallFunc(widget, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	动画时间
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+
+        local function callFunc(handle)
+            SL:ShowSystemTips(“触发延时回调”)
+            GUI:Button_loadTextureNormal(handle, “res/01/010033.png”)
+        end
+        GUI:Timeline_CallFunc(btn_zs, 2, callFunc)
+
+
+
+

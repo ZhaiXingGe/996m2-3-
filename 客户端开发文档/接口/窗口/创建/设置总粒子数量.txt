@@ -1,0 +1,23 @@
+ParticleEffect_setTotalParticles
+设置总粒子数量
+
+语法
+
+ParticleEffect_setTotalParticles(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	粒子特效
+value	是	int	数量
+返回值
+
+无返回值
+
+示例代码
+
+    local a = "res/private/particles/petal_1.plist"
+    local widget = GUI:ParticleEffect_Create(GUI:Attach_LeftBottom(), "TT", 568, 320, a)
+    GUI:ParticleEffect_setDuration(widget, -1)
+    GUI:ParticleEffect_setTotalParticles(widget, 999)
+
+

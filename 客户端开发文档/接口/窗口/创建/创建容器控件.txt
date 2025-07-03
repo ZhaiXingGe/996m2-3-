@@ -1,0 +1,38 @@
+Layout_Create
+创建容器控件
+
+语法
+
+GUI:Layout_Create( _Parent, _ID, _PosX, _PosY, _Width, _Height, _isClip)
+
+参数
+参数名	必选	类型	说明
+_Parent	是	parent	父控件对象
+_ID	是	string	控件ID
+_PosX	是	int	控件位置的横坐标
+_PosY	是	int	控件位置的纵坐标
+_Width	是	int	控件的宽
+_Height	是	int	控件的高
+_isClip	否	bool	是否裁剪
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    local _parent = GUI:Win_Create("QSQ_challengeboss", 0, 0, 0, 0, false, false, true, false)
+    if _parent then
+        local winSize = SL:GetScreenSize()
+        local x = winSize.width / 2
+        local y = winSize.height / 2
+        local w = winSize.width
+        local h = winSize.height
+
+        local layout = GUI:Layout_Create(_parent, "diban", x, y, w, h)
+        if layout then
+            GUI:setAnchorPoint(layout, 0.5, 0.5)
+        end
+    end
+
+

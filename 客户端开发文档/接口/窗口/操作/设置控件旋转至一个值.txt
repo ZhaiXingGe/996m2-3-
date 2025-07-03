@@ -1,0 +1,26 @@
+Timeline_RotateTo
+设置控件旋转至一个值
+
+语法
+
+GUI:Timeline_RotateTo(widget, value, time, timelineCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	int	旋转角度
+time	是	int	过程耗时
+timelineCB	是	fun	完成时触发函数
+返回值
+
+无返回值
+
+示例代码
+
+   GUI:setCascadeOpacityEnabled(_parent, true)
+
+   GUI:Timeline_RotateTo(_parent,180,1,function()
+        ceshi.test()
+   end)
+
+
