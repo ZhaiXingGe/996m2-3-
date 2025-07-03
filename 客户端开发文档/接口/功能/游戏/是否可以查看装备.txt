@@ -1,0 +1,19 @@
+IsCanLookRoleEquip
+是否可以查看装备
+
+语法
+
+SL:IsCanLookRoleEquip()
+
+参数
+
+无参数
+
+返回值
+
+类型：bool
+true：可以
+false：不可以
+
+示例代码
+     无示例代码

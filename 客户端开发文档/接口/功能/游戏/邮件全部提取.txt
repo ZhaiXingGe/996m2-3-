@@ -1,0 +1,17 @@
+RequestGetAllMailItems
+邮件全部提取
+
+语法
+
+SL:RequestGetAllMailItems()
+
+参数
+
+无参数
+
+返回值
+
+无
+
+示例代码
+      无示例代码

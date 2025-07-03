@@ -1,0 +1,19 @@
+IsCustomSkill
+判断是否是自定义技能
+
+语法
+
+SL:IsCustomSkill(skillID)
+
+参数
+参数名	必选	类型	说明
+skillID	是	int	技能id
+返回值
+
+无
+
+示例代码
+
+    local aaa = SL:IsCustomSkill(skillID)
+
+

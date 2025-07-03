@@ -1,0 +1,17 @@
+RequestDelReadMail
+删除已读邮件
+
+语法
+
+SL:RequestDelReadMail()
+
+参数
+
+无参数
+
+返回值
+
+无
+
+示例代码
+      无示例代码

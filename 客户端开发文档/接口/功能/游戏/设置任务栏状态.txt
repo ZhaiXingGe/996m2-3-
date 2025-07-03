@@ -1,0 +1,19 @@
+SetTaskBarState
+设置任务栏状态
+
+语法
+
+SL:SetTaskBarState(param)
+
+参数
+参数名	必选	类型	说明
+param	是	object	status = status, callback = callback
+返回值
+
+true or false
+
+示例代码
+
+无示例代码
+
+

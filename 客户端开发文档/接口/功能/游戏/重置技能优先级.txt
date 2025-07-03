@@ -1,0 +1,19 @@
+ResetSkillPriority
+重置技能优先级
+
+语法
+
+SL:ResetSkillPriority(skillID)
+
+参数
+参数名	必选	类型	说明
+skillID	是	int	技能id
+返回值
+
+无
+
+示例代码
+
+    SL:ResetSkillPriority(skillID)
+
+

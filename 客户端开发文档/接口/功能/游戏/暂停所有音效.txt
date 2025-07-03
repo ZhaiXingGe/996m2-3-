@@ -1,0 +1,52 @@
+PauseAllAudio
+暂停所有音效
+
+语法
+
+SL:PauseAllAudio()
+
+参数
+
+无
+
+返回值
+
+类型：无
+
+示例代码
+
+    local title = GUI:Text_Create(parent, "title11", 400, 400, 18, "#D6C6AD", "播放音效")
+    GUI:setTouchEnabled(title, true)
+    GUI:addOnClickEvent(title, function()
+        SL:PlayAudio(71100)
+    end)
+
+
+    local title = GUI:Text_Create(parent, "title12", 400, 370, 18, "#D6C6AD", "停止音效")
+    GUI:setTouchEnabled(title, true)
+    GUI:addOnClickEvent(title, function()
+        SL:StopAudio(71100)
+    end)
+
+
+    local title = GUI:Text_Create(parent, "title13", 400, 340, 18, "#D6C6AD", "暂停所有音效")
+    GUI:setTouchEnabled(title, true)
+    GUI:addOnClickEvent(title, function()
+        SL:PauseAllAudio()
+    end)
+
+
+    local title = GUI:Text_Create(parent, "title14", 400, 310, 18, "#D6C6AD", "恢复所有音效")
+    GUI:setTouchEnabled(title, true)
+    GUI:addOnClickEvent(title, function()
+        SL:ResumeAllAudio()
+    end)
+
+
+    local title = GUI:Text_Create(parent, "title15", 400, 280, 18, "#D6C6AD", "停止所有音效")
+    GUI:setTouchEnabled(title, true)
+    GUI:addOnClickEvent(title, function()
+        SL:StopAllAudio()
+    end)
+
+

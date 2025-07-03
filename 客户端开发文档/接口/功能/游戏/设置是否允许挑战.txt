@@ -1,0 +1,19 @@
+SetCanChallenge
+设置是否允许挑战
+
+语法
+
+SL:SetCanChallenge(value)
+
+参数
+参数名	必选	类型	说明
+value	是	boolean	状态
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

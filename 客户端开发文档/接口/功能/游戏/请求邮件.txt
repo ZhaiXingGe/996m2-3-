@@ -1,0 +1,17 @@
+RequestMailList
+请求邮件
+
+语法
+
+SL:RequestMailList()
+
+参数
+
+无参数
+
+返回值
+
+无
+
+示例代码
+      无示例代码

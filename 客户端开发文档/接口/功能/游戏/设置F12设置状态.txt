@@ -1,0 +1,59 @@
+SetSettingValue
+设置F12设置状态
+
+语法
+
+SL:SetSettingValue(ID, values)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	设置的唯一ID
+values	是	object	{default, default1, defaul2} 配置中字段的值
+返回值
+
+无返回值
+
+具体用法
+
+    -- 设置勾选状态
+    SL:SetSettingValue(ID, {default}
+
+    -- 设置 default1
+    SL:SetSettingValue(ID, {nil, default1})
+
+    -- 设置 default2
+    SL:SetSettingValue(ID, {nil, nil, default2})
+
+    -- 设置 default3
+    SL:SetSettingValue(ID, {nil, nil, nil, default3})
+
+
+
+示例代码
+
+例如：设置 [经验过滤] 这一项
+
+    -- 设置勾选
+    SL:SetSettingValue(36, {1}
+
+    -- 设置经验过滤为100
+    SL:SetSettingValue(36, {nil, 100})
+
+
+
+
+1. 找到 GUILayout/GUIShare.lua 文件
+2. 搜索 SetCfg 关键字找到设置配置
+3. 该设置配置中包含：基础（SetBaseCfg）、保护（SetProtectCfg）、战斗（SetBattleCfg）、英雄（SetHeroCfg）、其他设置（SetOtherCfg）
+4. 如下图：
+
+
+配置中有以下字段:
+参数名	必选	说明
+id	是	设置的唯一ID, 不能修改
+content	是	设置要显示的文本
+place	否	该设置在显示中占的位数，默认都是占1位，超过1位的需要设置，如下图
+default	是	默认勾选（1: 勾选； 0： 不勾选）
+default1	否	默认设置的值1（具体参考配置SetCfg）
+default2	否	默认设置的值2（id=38是自动练功的CD，id=25道士生命低于该值时使用）
+default3	否	预留字段

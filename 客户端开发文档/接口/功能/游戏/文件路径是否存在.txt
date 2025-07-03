@@ -1,0 +1,23 @@
+IsFileExist
+文件路径是否存在
+
+语法
+
+SL:IsFileExist(path)
+
+参数
+参数名	必选	类型	说明
+path	是	string	文件路径
+返回值
+
+bool|true 存在|false 不存在
+
+示例代码
+
+    if SL:IsFileExist("E:/1.png") then
+        SL:Print("文件存在")
+    else
+        SL:Print("文件不存在")
+    end
+
+

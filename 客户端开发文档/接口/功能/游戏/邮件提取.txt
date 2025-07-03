@@ -1,0 +1,19 @@
+RequestGetMailItems
+邮件提取
+
+语法
+
+SL:RequestGetMailItems(mailID)
+
+参数
+参数名	必选	类型	说明
+mailID	是	int	邮件ID
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

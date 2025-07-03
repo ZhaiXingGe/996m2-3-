@@ -1,0 +1,19 @@
+SetAttackState
+设置攻击状态
+
+语法
+
+SL:SetAttackState(state)
+
+参数
+参数名	必选	类型	说明
+state	是	boolean	设置攻击状态
+返回值
+
+无返回值
+
+示例代码
+    -- 自动去攻击目标ID是 1 的对象
+        local targetID = 1
+        SL:SetTargetID(targetID)
+        SL:SetAttackState(true)

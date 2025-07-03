@@ -1,0 +1,29 @@
+SetChatChannelReceiving
+设置聊天频道是否接收消息
+
+语法
+
+SL:SetChatChannelReceiving(channel)
+
+参数
+参数名	必选	类型	说明
+channel	是	int	聊天枚举
+Common      = 0,    -- 综合
+System      = 1,    -- 系统
+Shout       = 2,    -- 喊话
+Private     = 3,    -- 私聊
+Guild       = 4,    -- 行会
+Team        = 5,    -- 组队
+Near        = 6,    -- 附近
+World       = 7,    -- 世界
+GuildTips   = 40  -- 行会通知
+
+返回值
+
+无返回值
+
+示例代码
+
+        无示例代码
+
+

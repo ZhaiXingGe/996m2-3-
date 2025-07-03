@@ -1,0 +1,18 @@
+IsPickUpSprite
+是否是拾取小精灵
+
+语法
+
+SL:IsPickUpSprite(actor)
+
+参数
+参数名	必选	类型	说明
+actor	是	string	客户端对象
+返回值
+
+类型: bool
+true 是 | false 不是
+
+示例代码
+       local actor = SL:GetActorByID(makeid)
+       local isis = SL:IsPickUpSprite(actor)

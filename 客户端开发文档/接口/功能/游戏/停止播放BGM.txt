@@ -1,0 +1,21 @@
+StopBGM
+停止播放BGM
+
+语法
+
+SL:StopBGM()
+
+参数
+
+无
+
+返回值
+
+类型：无
+
+示例代码
+
+       -- SL:PlayBGM(GUIShare.SND_TYPE_BGM_LOGIN)
+    SL:StopBGM()
+
+

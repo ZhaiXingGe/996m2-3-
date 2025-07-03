@@ -1,0 +1,17 @@
+RequestAppointRank
+任命职位
+
+语法
+
+SL:RequestAppointRank(uid, rank)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家id
+rank	是	int	官职等级
+返回值
+
+无返回值
+
+示例代码
+     无示例代码

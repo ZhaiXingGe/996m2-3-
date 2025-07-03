@@ -1,0 +1,40 @@
+RequestStoreBuyItem
+请求购买商城道具
+
+语法
+
+SL:RequestStoreBuyItem(index, num)
+
+参数
+参数名	必选	类型	说明
+index	是	int	物品id
+num	是	int	购买数量
+返回值
+
+类型：无
+
+示例代码
+
+    local textList = {
+        {text = "获取商城数据根据页签", func = function() SL:Dump(SL:GetStoreDataByPage(1)) end},
+        {text = "打开购买弹窗",func = function() SL:OpenStoreBuyPop(SL:GetStoreDataByPage(1)[1]) end},
+        {text = "关闭购买弹窗",func = function() SL:CloseStoreBuyPop() end},
+        {text = "检测背包是否有位置", func = function() SL:Dump(SL:CheckNeedSpace(10020, 9999)) end},
+        {text = "请求查看商城数据(page: 1~5)",func = function() SL:RequestStoreData(1)  end},
+        {text = "请求购买商城道具",func = function() SL:RequestStoreBuyItem(5, 99) end},
+    }
+
+    for i, v in ipairs(textList) do
+        local title = GUI:Text_Create(parent, "texts_" .. i, 400, 400 - 30 * i, 18, "#FFFFFF", "点我：" ..v.text)
+        GUI:setTouchEnabled(title, true)
+        GUI:addOnClickEvent(title, function()
+            v.func()
+        end)
+    end
+
+    -- 商城刷新
+    SL:RegisterLUAEvent(LUA_EVENT_STORE_REFRESH, "Store_ceshi", function(page)
+        SL:Dump(page)
+    end)
+
+

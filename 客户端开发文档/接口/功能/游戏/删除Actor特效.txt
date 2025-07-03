@@ -1,0 +1,25 @@
+RmvActorEffect
+删除Actor特效
+
+语法
+
+SL:RmvActorEffect(actorID, sfxID)
+
+参数
+参数名	必选	类型	说明
+actorID	是	int	玩家id
+sfxID	是	int	特效ID
+返回值
+
+无
+
+示例代码
+
+    local actorID = SL:GetMetaValue("USERID")
+    if 1 == 2 then
+        SL:AddActorEffect(actorID, 1)
+    else
+        SL:RmvActorEffect(actorID, 1)
+    end
+
+

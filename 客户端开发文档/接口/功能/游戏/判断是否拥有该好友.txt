@@ -1,0 +1,20 @@
+HasFriends
+判断是否拥有该好友
+
+语法
+
+SL:HasFriends(name)
+
+参数
+参数名	必选	类型	说明
+name	是	str	玩家名
+返回值
+
+类型：bool
+true：有，false：无
+
+示例代码
+
+无示例代码
+
+

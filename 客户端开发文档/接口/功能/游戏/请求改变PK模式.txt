@@ -1,0 +1,19 @@
+RequestChangePKMode
+请求改变PK模式
+
+语法
+
+SL:RequestChangePKMode(pkmode)
+
+参数
+参数名	必选	类型	说明
+pkmode	是	str	模式
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

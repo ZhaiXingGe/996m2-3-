@@ -1,0 +1,28 @@
+AddActorEffect
+添加Actor特效
+
+语法
+
+SL:AddActorEffect(actorID, sfxID, isFront, offX, offY)
+
+参数
+参数名	必选	类型	说明
+actorID	是	int	玩家id
+sfxID	是	int	特效ID
+isFront	否	boolen	是否在模型前 默认在前面
+offX	否	int	x偏移
+offY	否	int	y偏移
+返回值
+
+无
+
+示例代码
+
+    local actorID = SL:GetMetaValue("USERID")
+    if 1 == 2 then
+        SL:AddActorEffect(actorID, 1)
+    else
+        SL:RmvActorEffect(actorID, 1)
+    end
+
+

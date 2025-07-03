@@ -1,0 +1,21 @@
+RequestCustomVar
+请求服务端上传自定义变量值
+
+特殊：废弃 废弃 废弃 请求数据返回的速度较慢
+修改为服务端主动推送：senditemvartoc
+语法
+
+SL:RequestCustomVar(key)
+
+参数
+参数名	必选	类型	说明
+key	是	str	变量名
+返回值
+
+无返回值
+
+示例代码
+
+        无示例
+
+

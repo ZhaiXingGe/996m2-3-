@@ -1,0 +1,17 @@
+SetPlayerAutoPickStatus
+设置是否玩家自动拾取
+
+特殊：该接口设置的是角色是否会去主动拾取装备
+语法
+
+SL:SetPlayerAutoPickStatus(value)
+
+参数
+参数名	必选	类型	说明
+value	是	int	0:否 1:是
+返回值
+
+无返回值
+
+示例代码
+无示例代码

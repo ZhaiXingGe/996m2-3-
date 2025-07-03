@@ -1,0 +1,22 @@
+IsJoinGuild
+是否加入行会
+
+语法
+
+SL:IsJoinGuild()
+
+参数
+
+无参数
+
+返回值
+
+类型：bool，str
+1，boolean
+2，行会ID
+
+示例代码
+
+        local bool,guildId = SL:IsJoinGuild()
+
+

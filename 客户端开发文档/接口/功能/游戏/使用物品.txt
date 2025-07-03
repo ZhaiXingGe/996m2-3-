@@ -1,0 +1,16 @@
+UseItemByIndex
+使用物品
+
+语法
+
+SL:UseItemByIndex(Index)
+
+参数
+参数名	必选	类型	说明
+Index	是	int	物品Index
+返回值
+
+无返回值
+
+示例代码
+     无示例代码

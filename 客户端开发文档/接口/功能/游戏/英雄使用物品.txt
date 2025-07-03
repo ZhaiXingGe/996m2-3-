@@ -1,0 +1,17 @@
+UseHeroItem
+英雄使用物品
+
+语法
+
+SL:UseHeroItem(itemData, autoUse)
+
+参数
+参数名	必选	类型	说明
+itemData	是	table	道具信息
+autoUse	否	bool	是否自动使用道具
+返回值
+
+无返回值
+
+示例代码
+     无示例代码

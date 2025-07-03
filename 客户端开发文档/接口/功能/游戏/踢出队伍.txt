@@ -1,0 +1,16 @@
+RequestKickTeam
+踢出队伍
+
+语法
+
+SL:RequestKickTeam(uid)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家ID
+返回值
+
+无返回值
+
+示例代码
+     无示例代码

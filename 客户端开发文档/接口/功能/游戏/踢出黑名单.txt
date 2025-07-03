@@ -1,0 +1,17 @@
+RequestKickBlackList
+踢出黑名单
+
+语法
+
+SL:RequestKickBlackList(uid, name)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家ID
+name	是	string	玩家名字
+返回值
+
+无返回值
+
+示例代码
+     SL:RequestKickBlackList(uid, name)
