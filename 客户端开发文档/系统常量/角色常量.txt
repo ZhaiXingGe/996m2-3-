@@ -1,0 +1,475 @@
+|— 点我查看具体用法 —|
+
+角色常量(初版)
+参数名	类型	说明
+USER_IS_DIE	boolean	角色是否死亡
+USERID	int	唯一ID
+M.USERNAME	str	玩家名字
+M.LEVEL	int	玩家等级
+M.RELEVEL	int	转生等级
+M.EXP	int	当前经验
+M.MAXEXP	int	最大经验
+M.JOB	int	职业
+M.MAXHP	int	最大生命值
+M.MAXMP	int	最大魔法值
+M.HP	int	当前生命值
+M.MP	int	当前魔法值
+M.BHP	int	生命值万分比加成
+M.BMP	int	魔法值万分比加成
+M.MIN_ATK	int	攻击下限
+M.MAX_ATK	int	攻击上限
+M.BMIN_ATK	int	攻击下限万分比加成
+M.BMAX_ATK	int	攻击上限万分比加成
+M.MIN_MAG	int	魔法下限
+M.MAX_MAG	int	魔法上限
+M.BMIN_MAG	int	魔法下限万分比加成
+M.BMAX_MAG	int	魔法上限万分比加成
+M.MIN_DAO	int	道术下限
+M.MAX_DAO	int	道术上限
+M.BMIN_DAO	int	道术下限万分比加成
+M.BMAX_DAO	int	道术上限万分比加成
+M.MIN_DEF	int	物防下限
+M.MAX_DEF	int	物防上限
+M.BMIN_DEF	int	物防下限万分比加成
+M.BMAX_DEF	int	物防上限万分比加成
+M.MIN_MDF	int	魔防下限
+M.MAX_MDF	int	魔防上限
+M.BMIN_MDF	int	魔防下限万分比加成
+M.BMAX_MDF	int	魔防上限万分比加成
+M.HIT	int	命中
+M.MISS	int	闪避
+M.M_SPEED	int	移动速度万分比
+M.A_SPEED	int	攻击速度万分比
+M.BURST	int	暴击几率
+M.BURST_DAM	int	暴击伤害
+M.IMM_ATT	int	物伤减免
+M.BIMM_ATT	int	物伤减免万分比
+M.PIMM_ATT	int	物伤减免几率万分比
+M.IMM_MAG	int	魔伤减免
+M.BIMM_MAG	int	魔伤减免万分比
+M.PIMM_MAG	int	魔伤减免几率万分比
+M.REF_ATT	int	物伤反弹
+M.BREF_ATT	int	物伤反弹万分比
+M.PREF_ATT	int	物伤反弹几率万分比
+M.REF_MAG	int	魔伤反弹
+M.BREF_MAG	int	魔伤反弹万分比
+M.PREF_MAG	int	魔伤反弹几率万分比
+M.IGN_DEF	int	物理穿透
+M.BIGN_DEF	int	物理穿透万分比
+M.PIGN_DEF	int	物理穿透几率万分比
+M.IGN_MDF	int	魔法穿透
+M.BIGN_MDF	int	魔法穿透万分比
+M.PIGN_MDF	int	魔法穿透几率万分比
+M.SUCK_HP	int	吸血
+M.BSUCK_HP	int	吸血万分比
+M.PSUCK_HP	int	吸血几率万分比
+M.SUCK_MP	int	吸魔
+M.BSUCK_MP	int	吸魔万分比
+M.PSUCK_MP	int	吸魔几率万分比
+M.LUCK	int	幸运
+M.DCR	int	倍功
+M.BEXE	int	经验倍率
+M.DROP	int	怪物爆率
+M.PK_DROP	int	PK爆率
+M.DEL_DROP	int	死亡掉装
+M.F_SPEED	int	施法速度
+M.BW	int	当前重量
+M.MAXBW	int	玩家最大负重
+M.WW	int	穿戴负重
+M.MAXWW	int	最大穿戴负重
+M.HW	int	腕力
+M.MAXHW	int	当前最大可穿戴腕力
+MAP_ID	str	地图id
+MAP_NAME	str	地图名
+MAP_DATA_ID	str	地图源id（镜像地图最初的地图id）
+MINIMAP_ID	str	小地图名
+IN_SAFE_AREA	bool	是否是安全区
+X	int	X坐标
+Y	int	Y坐标
+KFSTATE	bool	是否是跨服状态
+MAX_BAG	int	背包开放的格子数量
+H_MAX_BAG	int	英雄背包开放的格子数量
+N_MAX_BAG	int	仓库开放的格子数量
+USEHERO	bool	是否开启英雄
+CALLHERO	bool	是否召唤英雄
+ACTIVEHERO	bool	是否激活英雄
+PKMODE	int	pk模式获取
+0：全体
+1：和平
+2：夫妻
+3：师徒
+4：组队
+5：公会
+6：善恶
+7：国家
+8：同盟
+9：阵营
+10：区服
+PLATFORM	int	获取当前游戏平台0：win，1：linux，2：mac，3：安卓，4：iphone，5：ipad
+PLATFORM_ANDROID	bool	是否是安卓
+PLATFORM_IOS	bool	是否是ios
+PLATFORM_WINDOWS	bool	是否是windows
+WINPLAYMODE	int	获取当前游戏运行版本
+GAME_ID	int	获取游戏ID
+CHANNEL_ID	int	获取Channel ID
+PACKAGE_NAME	str	获取包名
+FPS	int	帧数
+SERVER_ID	int	获取当前服务器ID
+SERVER_NAME	int	获取当前服务器名字
+MAIN_SERVER_ID	int	获取主服务器ID
+RES_VERSION	str	获取当前版本号
+UID	int	获取玩家UID
+LEARNED_SKILLS	table	获取玩家所有技能信息
+获取已学技能param1:是否排除普攻
+param2:是否只获取主动技能 SL:GetMetaValue("LEARNED_SKILLS", true)
+SERVER_TIME	int	服务器时间戳
+KFSTATE	bool	是否在跨服状态
+PET_PKMODE	int	宠物模式1：跟随，2： 战斗，3：锁定，4：休息
+PET_ALIVE	bool	宝宝是否存活
+PET_ATTR	bool	获取宠物属性，宠物唯一id/属性id
+CHARM	str	宝珠位装备名
+BOOTS	str	靴子位装备名
+BELT	str	腰带位装备名
+BUJUK	str	护符位装备名
+BUJUK	str	护符位装备名
+ARMRINGL	str	左手镯位装备名
+ARMRINGR	str	右手镯位装备名
+RINGL	str	左戒位装备名
+RINGR	str	右戒位装备名
+NECKLACE	str	项链位装备名
+HELMET	str	头盔位装备名
+RIGHTHAND	str	勋章位装备名
+WEAPON	str	武器位装备名
+DRESS	str	衣服位装备名
+PKPOINT	int	pk值
+M.EQUIP_DATA	table	根据位置获取装备数据或者根据名字获取装备数据
+L.EQUIP_POS_DATAS	int	装备位数据Makeindex
+M.EQUIP_DATA_BY_POS	table	通过部位获取装备信息
+M.EQUIP_DATA_LIST_BY_POS	table	通过部位获取装备列表信息
+996BOX_LOGIN	bool	是否是盒子登录
+MAP_FORBID_SAY	bool	是否禁止说话
+MAP_FORBID_LEVEL_AND_JOB	bool	是否禁止显示职业等级
+MAP_SHOW_HPPER	int	血量显示百分比
+MAP_FORBID_LOOK	bool	是否禁止查看
+MAP_FORBID_LAUNCH_SKILL	bool	是否禁止释放某技能
+ITEM_INDEX_BY_NAME	int	通过名字获取道具index
+GUILD_MEMBER_LIMIT	int	获取行会成员上限
+GUILD_TITLE_LIST	table	获取行会封号职位列表
+TEAM_NEAR	table	附近队伍列表
+TEAM_MEMBER_LIST	table	队伍成员列表
+TEAM_COUNT	int	队伍人数
+TEAM_MAC_COUNT	int	队伍最大人数
+TEAM_APPLY	table	入队申请列表
+IS_TEAM_LEADER	bool	是否是队伍领导
+IS_TEAM_MEMBER	bool	是否是队伍成员
+ITEM_SHOW_NAME	string	物品显示名字（参数itemData）
+ITEM_NAME_COLOR_BY_DATA	string	物品显示名字颜色（参数itemData）
+MAIL_HAVE_DEL_ITEM	bool	是否有邮件可以删除
+SKILL_NAME	string	技能名字 param1:技能ID
+SKILL_ICON_PATH	string	技能图标 param1:技能ID
+SKILL_RECT_ICON_PATH	string	技能矩形图标 param1:技能ID
+SKILL_IS_ONOFF_SKILL	bool	是否可以开关技能 param1:技能ID
+SKILL_IS_ON_SKILL	bool	技能是否开启 param1:技能ID
+LEARNED_SKILLS	table	已学技能
+param1 : noBasicSkill(是否排除普攻)
+param2 : activeOnly(是否只获取主动技能)
+SKILL_IS_ACTIVE	bool	是否主动技能 param1:技能ID
+SKILL_DATA	table	获取技能数据 param1:技能ID
+SKILL_TRAIN_DATA	str	获取技能等级熟练度数据 param1:技能ID
+SKILL_CONFIG	table	获取技能配置 param1:技能ID
+SKILL_KEY	int	获取技能快捷键 param1:技能ID
+SKILL_LEVEL	int	获取技能等级 param1:技能ID
+IS_RECEIVE_CHAT_MSG	bool	获取聊天频道是否接收消息
+param1:聊天枚举
+0 — 综合
+1 — 系统
+2 — 喊话
+3 — 私聊
+4 — 行会
+5 — 组队
+6 — 附近
+7 — 世界
+40 — 行会通知
+IS_IN_HEROBAG	int	是否在英雄背包；参数param1：道具MakeIndex
+EQUIP_COMPARISON	int	获取装备对比属性; 参数param1：道具Index
+EQUIP_POWER	int	装备战力(param1: equipData； param2: param; param3: isHero)
+ITEM_MOVING_DATA	table	获取移动中道具信息
+ROLE_HP_PER	int	角色血量百分比
+ACTOR_POSITION_X	int	获取actor世界坐标X
+SL:GetMetaValue("ACTOR_POSITION_X", actorID)
+ACTOR_POSITION_y	int	获取actor世界坐标y
+SL:GetMetaValue("ACTOR_POSITION_y", actorID)
+DIR	int	人物方向
+0：上
+1：右上
+2：右
+3：右下
+4：下
+5：左下
+6：左
+7：左上
+0xff：无效位置
+ACTOR_DIR	int	获取actor方向
+SL:GetMetaValue(“ACTOR_DIR”,actorID)
+其他角色相关
+参数名	返回值类型	说明
+L.M.JOB	int	当前查看玩家职业
+L.M.HAIR	int	当前查看玩家发型
+L.M.LEVEL	int	当前查看玩家等级
+L.M.SEX	int	当前查看玩家性别
+L.M.PLAYER_DATA	table	当前查看玩家数据
+L.M.EQUIP_DATA	table	当前查看玩家某个装备位数据 param1: 装备位id 或者 装备名称
+L.M.EQUIP_POS_DATAS	table	当前查看玩家的所有装备位数据
+L.M.GUILD_INFO	table	当前查看玩家的行会信息
+L.M.TITLES	table	当前查看玩家的称号数据
+L.M.ACTIVATE_TITLE	int	当前查看玩家激活的称号id
+英雄常量(初版)
+参数名	类型	说明
+H.USERID	int	英雄UID
+H.USERNAME	str	英雄名字
+H.LEVEL	int	英雄等级
+H.RELEVEL	int	转生等级
+H.EXP	int	当前经验
+H.MAXEXP	int	最大经验
+H.JOB	int	职业
+H.MAXHP	int	最大生命值
+H.MAXMP	int	最大魔法值
+H.HP	int	当前生命值
+H.MP	int	当前魔法值
+H.BHP	int	生命值万分比加成
+H.BMP	int	魔法值万分比加成
+H.MIN_ATK	int	攻击下限
+H.MAX_ATK	int	攻击上限
+H.BMIN_ATK	int	攻击下限万分比加成
+H.BMAX_ATK	int	攻击上限万分比加成
+H.MIN_MAG	int	魔法下限
+H.MAX_MAG	int	魔法上限
+H.BMIN_MAG	int	魔法下限万分比加成
+H.BMAX_MAG	int	魔法上限万分比加成
+H.MIN_DAO	int	道术下限
+H.MAX_DAO	int	道术上限
+H.BMIN_DAO	int	道术下限万分比加成
+H.BMAX_DAO	int	道术上限万分比加成
+H.MIN_DEF	int	物防下限
+H.MAX_DEF	int	物防上限
+H.BMIN_DEF	int	物防下限万分比加成
+H.BMAX_DEF	int	物防上限万分比加成
+H.MIN_MDF	int	魔防下限
+H.MAX_MDF	int	魔防上限
+H.BMIN_MDF	int	魔防下限万分比加成
+H.BMAX_MDF	int	魔防上限万分比加成
+H.HIT	int	命中
+H.MISS	int	闪避
+H.M_SPEED	int	移动速度万分比
+H.A_SPEED	int	攻击速度万分比
+H.BURST	int	暴击几率
+H.BURST_DAM	int	暴击伤害
+H.IMM_ATT	int	物伤减免
+H.BIMM_ATT	int	物伤减免万分比
+H.PIMM_ATT	int	物伤减免几率万分比
+H.IMM_MAG	int	魔伤减免
+H.BIMM_MAG	int	魔伤减免万分比
+H.PIMM_MAG	int	魔伤减免几率万分比
+H.REF_ATT	int	物伤反弹
+H.BREF_ATT	int	物伤反弹万分比
+H.PREF_ATT	int	物伤反弹几率万分比
+H.REF_MAG	int	魔伤反弹
+H.BREF_MAG	int	魔伤反弹万分比
+H.PREF_MAG	int	魔伤反弹几率万分比
+H.IGN_DEF	int	物理穿透
+H.BIGN_DEF	int	物理穿透万分比
+H.PIGN_DEF	int	物理穿透几率万分比
+H.IGN_MDF	int	魔法穿透
+H.BIGN_MDF	int	魔法穿透万分比
+H.PIGN_MDF	int	魔法穿透几率万分比
+H.SUCK_HP	int	吸血
+H.BSUCK_HP	int	吸血万分比
+H.PSUCK_HP	int	吸血几率万分比
+H.SUCK_MP	int	吸魔
+H.BSUCK_MP	int	吸魔万分比
+H.PSUCK_MP	int	吸魔几率万分比
+H.LUCK	int	幸运
+H.DCR	int	倍功
+H.BEXE	int	经验倍率
+H.DROP	int	怪物爆率
+H.PK_DROP	int	PK爆率
+H.DEL_DROP	int	死亡掉装
+H.F_SPEED	int	施法速度
+H.BW	int	当前重量
+H.MAXBW	int	英雄最大负重
+H.WW	int	穿戴负重
+H.MAXWW	int	最大穿戴负重
+H.HW	int	腕力
+H.MAXHW	int	当前最大可穿戴腕力
+H.ANGER	int	当前愤怒
+H.MAXANGER	int	最大愤怒
+H.SHAN	boolen	英雄怒气值是否满
+H.SPEED	int	单次怒气增加值
+H.DELAYT	int	怒气增加间隔时间
+H.EQUIP_DATA	table	获取英雄某一装备数据
+param1: 装备位id 或者 装备名称 param2: 是否多个装备位共享
+H.EQUIP_POS_DATAS	table	获取装备位对应MakeIndex数据
+H.TITLES	table	英雄的称号数据
+H.ACTIVATE_TITLE	int	英雄激活的称号id
+H.SKILL_TRAIN_DATA	table	获取技能的等级熟练度数据
+param1: 技能ID
+H.SKILL_DATA	table	获取技能数据 param1: 技能ID
+H.SKILL_NAME	string	获取技能名 param1: 技能ID
+H.SKILL_KEY	int	获取技能快捷键 param1: 技能ID
+H.LEARNED_SKILLS	table	获取已有技能数据
+param1:是否排除普攻
+param2:是否只获取主动技能
+交易行角色常量(初版)
+参数名	类型	说明
+T.M.USERNAME	str	玩家名字
+T.M.LEVEL	int	玩家等级
+T.M.RELEVEL	int	转生等级
+T.M.EXP	int	当前经验
+T.M.MAXEXP	int	最大经验
+T.M.JOB	int	职业
+T.M.MAXHP	int	最大生命值
+T.M.MAXMP	int	最大魔法值
+T.M.HP	int	当前生命值
+T.M.MP	int	当前魔法值
+T.M.BHP	int	生命值万分比加成
+T.M.BMP	int	魔法值万分比加成
+T.M.MIN_ATK	int	攻击下限
+T.M.MAX_ATK	int	攻击上限
+T.M.BMIN_ATK	int	攻击下限万分比加成
+T.M.BMAX_ATK	int	攻击上限万分比加成
+T.M.MIN_MAG	int	魔法下限
+T.M.MAX_MAG	int	魔法上限
+T.M.BMIN_MAG	int	魔法下限万分比加成
+T.M.BMAX_MAG	int	魔法上限万分比加成
+T.M.MIN_DAO	int	道术下限
+T.M.MAX_DAO	int	道术上限
+T.M.BMIN_DAO	int	道术下限万分比加成
+T.M.BMAX_DAO	int	道术上限万分比加成
+T.M.MIN_DEF	int	物防下限
+T.M.MAX_DEF	int	物防上限
+T.M.BMIN_DEF	int	物防下限万分比加成
+T.M.BMAX_DEF	int	物防上限万分比加成
+T.M.MIN_MDF	int	魔防下限
+T.M.MAX_MDF	int	魔防上限
+T.M.BMIN_MDF	int	魔防下限万分比加成
+T.M.BMAX_MDF	int	魔防上限万分比加成
+T.M.HIT	int	命中
+T.M.MISS	int	闪避
+T.M.M_SPEED	int	移动速度万分比
+T.M.A_SPEED	int	攻击速度万分比
+T.M.BURST	int	暴击几率
+T.M.BURST_DAM	int	暴击伤害
+T.M.IMM_ATT	int	物伤减免
+T.M.BIMM_ATT	int	物伤减免万分比
+T.M.PIMM_ATT	int	物伤减免几率万分比
+T.M.IMM_MAG	int	魔伤减免
+T.M.BIMM_MAG	int	魔伤减免万分比
+T.M.PIMM_MAG	int	魔伤减免几率万分比
+T.M.REF_ATT	int	物伤反弹
+T.M.BREF_ATT	int	物伤反弹万分比
+T.M.PREF_ATT	int	物伤反弹几率万分比
+T.M.REF_MAG	int	魔伤反弹
+T.M.BREF_MAG	int	魔伤反弹万分比
+T.M.PREF_MAG	int	魔伤反弹几率万分比
+T.M.IGN_DEF	int	物理穿透
+T.M.BIGN_DEF	int	物理穿透万分比
+T.M.PIGN_DEF	int	物理穿透几率万分比
+T.M.IGN_MDF	int	魔法穿透
+T.M.BIGN_MDF	int	魔法穿透万分比
+T.M.PIGN_MDF	int	魔法穿透几率万分比
+T.M.SUCK_HP	int	吸血
+T.M.BSUCK_HP	int	吸血万分比
+T.M.PSUCK_HP	int	吸血几率万分比
+T.M.SUCK_MP	int	吸魔
+T.M.BSUCK_MP	int	吸魔万分比
+T.M.PSUCK_MP	int	吸魔几率万分比
+T.M.LUCK	int	幸运
+T.M.DCR	int	倍功
+T.M.BEXE	int	经验倍率
+T.M.DROP	int	怪物爆率
+T.M.PK_DROP	int	PK爆率
+T.M.DEL_DROP	int	死亡掉装
+T.M.BW	int	当前重量
+T.M.MAXBW	int	玩家最大负重
+T.M.WW	int	穿戴负重
+T.M.MAXWW	int	最大穿戴负重
+T.M.HW	int	腕力
+T.M.MAXHW	int	当前最大可穿戴腕力
+T.M.EQUIP_POS_DATAS	table	获取正在查看玩家的装备位数据
+交易行英雄常量(初版)
+参数名	类型	说明
+T.H.USERNAME	str	英雄名字
+T.H.LEVEL	int	英雄等级
+T.H.RELEVEL	int	转生等级
+T.H.EXP	int	当前经验
+T.H.MAXEXP	int	最大经验
+T.H.JOB	int	职业
+T.H.MAXHP	int	最大生命值
+T.H.MAXMP	int	最大魔法值
+T.H.HP	int	当前生命值
+T.H.MP	int	当前魔法值
+T.H.BHP	int	生命值万分比加成
+T.H.BMP	int	魔法值万分比加成
+T.H.MIN_ATK	int	攻击下限
+T.H.MAX_ATK	int	攻击上限
+T.H.BMIN_ATK	int	攻击下限万分比加成
+T.H.BMAX_ATK	int	攻击上限万分比加成
+T.H.MIN_MAG	int	魔法下限
+T.H.MAX_MAG	int	魔法上限
+T.H.BMIN_MAG	int	魔法下限万分比加成
+T.H.BMAX_MAG	int	魔法上限万分比加成
+T.H.MIN_DAO	int	道术下限
+T.H.MAX_DAO	int	道术上限
+T.H.BMIN_DAO	int	道术下限万分比加成
+T.H.BMAX_DAO	int	道术上限万分比加成
+T.H.MIN_DEF	int	物防下限
+T.H.MAX_DEF	int	物防上限
+T.H.BMIN_DEF	int	物防下限万分比加成
+T.H.BMAX_DEF	int	物防上限万分比加成
+T.H.MIN_MDF	int	魔防下限
+T.H.MAX_MDF	int	魔防上限
+T.H.BMIN_MDF	int	魔防下限万分比加成
+T.H.BMAX_MDF	int	魔防上限万分比加成
+T.H.HIT	int	命中
+T.H.MISS	int	闪避
+T.H.M_SPEED	int	移动速度万分比
+T.H.A_SPEED	int	攻击速度万分比
+T.H.BURST	int	暴击几率
+T.H.BURST_DAM	int	暴击伤害
+T.H.IMM_ATT	int	物伤减免
+T.H.BIMM_ATT	int	物伤减免万分比
+T.H.PIMM_ATT	int	物伤减免几率万分比
+T.H.IMM_MAG	int	魔伤减免
+T.H.BIMM_MAG	int	魔伤减免万分比
+T.H.PIMM_MAG	int	魔伤减免几率万分比
+T.H.REF_ATT	int	物伤反弹
+T.H.BREF_ATT	int	物伤反弹万分比
+T.H.PREF_ATT	int	物伤反弹几率万分比
+T.H.REF_MAG	int	魔伤反弹
+T.H.BREF_MAG	int	魔伤反弹万分比
+T.H.PREF_MAG	int	魔伤反弹几率万分比
+T.H.IGN_DEF	int	物理穿透
+T.H.BIGN_DEF	int	物理穿透万分比
+T.H.PIGN_DEF	int	物理穿透几率万分比
+T.H.IGN_MDF	int	魔法穿透
+T.H.BIGN_MDF	int	魔法穿透万分比
+T.H.PIGN_MDF	int	魔法穿透几率万分比
+T.H.SUCK_HP	int	吸血
+T.H.BSUCK_HP	int	吸血万分比
+T.H.PSUCK_HP	int	吸血几率万分比
+T.H.SUCK_MP	int	吸魔
+T.H.BSUCK_MP	int	吸魔万分比
+T.H.PSUCK_MP	int	吸魔几率万分比
+T.H.LUCK	int	幸运
+T.H.DCR	int	倍功
+T.H.BEXE	int	经验倍率
+T.H.DROP	int	怪物爆率
+T.H.PK_DROP	int	PK爆率
+T.H.DEL_DROP	int	死亡掉装
+T.H.BW	int	当前重量
+T.H.MAXBW	int	英雄最大负重
+T.H.WW	int	穿戴负重
+T.H.MAXWW	int	最大穿戴负重
+T.H.HW	int	腕力
+T.H.MAXHW	int	当前最大可穿戴腕力
+T.H.EQUIP_POS_DATAS	table	获取正在查看玩家的装备位数据
