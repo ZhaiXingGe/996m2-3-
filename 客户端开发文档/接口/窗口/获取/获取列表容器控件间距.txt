@@ -1,0 +1,20 @@
+ListView_getItemsMargin
+获取列表容器控件间距
+
+语法
+
+GUI:ListView_getItemsMargin(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	列表容器控件对象
+返回值
+
+类型：int
+返回列表容器控件间距
+
+示例代码
+
+    无示例代码
+
+

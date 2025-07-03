@@ -1,0 +1,21 @@
+getChildByName
+通过控件名字获取子节点
+
+语法
+
+GUI:getChildByName(widget, name)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+name	是	string	控件名字
+返回值
+
+获取成功则返回控件对象
+获取失败则返回空
+
+示例代码
+
+     无示例代码
+
+

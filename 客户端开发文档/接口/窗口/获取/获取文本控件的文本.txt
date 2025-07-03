@@ -1,0 +1,20 @@
+Text_getString
+获取文本控件的文本
+
+语法
+
+GUI:Text_getString(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：string
+获取文本控件的文本
+
+示例代码
+
+      local str = GUI:Text_getString(tx_switch)
+
+

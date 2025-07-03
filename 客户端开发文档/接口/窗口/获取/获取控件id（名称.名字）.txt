@@ -1,0 +1,20 @@
+getName
+获取控件id
+
+语法
+
+GUI:getName(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：str
+返回控件id
+
+示例代码
+
+    无示例代码
+
+

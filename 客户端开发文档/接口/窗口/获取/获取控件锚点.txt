@@ -1,0 +1,20 @@
+getAnchorPoint
+获取控件锚点
+
+语法
+
+GUI:getAnchorPoint(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：table
+{x = x, y = y}
+
+示例代码
+
+    local post = GUI:getAnchorPoint(widget)
+
+

@@ -1,0 +1,20 @@
+getScaleX
+获取控件X轴方向缩放比例
+
+语法
+
+GUI:getScaleX(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+返回值
+
+类型：int
+X轴方向缩放比例
+
+示例代码
+
+    local value = GUI:getScaleX(widget)
+
+

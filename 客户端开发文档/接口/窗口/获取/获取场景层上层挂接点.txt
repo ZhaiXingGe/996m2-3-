@@ -1,0 +1,24 @@
+Attach_SceneF
+获取场景层上层挂接点
+
+语法
+
+GUI:Attach_SceneF()
+
+参数
+
+无参数
+
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+            local _parent = GUI:Attach_SceneF()
+            ----将地图坐标 转换为场景层坐标 
+            local xy = SL:ConvertMapPos2WorldPos(328, 333, true)
+            local tx_switch = GUI:Text_Create(_parent, "titlecc", xy.x, xy.y, 20, "#D6C6AD", "转    生")
+
+

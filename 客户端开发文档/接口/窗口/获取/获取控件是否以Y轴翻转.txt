@@ -1,0 +1,21 @@
+getFlippedY
+获取控件是否以Y轴翻转
+
+语法
+
+GUI:getFlippedY(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型:bool
+true:翻转
+false:未翻转
+
+示例代码
+
+无示例
+
+

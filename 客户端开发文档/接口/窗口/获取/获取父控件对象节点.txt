@@ -1,0 +1,24 @@
+getParent
+获取父控件对象节点
+
+语法
+
+GUI:getParent(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+获取成功则返回父控件的对象
+获取失败则返回空
+
+示例代码
+
+    local LV_type = GUI:ListView_Create(_parent, "LV_type", 905, 65, 40, 450, 1)
+    if LV_type then
+        local template = GUI:Layout_Create(LV_type, "template", 0, 0, 40, 100)
+    end
+    local type = GUI:getParent(template)
+
+

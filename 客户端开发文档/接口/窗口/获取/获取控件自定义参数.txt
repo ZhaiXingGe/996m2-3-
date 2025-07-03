@@ -1,0 +1,20 @@
+Win_GetParam
+获取控件自定义参数
+
+语法
+
+GUI:Win_GetParam(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：int
+获取控件参数
+
+示例代码
+
+    无示例
+
+

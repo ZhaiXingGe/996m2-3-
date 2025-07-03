@@ -1,0 +1,20 @@
+getPositionX
+获取控件横坐标
+
+语法
+
+GUI:getPositionX(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：int
+控件横坐标
+
+示例代码
+
+    local x = GUI:getPositionX(widget)
+
+

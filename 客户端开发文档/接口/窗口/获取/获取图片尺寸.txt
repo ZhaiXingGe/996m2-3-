@@ -1,0 +1,20 @@
+getTextureSize
+获取图片尺寸
+
+语法
+
+GUI:getTextureSize(path)
+
+参数
+参数名	必选	类型	说明
+path	是	string	路径
+返回值
+
+类型：int
+尺寸
+
+示例代码
+
+    无示例代码
+
+

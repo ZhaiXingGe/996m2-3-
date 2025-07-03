@@ -1,0 +1,21 @@
+getChildren
+获取该控件的所有子控件对象
+
+语法
+
+GUI:getChildren(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型:table
+返回所有子控件对象
+
+示例代码
+
+local tab = GUI:getChildren(tx_btn_zs)
+SL:Dump(tab)
+
+

@@ -1,0 +1,21 @@
+ItemShow_GetLayoutExtra
+获取物品框控件中的基础容器对象
+
+特殊：允许物品框上设置文字显示 “+1” “1阶” 等字段
+语法
+
+GUI:ItemShow_GetLayoutExtra(parent)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	物品框对象
+返回值
+
+类型：parent
+获取物品框控件中的基础容器对象
+
+示例代码
+
+    无示例代码
+
+

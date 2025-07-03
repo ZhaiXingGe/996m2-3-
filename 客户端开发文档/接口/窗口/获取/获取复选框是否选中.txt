@@ -1,0 +1,21 @@
+CheckBox_isSelected
+获取复选框是否选中
+
+语法
+
+GUI:CheckBox_isSelected(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型:bool
+true:选中
+false:未选中
+
+示例代码
+
+    无示例代码
+
+

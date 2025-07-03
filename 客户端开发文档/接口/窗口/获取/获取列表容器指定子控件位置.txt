@@ -1,0 +1,20 @@
+ListView_getItemIndex
+获取列表容器指定子控件位置
+
+语法
+
+GUI:ListView_getItemIndex(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：int
+控件位置
+
+示例代码
+
+     GUI:ListView_getItemIndex(widget)
+
+

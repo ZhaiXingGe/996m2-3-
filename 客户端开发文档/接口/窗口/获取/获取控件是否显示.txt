@@ -1,0 +1,25 @@
+getVisible
+获取控件是否显示
+
+语法
+
+GUI:getVisible(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：bool
+true:显示
+false:不显示
+
+示例代码
+
+    if GUI:getVisible(rtx_xiaohao) then
+        GUI:setVisible(rtx_xiaohao,false)
+    else
+        GUI:setVisible(rtx_xiaohao,true)
+    end
+
+

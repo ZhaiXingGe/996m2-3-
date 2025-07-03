@@ -1,0 +1,22 @@
+convertToNodeSpace
+世界坐标转换为对应控件的节点坐标
+
+语法
+
+GUI:convertToNodeSpace(widget, x, y)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+x	是	int	世界坐标X
+y	是	int	世界坐标Y
+返回值
+
+类型：table
+{x = x, y = y}
+
+示例代码
+
+    无示例代码
+
+

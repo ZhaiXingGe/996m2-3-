@@ -1,0 +1,20 @@
+LoadingBar_getPercent
+获取进度条控件的进度值
+
+语法
+
+GUI:LoadingBar_getPercent(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：int
+获取进度条控件的进度值
+
+示例代码
+
+      local int = GUI:LoadingBar_getPercent(bar)
+
+

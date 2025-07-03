@@ -1,0 +1,20 @@
+getScale
+获取控件缩放
+
+语法
+
+GUI:getScale(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：int
+获取缩放比例
+
+示例代码
+
+local sc = GUI:getScale(layout)
+
+

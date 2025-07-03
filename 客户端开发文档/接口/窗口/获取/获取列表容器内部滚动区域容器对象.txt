@@ -1,0 +1,20 @@
+ListView_getInnerContainer
+获取列表容器内部滚动区域容器对象
+
+语法
+
+GUI:ListView_getInnerContainer(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：parent
+返回布局容器对象
+
+示例代码
+
+    无示例代码
+
+

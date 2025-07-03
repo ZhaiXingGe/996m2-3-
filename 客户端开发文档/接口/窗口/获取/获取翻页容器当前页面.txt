@@ -1,0 +1,20 @@
+PageView_getCurrentPageIndex
+获取翻页容器当前页面
+
+语法
+
+GUI:PageView_getCurrentPageIndex(parent)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	翻页容器对象
+返回值
+
+类型：int
+返回当前翻页容器的页面
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,21 @@
+getTouchEnabled
+获取控件是否可以点击
+
+语法
+
+GUI:getTouchEnabled(widget)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	控件对象
+返回值
+
+类型:bool
+true:可点击
+false:不可点击
+
+示例代码
+
+无示例
+
+

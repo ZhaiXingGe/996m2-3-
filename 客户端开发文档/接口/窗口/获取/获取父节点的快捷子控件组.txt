@@ -1,0 +1,19 @@
+ui_delegate
+获取父节点的快捷子控件组
+
+语法
+
+GUI:ui_delegate(parent)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+table [key 为控件名]
+
+示例代码
+
+    无示例代码
+
+

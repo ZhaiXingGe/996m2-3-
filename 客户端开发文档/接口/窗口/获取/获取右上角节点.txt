@@ -1,0 +1,21 @@
+Attach_RightTop
+获取右上角节点
+
+语法
+
+GUI:Attach_RightTop()
+
+参数
+
+无参数
+
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+    无示例 右上角功能请写在 MainRightTop 文件中
+
+

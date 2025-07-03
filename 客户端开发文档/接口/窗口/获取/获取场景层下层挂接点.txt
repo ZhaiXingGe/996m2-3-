@@ -1,0 +1,21 @@
+Attach_SceneB
+获取场景层下层挂接点
+
+语法
+
+GUI:Attach_SceneB()
+
+参数
+
+无参数
+
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+     local hou = GUI:Attach_SceneB()
+
+

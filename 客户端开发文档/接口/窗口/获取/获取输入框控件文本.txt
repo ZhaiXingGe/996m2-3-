@@ -1,0 +1,20 @@
+TextInput_getString
+获取输入框控件文本
+
+语法
+
+GUI:TextInput_getString(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：str/int 取决于输入类型
+获取输入框控件文本
+
+示例代码
+
+    local str = GUI:TextInput_getString(parent)
+
+

@@ -1,0 +1,21 @@
+getChildByTag
+通过控件标记获取子节点
+
+语法
+
+GUI:getChildByTag(widget, tag)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+tag	是	int	控件标记
+返回值
+
+获取成功则返回控件对象
+获取失败则返回空
+
+示例代码
+
+    local value = GUI:getChildByTag(widget, tag)
+
+

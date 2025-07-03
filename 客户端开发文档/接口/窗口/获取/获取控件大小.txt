@@ -1,0 +1,20 @@
+getContentSize
+获取控件大小
+
+语法
+
+GUI:getContentSize(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+类型：table
+{height = height, width = width}
+
+示例代码
+
+    local post = GUI:getContentSize(widget)
+
+

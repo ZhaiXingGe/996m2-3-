@@ -1,0 +1,20 @@
+TextAtlas_getString
+获取艺术字控件内容
+
+语法
+
+GUI:TextAtlas_getString(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+获取成功则返回艺术字内容
+获取失败则返回空
+
+示例代码
+
+    GUI:TextAtlas_getString(widget)
+
+
