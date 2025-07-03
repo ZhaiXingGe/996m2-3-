@@ -1,0 +1,20 @@
+Text_setFontSize
+设置文本控件的字体大小
+
+语法
+
+GUI:Text_setFontSize(widget, value)
+
+参数
+参数名	必选	类型	说明
+parent	是	obj	父控件对象
+value	是	int	字体大小
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Text_setFontSize(tx_switch, 18)
+
+

@@ -1,0 +1,20 @@
+Text_enableUnderline
+设置文本下划线
+
+语法
+
+GUI:Text_enableUnderline(widget)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local x = GUI:Text_Create(_parent, "renwu", 458, 125, 16, "#C0C0C0", "人物")
+        GUI:Text_enableUnderline(x)
+
+

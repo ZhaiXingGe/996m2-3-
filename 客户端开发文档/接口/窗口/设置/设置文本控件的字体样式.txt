@@ -1,0 +1,20 @@
+Text_setFontName
+设置文本控件的字体样式
+
+语法
+
+GUI:Text_setFontName(widget, value)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	父控件对象
+value	是	string	字体样式
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Text_setFontName(Text, "font/ttf")
+
+

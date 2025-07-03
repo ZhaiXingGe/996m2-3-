@@ -1,0 +1,27 @@
+Win_SetMainHide
+设置主界面隐藏
+
+语法
+
+GUI:Win_SetMainHide(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	界面父节点
+value	是	boolean	是否隐藏主界面
+返回值
+
+无返回值
+
+示例代码
+
+function Bag.main( page )
+    local parent  = GUI:Attach_Parent()
+    //此时打开背包会隐藏主界面
+    GUI:Win_SetMainHide(parent, true)
+
+    //此时打开背包不隐藏主界面
+    GUI:Win_SetMainHide(parent, false)
+end
+
+

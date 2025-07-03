@@ -1,0 +1,20 @@
+SetColorStyle
+设置文本样式(按钮、文本)
+
+语法
+
+SL:SetColorStyle(widget, colorID)
+
+参数
+参数名	必选	类型	说明
+widget	是	widget	按钮或者文本对象
+colorID	是	int	0 - 255 色值ID
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

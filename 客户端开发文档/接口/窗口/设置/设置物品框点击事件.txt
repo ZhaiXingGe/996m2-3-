@@ -1,0 +1,22 @@
+ItemShow_addReplaceClickEvent
+设置物品框点击事件
+
+语法
+
+GUI:ItemShow_addReplaceClickEvent(widget, eventCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+eventCB	是	fun	事件函数
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ItemShow_addReplaceClickEvent(item_, function ()
+         print("1111111111")
+    end)
+
+

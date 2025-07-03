@@ -1,0 +1,20 @@
+ItemShow_setIconGrey
+设置物品框是否变灰
+
+语法
+
+GUI:ItemShow_setIconGrey( widget, isGrey)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	按钮对象
+isGrey	是	bool	是否变灰
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ItemShow_setIconGrey(kuang,true)
+
+

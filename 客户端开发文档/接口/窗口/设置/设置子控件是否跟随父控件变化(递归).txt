@@ -1,0 +1,20 @@
+setChildrenCascadeOpacityEnabled
+设置子控件是否跟随父控件变化(递归)
+
+语法
+
+GUI:setChildrenCascadeOpacityEnabled(widget，bool)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	父控件对象
+bool	是	bool	是否变化
+返回值
+
+无返回值
+
+示例代码
+
+     GUI:setChildrenCascadeOpacityEnabled(_parent, true)
+
+

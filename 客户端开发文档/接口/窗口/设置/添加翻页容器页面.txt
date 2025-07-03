@@ -1,0 +1,20 @@
+PageView_addPage
+添加翻页容器页面
+
+语法
+
+GUI:PageView_addPage(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	进度条对象
+value	是	obj	子页面对象
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

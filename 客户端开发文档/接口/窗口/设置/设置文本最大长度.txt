@@ -1,0 +1,20 @@
+Text_setMaxLineWidth
+设置文本最大长度
+
+语法
+
+GUI:Text_setMaxLineWidth(widget, width)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+width	是	int	文本最大长度(达到最大会自动换行)
+返回值
+
+无返回值
+
+示例代码
+
+        GUI:Text_setMaxLineWidth(widget, 100)
+
+
