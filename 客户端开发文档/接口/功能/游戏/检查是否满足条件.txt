@@ -1,0 +1,20 @@
+CheckCondition
+检查是否满足条件
+
+语法
+
+SL:CheckCondition(conditionStr)
+
+参数
+参数名	必选	类型	说明
+conditionStr	是	str	条件判断
+返回值
+
+true / false
+
+示例代码
+
+    local state = SL:CheckCondition("$(M.LEVEL) >= 100 and $(M.RELEVEL) >= 0")
+    dump(state)
+
+

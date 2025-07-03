@@ -1,0 +1,22 @@
+GetAutoAgree
+获取是否自动同意状态
+
+语法
+
+SL:GetAutoAgree()
+
+参数
+
+无参数
+
+返回值
+
+类型：boolean
+true：同意
+false：不同意
+
+示例代码
+
+    无示例代码
+
+

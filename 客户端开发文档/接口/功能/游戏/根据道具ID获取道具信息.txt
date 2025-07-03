@@ -1,0 +1,21 @@
+GetItemDataByIndex
+根据道具ID获取道具信息
+
+语法
+
+SL:GetItemDataByIndex(index)
+
+参数
+参数名	必选	类型	说明
+index	是	int	道具ID
+返回值
+
+类型：table
+道具信息
+
+示例代码
+
+        local data = SL:GetItemDataByIndex(24)
+        SL:Dump(data,"元宝配置")
+
+

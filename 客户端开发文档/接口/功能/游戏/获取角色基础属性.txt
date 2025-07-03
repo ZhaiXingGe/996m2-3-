@@ -1,0 +1,33 @@
+GetRoleData
+获取角色基础属性
+
+语法
+
+SL:GetRoleData()
+
+参数
+
+无参数
+
+返回值
+
+类型：table
+{
+level,—等级
+reinLv,—转生等级
+job,—职业
+sex,—性别
+curHP,—当前血量
+maxHP,—最大血量
+curMP,—当前蓝量
+maxMP,—最大蓝量
+curExp,—当前经验
+maxExp—最大经验
+}
+
+示例代码
+
+        local data = SL:GetRoleData()
+        local hp_height = data.curHP / data.maxHP * imgSize.height
+
+

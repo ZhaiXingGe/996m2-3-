@@ -1,0 +1,20 @@
+GetItemTypeByData
+根据itemData获取道具类型
+
+语法
+
+SL:GetItemTypeByData(itemData)
+
+参数
+参数名	必选	类型	说明
+itemData	是	table	道具信息
+返回值
+
+类型：int
+道具类型
+
+示例代码
+
+        无示例
+
+

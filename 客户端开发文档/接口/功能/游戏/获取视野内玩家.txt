@@ -1,0 +1,18 @@
+GetPlayerInViewField
+获取视野内玩家(不包含英雄和自己召唤物)
+
+语法
+
+SL:GetPlayerInViewField()
+
+参数
+
+无参数
+
+返回值
+
+类型 table
+玩家
+
+示例代码
+        无示例代码

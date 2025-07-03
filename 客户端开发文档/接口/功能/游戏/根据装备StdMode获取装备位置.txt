@@ -1,0 +1,20 @@
+GetEquipPosByStdMode
+根据装备StdMode获取装备位置
+
+语法
+
+SL:GetEquipPosByStdMode(stdMode)
+
+参数
+参数名	必选	类型	说明
+stdMode	是	int	装备类型
+返回值
+
+类型：int
+装备位
+
+示例代码
+
+    无示例代码
+
+

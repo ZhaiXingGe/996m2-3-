@@ -1,0 +1,21 @@
+GetIdleBagNums
+获取当前背包空闲格子数量
+
+语法
+
+SL:GetIdleBagNums()
+
+参数
+
+无参数
+
+返回值
+
+类型：number
+当前背包空闲格子数量
+
+示例代码
+
+    local num =  SL:GetIdleBagNums()
+
+

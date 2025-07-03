@@ -1,0 +1,17 @@
+GetActorLevel
+获取对象等级
+
+语法
+
+SL:GetActorLevel(actor)
+
+参数
+参数名	必选	类型	说明
+actor	是	string	对象
+返回值
+
+类型: int
+等级
+
+示例代码
+      无示例代码

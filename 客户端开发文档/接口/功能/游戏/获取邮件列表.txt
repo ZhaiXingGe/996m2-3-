@@ -1,0 +1,17 @@
+GetMailList
+获取邮件列表
+
+语法
+
+SL:GetMailList()
+
+参数
+
+无参数
+
+返回值
+
+类型：table
+
+示例代码
+      无示例代码

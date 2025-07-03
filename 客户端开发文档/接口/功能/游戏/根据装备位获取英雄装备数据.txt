@@ -1,0 +1,20 @@
+GetHeroEquipDataByPos
+根据装备位获取英雄装备数据
+
+语法
+
+SL:GetHeroEquipDataByPos(pos)
+
+参数
+参数名	必选	类型	说明
+pos	是	int	装备位
+返回值
+
+类型：table
+英雄装备数据
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,19 @@
+IsBagFull
+判断背包是否满了
+
+语法
+
+SL:IsBagFull(isTips)
+
+参数
+参数名	必选	说明
+isTips	否	是否弹出tips说明
+返回值
+
+类型：boolean
+
+示例代码
+
+  SL:IsBagFull(true)
+
+

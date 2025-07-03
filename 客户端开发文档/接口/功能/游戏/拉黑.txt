@@ -1,0 +1,17 @@
+RequestAddBlackList
+拉黑
+
+语法
+
+SL:RequestAddBlackList(uid, name)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家ID
+name	是	string	玩家名字
+返回值
+
+无返回值
+
+示例代码
+     SL:RequestAddBlackList(uid, name)

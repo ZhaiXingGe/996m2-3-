@@ -1,0 +1,17 @@
+GetMonsterIDByActor
+根据对象获取怪物id
+
+语法
+
+SL:GetMonsterIDByActor(actor)
+
+参数
+参数名	必选	类型	说明
+actor	是	string	对象
+返回值
+
+类型: int
+怪物id
+
+示例代码
+      无示例代码

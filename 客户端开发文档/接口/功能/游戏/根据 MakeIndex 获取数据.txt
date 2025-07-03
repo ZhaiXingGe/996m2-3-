@@ -1,0 +1,19 @@
+GetItemDataByMakeIndex
+根据 MakeIndex 获取数据
+
+语法
+
+SL:GetItemDataByMakeIndex(MakeIndex)
+
+参数
+参数名	必选	类型	说明
+MakeIndex	是	int	MakeIndex
+返回值
+
+table | 数据
+
+示例代码
+
+无示例代码
+
+

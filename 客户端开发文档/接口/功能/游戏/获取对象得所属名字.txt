@@ -1,0 +1,17 @@
+GetActorOwnerName
+获取对象得所属名字
+
+语法
+
+SL:GetActorOwnerName(actor)
+
+参数
+参数名	必选	类型	说明
+actor	是	string	对象
+返回值
+
+类型: string
+所属名字
+
+示例代码
+      无示例代码

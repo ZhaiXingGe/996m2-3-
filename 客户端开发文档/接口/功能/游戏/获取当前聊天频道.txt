@@ -1,0 +1,29 @@
+GetChatChannel
+获取当前聊天频道
+
+语法
+
+SL:GetChatChannel()
+
+参数
+
+无参数
+Common = 0, — 综合
+System = 1, — 系统
+Shout = 2, — 喊话
+Private = 3, — 私聊
+Guild = 4, — 行会
+Team = 5, — 组队
+Near = 6, — 附近
+World = 7, — 世界
+GuildTips = 40 — 行会通知
+
+返回值
+
+类型：int
+
+示例代码
+
+        无示例代码
+
+

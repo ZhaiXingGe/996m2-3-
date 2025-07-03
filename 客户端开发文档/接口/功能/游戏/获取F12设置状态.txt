@@ -1,0 +1,25 @@
+CheckSet
+获取F12设置状态
+
+参考GUIShare.SetCfg
+语法
+
+SL:CheckSet(ID)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	设置ID
+返回值
+
+类型：int
+0: 关闭 1： 打开
+
+示例代码
+
+    if SL:CheckSet(1) == 1 then
+        SL:Print("开启...")
+    else
+        SL:Print("关闭...")
+    end
+
+

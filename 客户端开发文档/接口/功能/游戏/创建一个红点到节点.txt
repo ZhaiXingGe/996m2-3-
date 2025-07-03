@@ -1,0 +1,21 @@
+CreateRedPoint
+创建一个红点到节点
+
+语法
+
+SL:CreateRedPoint(targetNode, offset)
+
+参数
+参数名	必选	类型	说明
+targetNode	是	widget	目标控件
+offset	否	table	偏移位置 例: {x = 5, y = 5}
+返回值
+
+创建成功则返回新建控件的对象
+创建失败则返回空
+
+示例代码
+
+   无示例代码
+
+

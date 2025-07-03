@@ -1,0 +1,18 @@
+AutoMoveBegin
+开启自动寻路
+
+语法
+
+SL:AutoMoveBegin(mapID, mapX, mapY)
+
+参数
+参数名	必选	类型	说明
+mapID	是	str	地图id
+mapX	是	int	x坐标
+mapY	是	int	y坐标
+返回值
+
+无返回值
+
+示例代码
+无示例代码

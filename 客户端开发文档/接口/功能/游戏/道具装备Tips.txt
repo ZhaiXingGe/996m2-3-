@@ -1,0 +1,22 @@
+OpenItemTips
+道具装备Tips
+
+语法
+
+SL:OpenItemTips(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	itemData: 物品数据 pos: 提示位置
+返回值
+
+无返回值
+
+示例代码
+
+    local tipsData    = {}
+    tipsData.itemData = SL:GetItemDataByIndex(1)
+    tipsData.pos = {x = 100, y = 100}
+    SL:OpenItemTips(tipsData)
+
+

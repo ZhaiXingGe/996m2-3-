@@ -1,0 +1,16 @@
+GetGuildMemberByUID
+根据uid获取成员信息
+
+语法
+
+SL:GetGuildMemberByUID(uid)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家id
+返回值
+
+无返回值
+
+示例代码
+     无示例代码

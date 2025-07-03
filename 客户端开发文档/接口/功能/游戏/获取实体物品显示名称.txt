@@ -1,0 +1,20 @@
+GetItemShowNameByData
+获取实体物品显示名称
+
+语法
+
+SL:GetItemShowNameByData(itemData)
+
+参数
+参数名	必选	类型	说明
+itemData	是	table	物品信息
+返回值
+
+类型: string
+实体物品显示名称
+
+示例代码
+    local itemData = SL:GetEquipDataByPos(1)
+    local name = SL:GetItemShowNameByData(itemData)
+    local color = SL:GetItemShowNameColorByData(itemData)
+    SL:Print("name:" .. name .. "color:" .. color)

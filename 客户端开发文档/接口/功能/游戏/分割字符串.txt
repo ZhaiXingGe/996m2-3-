@@ -1,0 +1,11 @@
+Split
+分割字符串
+
+语法
+
+SL:Split(str, delimiter)
+
+参数
+参数名	必选	类型	说明
+str	是	string	目标字符串
+delimiter	是	object	分隔符

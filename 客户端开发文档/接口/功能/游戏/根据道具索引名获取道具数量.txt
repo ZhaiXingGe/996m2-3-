@@ -1,0 +1,22 @@
+GetItemNumberByKeyName
+根据道具索引名获取道具数量
+
+特殊：param 该参数无效不填即可
+语法
+
+SL:GetItemNumberByKeyName(keyname, param)
+
+参数
+参数名	必选	类型	说明
+keyname	是	str	道具索引名
+param	是	bool	是否绑定
+返回值
+
+类型：int
+道具数量
+
+示例代码
+
+        无示例
+
+

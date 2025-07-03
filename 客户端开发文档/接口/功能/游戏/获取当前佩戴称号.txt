@@ -1,0 +1,17 @@
+GetActiveTitleID
+获取当前佩戴称号
+
+语法
+
+SL:GetActiveTitleID()
+
+参数
+
+无参数
+
+返回值
+
+称号 string
+
+示例代码
+        无示例代码

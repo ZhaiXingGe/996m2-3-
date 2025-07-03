@@ -1,0 +1,23 @@
+GetMetaValue
+获取角色常量(属性)
+
+角色常量表
+
+语法
+
+SL:GetMetaValue(var)
+
+参数
+参数名	必选	类型	说明
+var	是	str	常量名
+返回值
+
+类型：int or str
+常量值
+
+示例代码
+
+    print("角色职业",SL:GetMetaValue("M.JOB"))
+    print("英雄职业",SL:GetMetaValue("H.JOB"))
+
+

@@ -1,0 +1,24 @@
+GetItemNumberByIndex
+根据道具ID获取背包物品数量
+
+特殊：该接口填货币ID也能返回货币数量
+特殊：famlilar 该参数无效不填即可
+语法
+
+SL:GetItemNumberByIndex(index,famlilar)
+
+参数
+参数名	必选	类型	说明
+index	是	int	道具ID
+famlilar	否	bool	是否绑定
+返回值
+
+类型：int
+道具数量
+
+示例代码
+
+        -- 元宝数量
+        local bag_num = SL:GetItemNumberByIndex(2)
+
+

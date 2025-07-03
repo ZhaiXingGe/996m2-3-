@@ -1,0 +1,20 @@
+GetEquipPosByStdModeList
+根据装备或者装备 StdMode 获取装备位置列表
+
+语法
+
+SL:GetEquipPosByStdModeList(param)
+
+参数
+参数名	必选	类型
+param	是	itemData或者StdMode
+返回值
+
+类型：table
+装备部位列表
+
+示例代码
+
+    无示例代码
+
+

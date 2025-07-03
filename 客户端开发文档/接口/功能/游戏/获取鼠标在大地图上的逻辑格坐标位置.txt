@@ -1,0 +1,21 @@
+GetCurMouseGridPosInBigMap
+获取鼠标在大地图上的逻辑格坐标位置
+
+语法
+
+SL:GetCurMouseGridPosInBigMap()
+
+参数
+
+无
+
+返回值
+
+类型：table
+鼠标在大地图上的逻辑格坐标位置
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,18 @@
+GetPlayerAutoPickStatus
+获取是否玩家自动拾取
+
+特殊：该接口设置的是角色是否会去主动拾取装备
+语法
+
+SL:GetPlayerAutoPickStatus()
+
+参数
+
+无
+
+返回值
+
+bool |是 |bool |是否自动拾取
+
+示例代码
+无示例代码

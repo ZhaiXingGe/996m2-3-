@@ -1,0 +1,23 @@
+GetAttConfigByAttId
+根据属性 ID 获取属性配置
+
+语法
+
+SL:GetAttConfigByAttId(attID)
+
+参数
+参数名	必选	说明
+attID	是	属性id(cfg_att_score)
+返回值
+
+类型： table
+cfg_att_score 中的配置
+
+示例代码
+
+
+SL:GetAttConfigByAttId(attID)
+
+
+
+

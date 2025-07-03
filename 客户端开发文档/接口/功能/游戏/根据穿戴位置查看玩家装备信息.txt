@@ -1,0 +1,25 @@
+GetLookPlayerItemDataByPos
+根据穿戴位置获取查看中玩家的装备信息
+
+语法
+
+SL:GetLookPlayerItemDataByPos(pos)
+
+参数
+参数名	必选	说明
+pos	是	装备位置
+返回值
+
+类型：table
+装备数据
+
+示例代码
+
+
+    local itemData = SL:GetLookPlayerItemDataByPos(1)
+
+
+
+
+
+

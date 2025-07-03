@@ -1,0 +1,20 @@
+GetGameDataCfg
+获取 game_data 配置
+
+语法
+
+SL:GetGameDataCfg()
+
+参数
+
+无参数
+
+返回值
+
+table | 配置
+
+示例代码
+
+无示例代码
+
+

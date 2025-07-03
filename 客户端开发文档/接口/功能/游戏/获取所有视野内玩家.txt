@@ -1,0 +1,18 @@
+GetAllPlayerInViewField
+获取所有视野内玩家
+
+语法
+
+SL:GetAllPlayerInViewField()
+
+参数
+
+无参数
+
+返回值
+
+类型 table
+玩家
+
+示例代码
+        无示例代码

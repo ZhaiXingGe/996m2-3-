@@ -1,0 +1,29 @@
+GetBuffData
+获取buff数据
+
+语法
+
+SL:GetBuffData(targetID)
+
+参数
+参数名	必选	类型	说明
+targetID	是	int	UserID,不填则为自己
+返回值
+
+类型：table
+{
+id,
+param,
+endTime,
+config,
+name,
+tips,
+icon,
+}
+
+示例代码
+
+    local buffData = SL:GetBuffData()
+    SL:Dump(buffData)
+
+

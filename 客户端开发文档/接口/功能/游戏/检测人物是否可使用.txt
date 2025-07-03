@@ -1,0 +1,21 @@
+CheckItemUseNeed
+检测人物是否可使用
+
+语法
+
+SL:CheckItemUseNeed(itemData)
+
+参数
+参数名	必选	说明
+itemData	是	装备数据
+返回值
+
+类型：boolean, table
+boolean：是否可用
+table：{str = conditionStr, can = canUse}}
+
+示例代码
+
+无示例代码
+
+

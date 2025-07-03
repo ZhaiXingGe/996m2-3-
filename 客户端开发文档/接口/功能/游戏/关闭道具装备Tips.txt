@@ -1,0 +1,16 @@
+CloseItemTips
+关闭道具装备Tips
+
+语法
+
+SL:CloseItemTips()
+
+参数
+
+无参数
+
+示例代码
+
+    无示例代码
+
+

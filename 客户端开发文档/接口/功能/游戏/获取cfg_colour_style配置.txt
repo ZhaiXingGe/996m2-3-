@@ -1,0 +1,19 @@
+GetColorCfg
+获取 cfg_colour_style 配置
+
+语法
+
+SL:GetColorCfg(ID)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	cfg_colour_style 表id
+返回值
+
+table | 配置
+
+示例代码
+
+SL:GetColorByID(ID)
+
+

@@ -1,0 +1,22 @@
+GetCanAddFriend
+获取是否允许添加状态
+
+语法
+
+SL:GetCanAddFriend()
+
+参数
+
+无参数
+
+返回值
+
+类型：boolean
+true：允许
+false：不允许
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,20 @@
+GetItemNameByIndex
+根据道具ID获取道具名
+
+语法
+
+SL:GetItemNameByIndex(index)
+
+参数
+参数名	必选	类型	说明
+index	是	int	道具id
+返回值
+
+类型：str
+道具名字
+
+示例代码
+
+        无示例
+
+

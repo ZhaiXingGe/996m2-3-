@@ -1,0 +1,17 @@
+GetActorHp
+获取对象当前血量
+
+语法
+
+SL:GetActorHp(actor)
+
+参数
+参数名	必选	类型	说明
+actor	是	string	对象
+返回值
+
+类型: int
+当前血量
+
+示例代码
+      无示例代码

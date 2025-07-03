@@ -1,0 +1,10 @@
+CopyData
+复制数据(深度拷贝)
+
+语法
+
+SL:CopyData(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	目标数据

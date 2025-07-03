@@ -1,0 +1,20 @@
+OpenGuildWarSponsorUI
+打开宣战、结盟界面
+
+语法
+
+SL:OpenGuildWarSponsorUI(data)
+
+参数
+参数名	必选	类型	说明
+data	是	int	数据
+返回值
+
+无返回值
+
+示例代码
+            -- 打开宣战界面
+            SL:OpenGuildWarSponsorUI({type = 1, guildId = guildId, guildName = guildName})
+
+            -- 打开结盟界面
+            SL:OpenGuildWarSponsorUI({type = 2, guildId = guildId, guildName = guildName})

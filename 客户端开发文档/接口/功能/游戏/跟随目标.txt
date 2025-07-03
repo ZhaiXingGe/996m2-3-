@@ -1,0 +1,17 @@
+SetFollowPlayer
+跟随目标
+
+语法
+
+SL:SetFollowPlayer(uid, isNotJustFollow)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	唯一id
+isNotJustFollow	是	bool	isNotJustFollow 默认只跟随; 填 true 代表不仅仅是跟随
+返回值
+
+无返回值
+
+示例代码
+        无示例代码

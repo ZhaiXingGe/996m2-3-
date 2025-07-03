@@ -1,0 +1,22 @@
+GetCanShow
+获取是否允许显示状态
+
+语法
+
+SL:GetCanShow()
+
+参数
+
+无参数
+
+返回值
+
+类型：boolean
+true：允许
+false：不允许
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,25 @@
+GetServerOption
+获取服务器定义的开关
+
+语法
+
+SL:GetServerOption(ID)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	自定义ID
+返回值
+
+无返回值
+
+示例代码
+
+    local SHOW_ALL_FIGHTPAGES = GUIShare.ServerOption.SHOW_ALL_FIGHTPAGES
+    local showAll = SL:GetServerOption(SHOW_ALL_FIGHTPAGES) == 1
+    if showAll then
+        SL:Print("开启...")
+    else
+        SL:Print("关闭...")
+    end
+
+

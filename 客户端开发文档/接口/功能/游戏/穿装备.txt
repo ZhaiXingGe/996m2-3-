@@ -1,0 +1,18 @@
+RequestTakeOn
+穿装备
+
+语法
+
+SL:RequestTakeOn(data, isHero, isFromHeroBag)
+
+参数
+参数名	必选	类型	说明
+data	是	table	穿戴数据：{itemData = itemData, pos = equipIntoPos}
+isHero	是	bool	是否是英雄
+isFromHeroBag	否	bool	是否来源于英雄背包
+返回值
+
+无返回值
+
+示例代码
+     可参考 AutoUsePop.lua

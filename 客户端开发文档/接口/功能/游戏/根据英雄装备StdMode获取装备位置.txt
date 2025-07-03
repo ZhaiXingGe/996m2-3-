@@ -1,0 +1,20 @@
+GetHeroEquipPosByStdMode
+根据英雄装备StdMode获取装备
+
+语法
+
+SL:GetHeroEquipPosByStdMode(stdMode)
+
+参数
+参数名	必选	类型	说明
+stdMode	是	int	装备类型
+返回值
+
+类型：int
+装备位
+
+示例代码
+
+    无示例代码
+
+

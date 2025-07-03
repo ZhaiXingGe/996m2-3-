@@ -1,0 +1,21 @@
+GetRoleAttByType
+根据玩家属性ID获取属性值
+
+语法
+
+SL:GetRoleAttByType(attID)
+
+参数
+参数名	必选	类型	说明
+attID	是	int	cfg_att_score表对应 的 id
+返回值
+
+类型：str
+返回控件id
+
+示例代码
+
+    -- 生命
+    local hp = SL:GetRoleAttByType(1)
+
+

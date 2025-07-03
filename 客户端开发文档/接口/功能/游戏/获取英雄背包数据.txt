@@ -1,0 +1,21 @@
+GetHeroBagData
+获取英雄背包数据
+
+语法
+
+SL:GetHeroBagData()
+
+参数
+
+无参数
+
+返回值
+
+类型：table
+背包道具数据
+
+示例代码
+
+        无示例代码
+
+

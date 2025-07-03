@@ -1,0 +1,44 @@
+GetSerCustomVar
+获取已请求服务端物品所有自定义变量
+
+特殊：变量名在传输中会全部转为 大 写！！！
+特殊：服务端使用 senditemvartoc 推送到客户
+特殊：聊天栏中无法使用这个接口获取数据必须数据存在itemData中
+语法
+
+SL:GetSerCustomVar(key)
+
+参数
+参数名	必选	类型	说明
+key	是	int	物品：makeindex
+返回值
+
+类型：table
+物品所有自定义变量值
+
+示例代码
+
+
+    ----如果 没有 or itemData.Var 会出现 聊天框中发送道具时无法显示变量
+    local cc = SL:GetSerCustomVar(itemData.MakeIndex) or itemData.Var
+    dump(itemData)
+    if cc then
+        local extraAttStr = ""
+        extraAttStr = string.format("%s", SL:GetColorByID(154), "[变量测试]：") .. "
+"
+        for key, value in pairs(cc) do
+            local names = "key:"..key .." -- ".. "value:"..value
+            local str = string.format("%s", SL:GetColorByID(color), names)
+            extraAttStr = extraAttStr .. str .. "
+"
+        end
+        local r_extra = GUI:RichText_Create(ListView, "r_extra", 0, 0, extraAttStr, richWidth, _TextSize, 1038, nil, nil, fontPath)
+        ItemTips.CreateIntervalPanel(ListView, _DefaultSpace, true)
+
+
+        size = GUI:getContentSize(r_extra)
+        ww = math.max(ww, size.width)
+        hh = hh + size.height + _DefaultSpace
+    end
+
+

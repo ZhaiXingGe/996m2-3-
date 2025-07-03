@@ -1,0 +1,23 @@
+FindAllSkillsByJob
+查找所有技能通过职业
+
+语法
+
+SL:FindAllSkillsByJob(job)
+
+参数
+参数名	必选	类型	说明
+job	否	int	0：战士
+1：法师
+2：道士
+3：全部
+不填是人物本身的职业
+返回值
+
+无
+
+示例代码
+
+    local aaa = SL:FindAllSkillsByJob()
+
+

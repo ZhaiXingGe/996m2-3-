@@ -1,0 +1,28 @@
+CheckEquipPowerThanSelf
+对比传入装备和自身穿戴的装备
+
+特殊：只是比较目标装备是否比自己身上的好
+语法
+
+SL:CheckEquipPowerThanSelf(itemData, from)
+
+参数
+参数名	必选	类型	说明
+itemData	是	table	装备数据
+from	否	int	物品来源（默认背包）
+返回值
+
+类型：boolean
+true|false
+
+示例代码
+
+    -- dump(SL:GetItemForm())
+    for k, v in pairs(SL:GetBagData()) do
+        if SL:GetItemTypeByData(v) == SL:GetItemType().Equip then
+            local state = SL:CheckEquipPowerThanSelf(v)
+            dump(state)
+        end
+    end
+
+

@@ -1,0 +1,23 @@
+GetSettingValue
+获取设置数据
+
+语法
+
+SL:GetSettingValue(ID)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	id
+返回值
+
+table(table[1]: 设置开关； table[2]: value1; table[3]: value2 … )
+
+示例代码
+
+    local data = SL:GetSettingValue(1)
+    local isSelect = data[1]    -- 开关设置,对应设置配置的 select 字段
+    -- local value1 = data[2]        -- 对应设置配置的 value1 字段
+    -- local value2 = data[3]        -- 对应设置配置的 value2 字段
+    -- local value3 = data[4]        -- 对应设置配置的 value3 字段
+
+

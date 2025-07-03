@@ -1,0 +1,19 @@
+GetFashionShow
+获取当前是否显示时装
+
+语法
+
+SL:GetFashionShow()
+
+参数
+
+无参数
+
+返回值
+
+类型：bool
+true 显示。
+false不显示。
+
+示例代码
+无示例代码

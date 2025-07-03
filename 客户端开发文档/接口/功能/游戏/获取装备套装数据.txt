@@ -1,0 +1,19 @@
+GetSuitDataById
+获取装备套装数据
+
+语法
+
+SL:GetSuitDataById(ID)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	对应 cfg_equip 中 suitid 字段
+返回值
+
+table | 数据
+
+示例代码
+
+SL:GetSuitDataById(suitID)
+
+

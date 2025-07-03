@@ -1,0 +1,22 @@
+GetItemForm
+获取游戏道具所有来源渠道
+
+语法
+
+SL:GetItemForm()
+
+参数
+
+无参数
+
+返回值
+
+类型：table
+游戏道具所有来源
+
+示例代码
+
+    local aaa = SL:GetItemForm()
+    SL:Dump(aaa)
+
+
