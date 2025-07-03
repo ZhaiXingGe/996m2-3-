@@ -1,0 +1,21 @@
+NumberToChinese
+阿拉伯数字转中文大写
+
+语法
+
+SL:NumberToChinese(num)
+
+参数
+参数名	必选	类型	说明
+num	是	int	数字
+返回值
+
+类型：str
+中文大写
+
+示例代码
+
+    local aaa = SL:NumberToChinese(66)
+    SL:Print(aaa)
+
+

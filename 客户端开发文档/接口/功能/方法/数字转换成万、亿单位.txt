@@ -1,0 +1,20 @@
+GetSimpleNumber
+数字转换成万、亿单位
+
+语法
+
+SL:GetSimpleNumber(num, places)
+
+参数
+参数名	必选	类型	说明
+num	是	int	数值
+places	否	int	显示小数点后几位数
+返回值
+
+类型：str
+
+示例代码
+
+   无示例代码
+
+

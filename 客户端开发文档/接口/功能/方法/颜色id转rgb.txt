@@ -1,0 +1,20 @@
+GetColorByStyleId
+把 cfg_colour_style 表中的对应 id 的颜色转换成 RGB 格式
+
+语法
+
+SL:GetColorByStyleId(id)
+
+参数
+参数名	必选	类型	说明
+id	是	int	cfg_colour_style 表中的对应 id
+返回值
+
+类型：table
+{r = 255, g = 255, b = 255}
+
+示例代码
+
+    无示例代码
+
+

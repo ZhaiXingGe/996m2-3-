@@ -1,0 +1,21 @@
+GetPointDistanceSQ
+计算两坐标间的平方距离
+
+语法
+
+SL:GetPointDistanceSQ(pt1, pt2)
+
+参数
+参数名	必选	类型	说明
+pt1	是	table	起始坐标 GUI:p(x, y) 或{x = x, y = y}
+pt2	是	table	结束坐标 GUI:p(x, y) 或{x = x, y = y}
+返回值
+
+距离
+
+示例代码
+
+    local aaa = SL:GetPointDistanceSQ({x = 1, y = 1}, {x = 4, y = 4})
+    SL:Print(aaa)
+
+

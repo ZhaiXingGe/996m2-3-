@@ -1,0 +1,20 @@
+ConvertColorFromHexString
+从16进制字符转为{r, g, b}
+
+语法
+
+SL:ConvertColorFromHexString(hexStr)
+
+参数
+参数名	必选	类型	说明
+hexStr	是	str	16进制字符
+返回值
+
+类型：table
+
+示例代码
+
+    local color = SL:ConvertColorFromHexString("#FFFFFF")
+    SL:dump(color)
+
+

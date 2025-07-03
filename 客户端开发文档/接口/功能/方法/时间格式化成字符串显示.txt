@@ -1,0 +1,19 @@
+TimeFormatToStr
+将时间 time 大于 1 天时转换成 xx天xx时xx分， 否则 xx:xx:xx
+
+语法
+
+SL:TimeFormatToStr(time)
+
+参数
+参数名	必选	类型	说明
+time	是	int	时间
+返回值
+
+string | 时间
+
+示例代码
+
+无示例代码
+
+

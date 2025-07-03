@@ -1,0 +1,20 @@
+GetPointAngleSelf
+计算自身弧度值
+
+语法
+
+SL:GetPointAngleSelf(pt)
+
+参数
+参数名	必选	类型	说明
+pt	是	table	坐标 GUI:p(x, y) 或{x = x, y = y}
+返回值
+
+弧度值
+
+示例代码
+
+    local aaa = SL:GetPointAngleSelf({x = 5, y = 3})
+    SL:Print(aaa)
+
+

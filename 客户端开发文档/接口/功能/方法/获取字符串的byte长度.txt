@@ -1,0 +1,20 @@
+GetUTF8ByteLen
+获取字符串的byte长度
+
+语法
+
+SL:GetUTF8ByteLen(str)
+
+参数
+参数名	必选	类型	说明
+str	是	str	字符串
+返回值
+
+类型：int
+
+示例代码
+
+    local aaa = SL:GetUTF8ByteLen("字符串长度")
+    SL:Print(aaa)
+
+

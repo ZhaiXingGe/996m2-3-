@@ -1,0 +1,20 @@
+GetPointLength
+计算向量长度
+
+语法
+
+SL:GetPointLength(pt)
+
+参数
+参数名	必选	类型	说明
+pt	是	table	GUI:p(x, y) 或 {x = x, y = y}
+返回值
+
+长度
+
+示例代码
+
+    local aaa = SL:GetPointLength({x = 1, y = 2})
+    SL:Print(aaa)
+
+

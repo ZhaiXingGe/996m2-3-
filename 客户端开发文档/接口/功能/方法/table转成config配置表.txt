@@ -1,0 +1,22 @@
+SaveTableToConfig
+table转成config配置表
+
+语法
+
+SL:SaveTableToConfig(tab, name, destPath, sortFunc)
+
+参数
+参数名	必选	类型	说明
+tab	是	table	需要转换的table
+name	是	string	转出文件名
+destPath	否	string	文件保存的路径, 默认目录：dev/scripts/game_config/
+sortFunc	否	function	外层排序函数
+返回值
+
+类型：str
+
+示例代码
+
+   无示例代码
+
+

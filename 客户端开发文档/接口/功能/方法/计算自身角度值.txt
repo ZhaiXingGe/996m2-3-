@@ -1,0 +1,28 @@
+GetPointAngleSelf
+计算自身角度值
+
+语法
+
+SL:GetPointRotateSelf(pt)
+
+参数
+参数名	必选	类型	说明
+pt	是	table	坐标 GUI:p(x, y) 或{x = x, y = y}
+返回值
+
+角度值
+
+示例代码
+
+    -- 获取坐标 pt1 到 pt2 的角度值
+    local pt1 = GUI:p(100, 100)
+    local pt2 = GUI:p(100, 200)
+    local p = SL:GetSubPoint(pt2, pt1)
+    local rotate = SL:GetPointRotateSelf(p)
+    SL:Print(rotate)
+
+    -- 两向量夹角 角度值
+    local tRotate = SL:GetPointRotate(pt1, pt2)
+    SL:Print(tRotate)
+
+

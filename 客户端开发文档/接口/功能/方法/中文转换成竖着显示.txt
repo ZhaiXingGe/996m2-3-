@@ -1,0 +1,19 @@
+ChineseToVertical
+中文转换成竖着显示
+
+语法
+
+SL:ChineseToVertical(str)
+
+参数
+参数名	必选	类型	说明
+str	是	str	文本
+返回值
+
+类型：str
+
+示例代码
+
+   无示例代码
+
+
