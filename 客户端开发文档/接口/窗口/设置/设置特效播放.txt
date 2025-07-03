@@ -1,0 +1,24 @@
+Effect_play
+设置特效播放
+
+语法
+
+GUI:Effect_play(widget, act, dir, isLoop, speed, isSequence)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+act	是	int	特效动作 0.待机 1.走 2.攻击 3.施法 4.死亡 5.跑步….
+dir	是	int	特效方向 0.上 1.右上 2.右 …
+isLoop	是	bool	是否循环
+speed	是	int	播放速度
+isSequence	是	bool	是否暂停最后一帧
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Effect_play(Effhanld, 0, 0, true, 1, false)
+
+

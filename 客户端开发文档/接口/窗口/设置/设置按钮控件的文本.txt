@@ -1,0 +1,23 @@
+Button_setTitleText
+设置按钮控件的文本
+
+不推荐使用 手机端字体像素点会降低
+不推荐使用 手机端字体像素点会降低
+不推荐使用 手机端字体像素点会降低
+语法
+
+GUI:Button_setTitleText(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	string	文本
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

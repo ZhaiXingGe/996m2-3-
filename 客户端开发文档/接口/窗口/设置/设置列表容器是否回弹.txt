@@ -1,0 +1,20 @@
+ListView_setBounceEnabled
+设置列表容器是否回弹
+
+语法
+
+GUI:ListView_setBounceEnabled(widget, value)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	控件对象
+value	是	bool	是否回弹
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ListView_setBounceEnabled(tiao,true)
+
+

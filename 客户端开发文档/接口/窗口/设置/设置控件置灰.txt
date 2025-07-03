@@ -1,0 +1,20 @@
+setGrey
+设置控件置灰
+
+语法
+
+GUI:setGrey(widget, isGrey)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+isGrey	是	bool	是否置灰
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:setGrey(btn, true)
+
+

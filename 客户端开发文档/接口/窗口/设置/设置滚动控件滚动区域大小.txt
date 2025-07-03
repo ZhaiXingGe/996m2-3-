@@ -1,0 +1,21 @@
+ScrollView_setInnerContainerSize
+设置滚动控件滚动区域大小
+
+特殊:参数value 中 width 与 height 为固定值
+语法
+
+GUI:ScrollView_setInnerContainerSize(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	table	区域大小
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ScrollView_setInnerContainerSize(SV_type, {width = 500, height = 700})
+
+

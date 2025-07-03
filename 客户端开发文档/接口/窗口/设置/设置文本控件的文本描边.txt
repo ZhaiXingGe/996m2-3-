@@ -1,0 +1,21 @@
+Text_enableOutline
+设置文本控件的文本描边
+
+语法
+
+GUI:Text_enableOutline(widget, color, size)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+color	是	string	描边颜色
+size	是	int	描边大小
+返回值
+
+无返回值
+
+示例代码
+
+     GUI:Text_enableOutline(tx_btn_zs,"#FFFF00",2)
+
+

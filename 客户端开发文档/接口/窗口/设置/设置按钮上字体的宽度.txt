@@ -1,0 +1,20 @@
+Button_setMaxLineWidth
+设置按钮上字体的宽度
+
+语法
+
+GUI:Button_setMaxLineWidth(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+value	是	px像素	字体宽度
+返回值
+
+无返回值
+
+示例代码
+
+     GUI:Button_setMaxLineWidth(btn, 100)
+
+

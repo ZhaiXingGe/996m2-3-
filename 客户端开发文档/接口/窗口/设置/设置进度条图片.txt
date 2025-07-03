@@ -1,0 +1,20 @@
+LoadingBar_loadTexture
+设置进度条控件图片
+
+语法
+
+GUI:LoadingBar_loadTexture(widget, filepath)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+filepath	是	string	图片路径
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:LoadingBar_loadTexture(MainTarget.hpLoadingBarMonster, "res/custom/common/com_btn_4.png")
+
+

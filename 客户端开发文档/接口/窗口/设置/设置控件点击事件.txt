@@ -1,0 +1,26 @@
+addOnClickEvent
+设置控件点击事件
+
+语法
+
+GUI:addOnClickEvent(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	func	回调函数
+返回值
+
+无返回值
+
+示例代码
+
+        local bg_close = GUI:Image_Create(_parent, "bg_close", 0, 0, "res/01/010010.png")
+        if bg_close then
+            GUI:setTouchEnabled(bg_close, true)
+            GUI:addOnClickEvent(bg_close, function()
+                GUI:Win_Close(_parent)
+            end)
+        end
+
+

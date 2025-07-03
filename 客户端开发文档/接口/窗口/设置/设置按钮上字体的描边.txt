@@ -1,0 +1,21 @@
+Button_titleEnableOutline
+设置按钮上字体的描边
+
+语法
+
+GUI:Button_titleEnableOutline(widget, color, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+color	是	string	描边颜色
+value	是	int	描边宽度
+返回值
+
+无返回值
+
+示例代码
+
+     GUI:Button_titleEnableOutline(btn, "#ff0000", 1)
+
+

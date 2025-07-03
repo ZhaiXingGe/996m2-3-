@@ -1,0 +1,21 @@
+setLocalZOrder
+设置控件渲染层级
+
+语法
+
+GUI:setLocalZOrder(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	int	层级
+返回值
+
+无返回值
+设置其在父控件的渲染层级 值越大显示越靠前
+
+示例代码
+
+        GUI:setLocalZOrder(btn_zs,-1)
+
+

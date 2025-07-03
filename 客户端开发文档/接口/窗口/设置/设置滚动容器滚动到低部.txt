@@ -1,0 +1,23 @@
+ScrollView_scrollToBottom
+设置滚动容器滚动到低部
+
+语法
+
+GUI:ScrollView_scrollToBottom(widget, time, boolvalue)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	时间
+boolvalue	是	bool	速度类型：
+true：衰减
+false：匀速
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ScrollView_scrollToBottom(SV_type, 2, true)
+
+

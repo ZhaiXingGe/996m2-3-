@@ -1,0 +1,33 @@
+addMouseButtonEvent
+设置鼠标按钮事件
+
+语法
+
+GUI:addMouseButtonEvent(widget, param)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+param	是	table	onLeftDoubleFunc: 鼠标左键双击函数
+onRightDownFunc: 鼠标右键放下函数
+OnSpecialRFunc: 特别：模仿手机上的左键向下函数
+返回值
+
+无返回值
+
+示例代码
+
+    local btn = GUI:Button_Create(parent, "btn_test", 400, 200, "res/public/00000361.png")
+    GUI:addMouseButtonEvent(btn, {
+        onLeftDoubleFunc = function()
+            SL:print("左键双击")
+        end,
+        onRightDownFunc = function()
+            SL:print("按下右键")
+        end,
+        OnSpecialRFunc = function()
+            SL:print("特别：模仿手机上的左键向下")
+        end,
+    })
+
+

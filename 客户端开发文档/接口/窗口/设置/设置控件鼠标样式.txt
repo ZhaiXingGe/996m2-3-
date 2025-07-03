@@ -1,0 +1,21 @@
+addMouseStyle
+设置控件鼠标样式
+
+手游 × 端游 √
+语法
+
+GUI:addMouseStyle(widget, styleType)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+styleType	是	int	鼠标样式
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

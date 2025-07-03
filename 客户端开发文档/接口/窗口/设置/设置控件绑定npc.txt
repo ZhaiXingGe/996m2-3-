@@ -1,0 +1,20 @@
+Win_BindNPC
+设置控件绑定npc
+
+语法
+
+GUI:Win_BindNPC(widget, npcID)
+
+参数
+参数名	必选	类型	说明
+widget	是	int	控件对象
+npcID	是	int	npcid
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

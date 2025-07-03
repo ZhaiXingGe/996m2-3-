@@ -1,0 +1,23 @@
+Button_setScale9Slice
+设置图片控件九宫格参数
+
+语法
+
+GUI:Button_setScale9Slice(widget, scale9l, scale9r, scale9t, scale9b)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+scale9l	是	int	左边比例
+scale9r	是	int	右边比例
+scale9t	是	int	上边比例
+scale9b	是	int	下边比例
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Button_setScale9Slice(btn, 10, 10, 10, 10)
+
+

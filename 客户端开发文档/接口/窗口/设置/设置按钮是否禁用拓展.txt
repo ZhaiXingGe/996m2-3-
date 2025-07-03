@@ -1,0 +1,21 @@
+Button_setBrightEx
+设置按钮是否禁用拓展
+
+改变外观同时 按钮无法点击
+语法
+
+GUI:Button_setBrightEx(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	按钮对象
+value	是	bool	是否禁用
+返回值
+
+无返回值
+
+示例代码
+
+   GUI:Button_setBrightEx(handle, true)
+
+

@@ -1,0 +1,33 @@
+setAnchorPoint
+设置控件锚点
+
+语法
+
+GUI:setAnchorPoint(widget, x, y)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+x	是	int	控件横向锚点
+y	是	int	控件纵向锚点
+返回值
+
+无返回值
+
+示例代码
+
+    local _parent = GUI:Win_Create("QSQ_zhuansheng", 0, 0, 0, 0, false, false, true, false) --节点
+    if _parent then
+        local winSize = SL:GetScreenSize()
+        local x = winSize.width / 2
+        local y = winSize.height / 2
+        local w = winSize.width
+        local h = winSize.height
+
+        local layout = GUI:Layout_Create(_parent, "diban", x, y, w, h)
+        if layout then
+            GUI:setAnchorPoint(layout, 0.5, 0.5)   --设置锚为中心 
+        end                                        --左下角为(layout, 0, 0)
+    end                                            --右上角为(layout, 1, 1)其它以此类推
+
+

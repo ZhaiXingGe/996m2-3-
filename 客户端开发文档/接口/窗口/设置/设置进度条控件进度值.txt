@@ -1,0 +1,20 @@
+LoadingBar_setPercent
+设置进度条控件进度值
+
+语法
+
+GUI:LoadingBar_setPercent(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+value	是	int	进度值（0-100）
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:LoadingBar_setPercent(widget, 50)
+
+

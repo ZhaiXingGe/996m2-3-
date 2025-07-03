@@ -1,0 +1,20 @@
+TextInput_setString
+设置输入框控件文本
+
+语法
+
+GUI:TextInput_setString(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	string/int	文本
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:TextInput_setString(parent,"请输入")
+
+

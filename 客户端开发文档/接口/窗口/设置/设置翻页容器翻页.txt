@@ -1,0 +1,20 @@
+PageView_scrollToItem
+设置翻页容器翻页
+
+语法
+
+GUI:PageView_scrollToItem(widget, index)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	进度条对象
+index	是	int	页面
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:PageView_scrollToItem(widget, 2)
+
+

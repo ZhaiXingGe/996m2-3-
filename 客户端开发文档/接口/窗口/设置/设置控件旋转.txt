@@ -1,0 +1,21 @@
+setRotation
+设置控件旋转
+
+语法
+
+GUI:setRotation(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	int	旋转角度
+返回值
+
+无返回值
+
+示例代码
+
+        local rot = GUI:getRotation(rtx_xiaohao)
+        GUI:setRotation(rtx_xiaohao, rot +10)
+
+

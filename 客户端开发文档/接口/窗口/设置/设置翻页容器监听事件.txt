@@ -1,0 +1,20 @@
+PageView_addOnEvent
+设置翻页容器监听事件
+
+语法
+
+GUI:PageView_addOnEvent(widget, eventCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	进度条对象
+eventCB	是	int	回调函数
+返回值
+
+无返回值
+
+示例代码
+
+    参考 ListView_addOnScrollEvent 与 ScrollView_addOnScrollEvent
+
+

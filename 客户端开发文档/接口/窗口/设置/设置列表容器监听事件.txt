@@ -1,0 +1,34 @@
+ListView_addOnScrollEvent
+设置列表容器监听事件
+
+语法
+
+GUI:ListView_addOnScrollEvent(widget, eventCB)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+eventCB	是	fun	事件函数
+返回值
+
+无返回值
+
+示例代码
+
+    参考接口
+    GUI:ScrollView_addOnScrollEvent
+
+    顶：0
+    低：1
+    左：2
+    右：3
+    滚动：4
+    顶弹：5
+    低弹：6
+    左弹：7
+    右弹：8
+    滚动开始：9
+    滚动结束：10
+
+
+

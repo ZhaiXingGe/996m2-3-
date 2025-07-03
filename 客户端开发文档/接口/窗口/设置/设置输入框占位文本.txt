@@ -1,0 +1,20 @@
+TextInput_setPlaceHolder
+设置输入框占位文本
+
+语法
+
+GUI:TextInput_setPlaceHolder(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	string	文本
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:TextInput_setPlaceHolder(parent,"请输入")
+
+

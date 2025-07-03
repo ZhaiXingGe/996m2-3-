@@ -1,0 +1,26 @@
+ListView_setGravity
+设置列表容器对齐方式
+
+语法
+
+GUI:ListView_setGravity(widget, value)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	控件对象
+value	是	int	对齐方式
+0:左对齐
+1:右对齐
+2:水平居中
+3:顶对齐
+4:底对齐
+5:垂直居中
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ListView_setGravity(widget, 2)
+
+

@@ -1,0 +1,22 @@
+Win_SetDrag
+设置界面拖动
+
+语法
+
+GUI:Win_SetDrag(widget, dragLayer)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	父控件对象
+dragLayer	是	parent	点击控件对象
+返回值
+
+无返回值
+
+示例代码
+
+    local PMainUI = GUI:Layout_Create(parent, "PMainUI", 850, 320, 386, 520)
+    GUI:setTouchEnabled(PMainUI, true)
+    GUI:Win_SetDrag(parent, PMainUI)
+
+

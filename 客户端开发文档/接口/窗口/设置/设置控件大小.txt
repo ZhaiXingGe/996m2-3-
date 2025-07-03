@@ -1,0 +1,24 @@
+setContentSize
+设置控件大小
+
+特殊:参数value 中 width 与 height 为固定值
+语法
+
+GUI:setContentSize(widget, size)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+size	是	table	控件大小
+返回值
+
+无返回值
+
+示例代码
+
+        local bg_kuang = GUI:Image_Create(_parent, "bg_kuang", 142, 45, "res/01/010000.png")
+        if bg_kuang then
+            GUI:setContentSize(bg_kuang,{width = 815, height = 575})
+        end
+
+

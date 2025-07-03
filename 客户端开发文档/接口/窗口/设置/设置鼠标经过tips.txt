@@ -1,0 +1,24 @@
+addMouseOverTips
+设置鼠标经过tips
+
+手游 × 端游 √
+语法
+
+GUI:addMouseOverTips(widget,str,pos,anr)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+str	是	str	tips文本
+pos	是	table	位置
+anr	是	table	锚点
+styletype	是	int	鼠标样式(GUIShare自定义)
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:addMouseOverTips(widget,"示例文本",{x=10,y=10},{x=1,y=0.5})
+
+

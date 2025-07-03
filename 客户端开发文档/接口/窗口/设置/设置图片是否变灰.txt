@@ -1,0 +1,20 @@
+Image_setGrey
+设置图片是否变灰
+
+语法
+
+GUI:Image_setGrey( widget, isGrey )
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+isGrey	是	bool	是否变灰
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Image_setGrey(bg_kuang,true)
+
+

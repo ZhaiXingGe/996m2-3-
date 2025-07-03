@@ -1,0 +1,24 @@
+Button_setBright
+设置按钮是否禁用
+
+该功能仅改变外观 按钮还是可以点击
+语法
+
+GUI:Button_setBright(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	按钮对象
+value	是	bool	是否禁用
+返回值
+
+无返回值
+
+示例代码
+
+    local btn_switch = GUI:Button_Create(template, "btn_switch", 0,0, "res/01/010022.png")
+    if btn_switch then
+        GUI:Button_setBright(btn_switch,true)
+    end
+
+

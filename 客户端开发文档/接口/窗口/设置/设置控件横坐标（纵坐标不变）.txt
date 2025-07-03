@@ -1,0 +1,20 @@
+setPositionX
+设置控件横坐标（纵坐标不变）
+
+语法
+
+GUI:setPositionX(widget, x)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+x	是	int	控件x坐标
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:setPositionX(widget, 10)
+
+

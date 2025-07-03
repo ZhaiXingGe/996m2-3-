@@ -1,0 +1,27 @@
+SetWidgetShader
+设置控件对象shader
+
+语法
+
+GUI:SetWidgetShader(widget, shadertype)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+shadertype	是	int	1：高亮
+2：金色
+3：模糊
+6：冰冻
+7：石化
+
+返回值
+
+无返回值
+
+示例代码
+
+    local imgPath = "res/private/bag_ui_hero/bg_beibao_1.png"
+    local aaa = GUI:Image_Create(parent, "image_aaa", 100, 100, imgPath)
+    GUI:SetWidgetShader(aaa, 2)
+
+

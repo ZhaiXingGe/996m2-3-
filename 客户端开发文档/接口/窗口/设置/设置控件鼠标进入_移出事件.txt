@@ -1,0 +1,29 @@
+addMouseMoveEvent
+设置控件鼠标进入/移出事件
+
+语法
+
+GUI:addMouseMoveEvent(widget, param)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+param	是	table	onEnterFunc: 鼠标进入回调函数
+onLeaveFunc: 鼠标移出回调函数
+返回值
+
+无返回值
+
+示例代码
+
+    local image = GUI:Image_Create(parent, "Image_bg", 300, 300, "res/public/bg_bubble_1.png")
+    GUI:addMouseMoveEvent(image, {
+        onEnterFunc = function()
+            SL:Print(" !!!!!! OnEnter image")
+        end,
+        onLeaveFunc = function()
+            SL:Print(" !!!!!! OnLeave image")
+        end,
+    })
+
+

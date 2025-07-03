@@ -1,0 +1,22 @@
+ScrollText_setString
+设置滚动文本控件的文本
+
+语法
+
+GUI:ScrollText_setString(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	string	文本
+返回值
+
+无返回值
+
+示例代码
+
+        local SText = GUI:ScrollText_Create(_parent, "SText", 0, 0, 20, 16, "#D6C6AD", "这是一个测试")
+
+        GUI:ScrollText_setString(SText, "测试")
+
+

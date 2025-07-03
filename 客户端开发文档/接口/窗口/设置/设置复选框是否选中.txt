@@ -1,0 +1,20 @@
+CheckBox_setSelected
+设置复选框是否选中
+
+语法
+
+GUI:CheckBox_setSelected(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	bool	是否选中
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:CheckBox_setSelected(widget, true)
+
+

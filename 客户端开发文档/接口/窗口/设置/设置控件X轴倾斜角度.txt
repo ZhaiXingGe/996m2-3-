@@ -1,0 +1,21 @@
+setRotationSkewX
+设置控件X轴倾斜角度
+
+语法
+
+GUI:setRotationSkewX(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	int	倾斜角度（0 - 360）
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:setRotationSkewX(widget, 90)
+    GUI:setRotationSkewY(widget, 90)
+
+

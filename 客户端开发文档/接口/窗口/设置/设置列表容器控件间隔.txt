@@ -1,0 +1,20 @@
+ListView_setItemsMargin
+设置列表容器控件间隔
+
+语法
+
+GUI:ListView_setItemsMargin(widget, value)
+
+参数
+参数名	必选	类型	说明
+parent	是	parent	控件对象
+value	是	int	间隔
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:ListView_setItemsMargin(widget, 20)
+
+

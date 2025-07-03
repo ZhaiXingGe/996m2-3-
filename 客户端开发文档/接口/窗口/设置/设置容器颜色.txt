@@ -1,0 +1,26 @@
+Layout_setBackGroundColor
+设置容器背景颜色
+
+语法
+
+GUI:Layout_setBackGroundColor(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	string	颜色
+返回值
+
+无返回值
+
+示例代码
+
+        local layout = GUI:Layout_Create(_parent, "diban", x, y, w, h)
+        if layout then
+            GUI:setAnchorPoint(layout, 0.5, 0.5)
+            GUI:Layout_setBackGroundColor(layout, "#4AE74A")
+            GUI:Layout_setBackGroundColorType(layout, 1)
+            GUI:Layout_setBackGroundColorOpacity(layout, 155)
+        end
+
+

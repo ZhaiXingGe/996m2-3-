@@ -1,0 +1,22 @@
+Effect_stop
+设置特效停止
+
+语法
+
+GUI:Effect_stop(widget, frameIndex, act, dir)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+frameIndex	是	int	停在第几帧
+act	是	int	特效动作 0.待机 1.走 2.攻击 3.施法 4.死亡 5.跑步….
+dir	是	int	特效方向 0.上 1.右上 2.右 …
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:Effect_stop(Effhanld, 0, 0, 0)
+
+

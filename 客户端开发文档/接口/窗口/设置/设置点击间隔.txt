@@ -1,0 +1,24 @@
+setClickDelay
+设置点击间隔
+
+语法
+
+GUI:setClickDelay(widget, time)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+time	是	int	时间
+返回值
+
+无返回值
+
+示例代码
+
+    local btn = GUI:Button_Create(parent, "btn_test", 400, 200, "res/public/00000361.png")
+    GUI:addOnClickEvent(btn, function()
+        GUI:setClickDelay(btn, 2)
+        SL:Print("hello")
+    end)
+
+

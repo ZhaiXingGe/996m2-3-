@@ -1,0 +1,21 @@
+setMouseEnabled
+设置控件是否可以鼠标触摸
+
+语法
+
+GUI:setMouseEnabled(PMainUI, bool)
+
+参数
+参数名	必选	类型	说明
+PMainUI	是	parent	控件对象
+bool	是	bool	是否鼠标触摸
+true:不穿透,false:允许
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:setMouseEnabled(PMainUI, true)
+
+

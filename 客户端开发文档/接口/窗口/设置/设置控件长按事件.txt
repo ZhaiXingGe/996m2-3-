@@ -1,0 +1,20 @@
+addOnLongTouchEvent
+设置控件长按事件
+
+语法
+
+GUI:addOnLongTouchEvent(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+value	是	fun	回调函数
+返回值
+
+无返回值
+
+示例代码
+
+        无示例代码
+
+

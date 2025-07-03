@@ -1,0 +1,23 @@
+TextInput_setInputMode
+设置输入框文本输入类型
+
+语法
+
+GUI:TextInput_setInputMode(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	int	类型：
+0：任何
+1：邮件
+2：数字
+返回值
+
+无返回值
+
+示例代码
+
+    GUI:TextInput_setInputMode(QSQ_Layout_img_input, 2)
+
+

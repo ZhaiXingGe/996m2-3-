@@ -1,0 +1,22 @@
+setSwallowTouches
+设置点击吞噬
+
+语法
+
+GUI:setSwallowTouches(widget, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	obj	控件对象
+value	是	bool	是否吞噬
+返回值
+
+无返回值
+
+示例代码
+
+function GUI:setSwallowTouches(widget, value)
+    widget:setSwallowTouches(value)
+end
+
+
