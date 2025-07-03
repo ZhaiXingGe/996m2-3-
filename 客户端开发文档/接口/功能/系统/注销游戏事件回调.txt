@@ -1,0 +1,22 @@
+UnRegisterLUAEvent
+注销游戏事件回调
+
+游戏事件ID
+
+语法
+
+SL:UnRegisterLUAEvent(eventID, eventTag)
+
+参数
+参数名	必选	类型	说明
+eventID	是	string	事件ID
+eventTag	是	string	事件描述
+返回值
+
+无返回值
+
+示例代码
+
+    SL:UnRegisterLUAEvent(LUA_EVENT_ONPLAYLEVELUP, "属性刷新")
+
+
