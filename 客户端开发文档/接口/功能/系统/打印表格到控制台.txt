@@ -1,0 +1,21 @@
+Dump
+打印表格到控制台
+
+语法
+
+SL:Dump(...)
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+    local tab = GUI:getPosition(btn_zs)
+    SL:Dump(tab)
+
+

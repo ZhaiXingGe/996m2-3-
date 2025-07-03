@@ -1,0 +1,20 @@
+SetProtectItems
+设置保护配置
+
+语法
+
+SL:SetProtectItems(id, values)
+
+参数
+参数名	必选	类型	说明
+id	是	int	消耗组id
+values	是	table	消耗道具组道具
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

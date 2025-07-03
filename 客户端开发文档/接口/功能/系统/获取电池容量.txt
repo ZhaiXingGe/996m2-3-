@@ -1,0 +1,20 @@
+GetBatteryPer
+获取电池容量
+
+语法
+
+SL:GetBatteryPer()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+    无示例
+
+

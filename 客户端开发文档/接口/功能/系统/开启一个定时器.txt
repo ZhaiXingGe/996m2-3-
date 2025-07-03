@@ -1,0 +1,26 @@
+Schedule
+开启一个定时器
+
+语法
+
+SL:Schedule(callback, interval)
+
+参数
+参数名	必选	类型	说明
+callback	是	fun	函数回调
+interval	是	int	时间
+返回值
+
+类型：int
+返回 定时器ID
+
+示例代码
+
+    local title = GUI:Text_Create(_parent, "title", 520, 558, 20, "#D6C6AD", "转    生")
+    local index = 1
+    SL:Schedule(function()
+        index = index + 1
+        GUI:Text_setString(title, index)
+    end, 1)
+
+

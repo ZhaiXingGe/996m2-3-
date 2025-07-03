@@ -1,0 +1,21 @@
+GetRankDatas
+根据类型获取排行榜数据
+
+首次获取前要先请求服务端 请求接口
+语法
+
+SL:GetRankDatas(rankType)
+
+参数
+参数名	必选	类型	说明
+rankType	是	int	数据类型（1 玩家 2 英雄）
+返回值
+
+类型：table
+返回 数据信息
+
+示例代码
+
+无示例代码
+
+

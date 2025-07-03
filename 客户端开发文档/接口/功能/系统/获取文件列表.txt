@@ -1,0 +1,20 @@
+GetFilesByPath
+获取文件列表
+
+语法
+
+SL:GetFilesByPath(file)
+
+参数
+参数名	必选	类型	说明
+file	是	str	文件名
+返回值
+
+类型：table
+
+示例代码
+
+    local aaa = SL:GetFilesByPath("res")
+    dump(aaa)
+
+

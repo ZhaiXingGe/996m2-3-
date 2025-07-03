@@ -1,0 +1,22 @@
+SetLocalString
+存储数据到本地，存储的文件名为：”GUIStorage”+玩家ID
+
+语法
+
+SL:SetLocalString(key, data)
+
+参数
+参数名	必选	类型	说明
+key	是	任意类型	字段名
+data	是	table、int、string	数据
+返回值
+
+无示例
+
+示例代码
+
+   local test = {key1 = "111", key2 = "222"}
+   local jsonStr = SL:JsonEncode(test)
+   SL:SetLocalString("test", jsonStr)
+
+

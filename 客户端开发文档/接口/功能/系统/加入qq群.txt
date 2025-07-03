@@ -1,0 +1,23 @@
+JoinQQGroup
+加入qq群
+
+QQ群的IOSKey和AndroidKey可在QQ群官网获取
+QQ官网 ：https://qun.qq.com/join.html
+语法
+
+SL:JoinQQGroup(ID, IOSKey,AndroidKey)
+
+参数
+参数名	必选	类型	说明
+ID	是	int	qq群号
+IOSKey	是	object	qq群ioskey
+AndroidKey	是	object	qq群安卓key
+返回值
+
+无返回值
+
+示例代码
+
+ SL:JoinQQGroup(856211842,"3217141bc44dd05d3e26dbbd9661a8590f7266288f938a5829d1c57f985dbdd3","HNstuGbY7MdLPw_UJsKdqnYwk25wpUGq")
+
+

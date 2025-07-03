@@ -1,0 +1,20 @@
+SetSkillKey
+设置技能键 (手机端1-9，PC端1-8键位-> 快捷键Fkey，9-16键位-> 快捷键CTRL+Fkey)
+
+语法
+
+SL:SetSkillKey(skillID, key)
+
+参数
+参数名	必选	类型	说明
+skillID	是	int	技能ID
+key	是	string	键值
+返回值
+
+无返回值
+
+示例代码
+
+SL:SetSkillKey(skillID, key)
+
+

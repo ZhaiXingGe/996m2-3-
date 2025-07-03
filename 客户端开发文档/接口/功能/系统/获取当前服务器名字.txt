@@ -1,0 +1,21 @@
+GetGameServerName
+获取当前服务器名字
+
+语法
+
+SL:GetGameServerName()
+
+参数
+
+无参数
+
+返回值
+
+类型：int
+返回当前服务器名字
+
+示例代码
+
+    无示例代码
+
+

@@ -1,0 +1,18 @@
+ShowSystemTips
+发送提示信息
+
+语法
+
+SL:ShowSystemTips(str)
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+    SL:ShowSystemTips("111111111")
+    SL:ShowSystemTips("<font color='#ff0000'>hello world !</font>")

@@ -1,0 +1,16 @@
+ShowSystemChat
+发送到系统聊天框
+
+语法
+
+SL:ShowSystemChat( str)
+
+参数
+参数名	必选	类型	说明
+str	是	str	文本内容
+返回值
+
+无返回值
+
+示例代码
+SL:ShowSystemChat("<font color='#C0C0C0' size='16'>一转证明：</font><font color='#4AE74A'>0/5</font>")

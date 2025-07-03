@@ -1,0 +1,21 @@
+ConvertWorldPos2MapPos
+世界坐标转化为地图坐标
+
+语法
+
+SL:ConvertWorldPos2MapPos(worldX, worldY)
+
+参数
+参数名	必选	类型	说明
+worldX	是	int	世界坐标X
+worldY	是	int	世界坐标Y
+返回值
+
+类型: table
+{x = num,y = num}
+
+示例代码
+
+无示例代码
+
+

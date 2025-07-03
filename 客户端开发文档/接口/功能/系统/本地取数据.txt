@@ -1,0 +1,26 @@
+GetLocalString
+
+语法
+
+SL:GetLocalString(key)
+
+参数
+参数名	必选	类型	说明
+key	是	任意类型	存储时的字段
+返回值
+
+无示例
+
+示例代码
+
+    local data = {}
+    local jsonStr = SL:GetLocalString("text")
+    if jsonStr and string.len(jsonStr) > 0 then
+        local jsonData = SL:JsonDecode(jsonStr)
+        if jsonData then
+            data = jsonData
+        end
+    end
+    SL:Dump( data )
+
+

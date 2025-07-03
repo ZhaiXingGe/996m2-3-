@@ -1,0 +1,22 @@
+ConvertMapPos2WorldPos
+地图坐标转化为世界坐标
+
+语法
+
+SL:ConvertMapPos2WorldPos(mapX, mapY, centerOfGrid)
+
+参数
+参数名	必选	类型	说明
+mapX	是	int	地图坐标X
+mapY	是	int	地图坐标Y
+centerOfGrid	否	bool	是否在地图格中心
+返回值
+
+类型: table
+{x = num,y = num}
+
+示例代码
+
+无示例代码
+
+

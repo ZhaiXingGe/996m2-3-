@@ -1,0 +1,24 @@
+DownloadStaticRes
+静默下载
+
+语法
+
+SL:DownloadStaticRes(tPath, callback)
+
+参数
+参数名	必选	类型	说明
+tPath	是	table	路径
+callback	是	function	触发函数
+返回值
+
+无返回值
+
+示例代码
+
+SL:DownloadStaticRes({"anim/effect/sfx_9999_0.png","anim/effect/sfx_9999_0.plist"},test)
+
+ function test(...)
+    print("test",...)
+end
+
+

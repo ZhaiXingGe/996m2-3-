@@ -1,0 +1,21 @@
+RequestRankListData
+请求排行列表数据
+
+通过监听 LUA_EVENT_RANK_UPDATE 事件刷新排行榜列表
+语法
+
+SL:RequestRankListData(rankType)
+
+参数
+参数名	必选	类型	说明
+rankType	是	int	数据类型（1 玩家 2 英雄）
+返回值
+
+类型：table
+返回 数据信息
+
+示例代码
+
+无示例代码
+
+

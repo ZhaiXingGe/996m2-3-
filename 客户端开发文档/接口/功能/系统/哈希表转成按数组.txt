@@ -1,0 +1,25 @@
+HashToSortArray
+哈希表转成按数组
+
+语法
+
+SL:HashToSortArray(hashTab, sortFunc)
+
+参数
+参数名	必选	类型	说明
+hashTab	是	table	哈希表
+sortFunc	是	function	排序函数
+返回值
+
+table | 数组
+
+示例代码
+
+    local aaa = {["a"] = 9, ["b"] = 1, ["c"] = 7, }
+    local function sortFunc(a,b)
+        return a > b
+    end
+    local bbb = SL:HashToSortArray(aaa, sortFunc)
+    SL:Dump(bbb)
+
+

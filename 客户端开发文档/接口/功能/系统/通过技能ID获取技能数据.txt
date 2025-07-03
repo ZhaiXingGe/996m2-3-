@@ -1,0 +1,19 @@
+GetSkillDataByID
+通过技能ID获取技能数据
+
+语法
+
+SL:GetSkillDataByID(skillID)
+
+参数
+参数名	必选	类型	说明
+skillID	是	int	技能ID
+返回值
+
+table | 表
+
+示例代码
+
+SL:GetSkillDataByID(skillID)
+
+

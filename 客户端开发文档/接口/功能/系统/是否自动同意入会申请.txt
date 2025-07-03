@@ -1,0 +1,21 @@
+IsAutoJoinGuild
+是否自动同意入会申请
+
+语法
+
+SL:IsAutoJoinGuild()
+
+参数
+
+无参数
+
+返回值
+
+类型：bool
+true 同意|false 不同意
+
+示例代码
+
+无示例代码
+
+

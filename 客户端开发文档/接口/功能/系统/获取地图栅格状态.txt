@@ -1,0 +1,20 @@
+GetMapGridSwitch
+获取地图栅格状态
+
+语法
+
+SL:GetMapGridSwitch()
+
+参数
+
+无
+
+返回值
+
+类型：bool
+
+示例代码
+
+    local aaa = SL:GetMapGridSwitch()
+
+

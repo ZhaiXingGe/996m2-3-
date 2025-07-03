@@ -1,0 +1,25 @@
+CopyText
+复制文本
+
+语法
+
+SL:CopyText(str)
+
+参数
+参数名	必选	类型	说明
+str	是	string	复制的文本
+返回值
+
+无返回值
+
+示例代码
+
+function SL:CopyText(str)
+    if SL:IsWinMode() then
+        global.Win32BridgeCt1:copyToClipboard(str)
+    else
+        global.L_NativeBridgeManager:GN_setClipboardText(str)
+    end
+end
+
+

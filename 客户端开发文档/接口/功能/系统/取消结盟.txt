@@ -1,0 +1,19 @@
+RequestGuildCancelAlly
+取消结盟
+
+语法
+
+SL:RequestGuildCancelAlly(guildID)
+
+参数
+参数名	必选	类型	说明
+guildId	是	int	行会id
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

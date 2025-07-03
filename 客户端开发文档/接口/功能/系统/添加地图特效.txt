@@ -1,0 +1,24 @@
+AddMapSpecialEffect
+添加地图特效
+
+语法
+
+SL:AddMapSpecialEffect(sfxId, x, y, loop)
+
+参数
+参数名	必选	类型	说明
+sfxId	是	int	特效ID
+x	是	int	地图坐标X
+y	是	int	地图坐标Y
+loop	是	boolean	是否循环播放特效
+返回值
+
+类型：int
+特效数量
+
+示例代码
+
+    local x, y = SL:GetMetaValue("X"), SL:GetMetaValue("Y")
+    SL:AddMapSpecialEffect(24, x, y, true)
+
+

@@ -1,0 +1,20 @@
+CloseSkillSetWin32UI
+关闭 PC 技能键盘设置
+
+语法
+
+SL:CloseSkillSetWin32UI()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+SL:CloseSkillSetWin32UI()
+
+

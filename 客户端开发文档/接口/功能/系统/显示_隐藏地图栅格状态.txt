@@ -1,0 +1,20 @@
+OnMapGridSwitch
+显示/隐藏地图栅格状态
+
+语法
+
+SL:OnMapGridSwitch()
+
+参数
+
+无
+
+返回值
+
+无
+
+示例代码
+
+    SL:OnMapGridSwitch()
+
+

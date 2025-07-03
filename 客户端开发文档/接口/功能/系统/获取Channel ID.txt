@@ -1,0 +1,21 @@
+GetGameChannelID
+获取Channel ID
+
+语法
+
+SL:GetGameChannelID()
+
+参数
+
+无参数
+
+返回值
+
+类型：int
+返回Channel ID
+
+示例代码
+
+    无示例代码
+
+

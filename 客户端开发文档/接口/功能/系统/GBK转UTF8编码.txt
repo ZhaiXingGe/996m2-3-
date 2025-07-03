@@ -1,0 +1,24 @@
+GBKToUTF8
+GBK转UTF8编码
+
+语法
+
+SL:GBKToUTF8(str)
+
+参数
+参数名	必选	类型	说明
+str	是	string	文本
+返回值
+
+类型：string
+返回 转码后字符
+
+示例代码
+
+function SL:GBKToUTF8(str)
+    if GB2312ToUTF8 then
+        return GB2312ToUTF8(str)
+    end
+end
+
+

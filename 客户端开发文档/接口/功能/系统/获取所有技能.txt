@@ -1,0 +1,20 @@
+GetSkills
+获取所有技能
+
+语法
+
+SL:GetSkills(noBasicSkill, activeOnly)
+
+参数
+参数名	必选	类型	说明
+noBasicSkill	是	bool	是否排除普攻
+activeOnly	是	bool	是否只获取主动技能
+返回值
+
+table | 表
+
+示例代码
+
+SL:GetSkills(noBasicSkill, activeOnly)
+
+

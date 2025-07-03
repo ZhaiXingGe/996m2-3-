@@ -1,0 +1,20 @@
+CheckPlayerEquipInfo
+根据玩家UID请求玩家排行榜数据
+
+语法
+
+SL:CheckPlayerEquipInfo(uid)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	玩家uid
+返回值
+
+类型：table
+返回 排行榜数据
+
+示例代码
+
+SL:CheckPlayerEquipInfo(SL:GetGameUserUID())
+
+

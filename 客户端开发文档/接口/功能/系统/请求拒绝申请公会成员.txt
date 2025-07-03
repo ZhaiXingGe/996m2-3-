@@ -1,0 +1,19 @@
+RequestRefuseApplyMember
+请求拒绝申请公会成员
+
+语法
+
+SL:RequestRefuseApplyMember(uid)
+
+参数
+参数名	必选	类型	说明
+uid	是	int	成员id
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

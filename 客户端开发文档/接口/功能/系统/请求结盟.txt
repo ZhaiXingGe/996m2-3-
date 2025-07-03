@@ -1,0 +1,20 @@
+RequestGuildAlly
+请求结盟
+
+语法
+
+SL:RequestGuildAlly(guildID, param)
+
+参数
+参数名	必选	类型	说明
+guildID	是	int	行会id
+param	是	int	1-结盟时长 2-结盟花费
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

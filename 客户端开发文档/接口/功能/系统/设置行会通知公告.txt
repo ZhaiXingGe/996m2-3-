@@ -1,0 +1,19 @@
+RequestEditNotice
+设置行会通知公告
+
+语法
+
+SL:RequestEditNotice(str)
+
+参数
+参数名	必选	类型	说明
+str	是	str	行会公告内容
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

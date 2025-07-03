@@ -1,0 +1,23 @@
+JsonDecode
+json字符串解密
+
+特殊：json过程中已下违禁词不可用
+违禁词：lib function then end _G return index set %( %) __ _
+语法
+
+SL:JsonDecode(jsonStr,isfilter)
+
+参数
+参数名	必选	类型	说明
+jsonStr	是	string	json字符
+isfilter	是	bool	是否过滤违禁词 默认为true
+返回值
+
+类型：table
+返回 json表
+
+示例代码
+
+    SL:JsonDecode(jsonStr)
+
+

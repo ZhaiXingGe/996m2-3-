@@ -1,0 +1,19 @@
+OpenUrlUserIE
+使用默认浏览器打开链接
+
+语法
+
+SL:OpenUrlUserIE(url)
+
+参数
+参数名	必选	类型	说明
+url	是	object	链接
+返回值
+
+无返回值
+
+示例代码
+
+ SL:OpenUrlUserIE("https://www.baidu.com/")
+
+

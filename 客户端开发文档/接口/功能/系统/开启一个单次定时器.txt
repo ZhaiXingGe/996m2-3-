@@ -1,0 +1,26 @@
+ScheduleOnce
+开启一个单次定时器
+
+语法
+
+SL:ScheduleOnce(callback, time)
+
+参数
+参数名	必选	类型	说明
+callback	是	fun	函数回调
+time	是	int	时间
+返回值
+
+类型：int
+返回 定时器ID
+
+示例代码
+
+    local time = 0.5
+    local function callback()
+        SL:Print("callback...")
+    end
+    -- 0.5s后执行一次 callback
+    SL:ScheduleOnce(callback, time)
+
+

@@ -1,0 +1,22 @@
+RequestPlayerShowData
+请求指定玩家数据
+
+通过监听 LUA_EVENT_RANK_UPDATE_MODEL 事件刷新查看的玩家信息
+语法
+
+SL:RequestPlayerShowData(userID, rankType)
+
+参数
+参数名	必选	类型	说明
+userID	是	string	玩家uid
+rankType	是	int	数据类型（1 玩家 2 英雄）
+返回值
+
+类型：table
+返回 数据信息
+
+示例代码
+
+无示例代码
+
+

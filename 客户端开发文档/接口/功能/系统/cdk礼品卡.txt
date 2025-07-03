@@ -1,0 +1,19 @@
+RequestCDK
+cdk礼品卡(礼包卡，礼包码，激活码)
+
+语法
+
+SL：RequestCDK(cdk)
+
+参数
+参数名	必选	类型	说明
+cdk	是	object	礼品卡
+返回值
+
+无
+
+示例代码
+
+无示例代码
+
+

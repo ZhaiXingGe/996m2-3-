@@ -1,0 +1,21 @@
+GetGameServerID
+获取当前服务器ID
+
+语法
+
+SL:GetGameServerID()
+
+参数
+
+无参数
+
+返回值
+
+类型：int
+返回当前服务器ID
+
+示例代码
+
+    无示例代码
+
+

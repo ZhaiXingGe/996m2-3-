@@ -1,0 +1,19 @@
+HexToInt
+十六进制转十进制
+
+语法
+
+SL:HexToInt(hexStr)
+
+参数
+参数名	必选	类型	说明
+hexStr	是	int	16进制数
+返回值
+
+十进制数
+
+示例代码
+
+    无
+
+

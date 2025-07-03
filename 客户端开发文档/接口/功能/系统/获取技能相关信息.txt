@@ -1,0 +1,22 @@
+GetMetaValue
+获取技能相关信息
+
+语法
+
+SL:GetMetaValue(value, skillID)
+
+参数
+参数名	必选	类型	说明
+value	是	string	信息 SKILL_CONFIG(配置) SKILL_NAME(名字)
+skillID	是	int	技能ID
+返回值
+
+SKILL_CONFIG | table 配置
+SKILL_NAME | string 名字
+
+示例代码
+
+local tab = SL:GetMetaValue("SKILL_CONFIG", 1)
+print("tab",tab)
+
+

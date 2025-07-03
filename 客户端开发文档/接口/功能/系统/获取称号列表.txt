@@ -1,0 +1,20 @@
+GetTitleList
+获取称号列表
+
+语法
+
+SL:GetTitleList()
+
+参数
+
+无参数
+
+返回值
+
+table | 表
+
+示例代码
+
+SL:GetTitleList()
+
+

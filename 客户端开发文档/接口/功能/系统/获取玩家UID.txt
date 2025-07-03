@@ -1,0 +1,21 @@
+GetGameUserUID
+获取玩家UID
+
+语法
+
+SL:GetGameUserUID()
+
+参数
+
+无参数
+
+返回值
+
+类型：int
+返回玩家UID
+
+示例代码
+
+    无示例代码
+
+

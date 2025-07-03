@@ -1,0 +1,20 @@
+SetAutoJoinGuild
+设置入会条件
+
+语法
+
+SL:SetAutoJoinGuild(auto, level)
+
+参数
+参数名	必选	类型	说明
+auto	是	int	1-等级满足自动加入；0-需要审核
+level	是	int	入会需求等级
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

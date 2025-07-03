@@ -1,0 +1,17 @@
+Require
+加载文件
+
+语法
+
+SL:Require( file)
+
+参数
+参数名	必选	类型	说明
+file	是	str	文件名
+bool	是	bool	是否先释放后加载
+返回值
+
+无返回值
+
+示例代码
+    SL:Require("csvcfg/"..path,true)

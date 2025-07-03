@@ -1,0 +1,23 @@
+IsWinMode
+当前环境是否为 pc
+
+语法
+
+SL:IsWinMode()
+
+参数
+
+无参数
+
+返回值
+
+类型：bool
+true:pc false:其他
+
+示例代码
+
+if SL:IsWinMode() then
+    GUI:setMouseEnabled(PMainUI, true)
+end
+
+

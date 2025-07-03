@@ -1,0 +1,20 @@
+WndClick
+模拟左键单击触发左键点击事件
+
+语法
+
+SL:WndClick(hand,msg)
+
+参数
+参数名	必选	类型	说明
+hand	是	string	控件对象
+msg	是	string	描述
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

@@ -1,0 +1,21 @@
+ConvertScreen2WorldPos
+屏幕坐标转化为世界坐标
+
+语法
+
+SL:ConvertScreen2WorldPos(screenX, screenY)
+
+参数
+参数名	必选	类型	说明
+screenX	是	int	屏幕坐标X
+screenY	是	int	屏幕坐标Y
+返回值
+
+类型: table
+{x = num,y = num}
+
+示例代码
+
+无示例代码
+
+

@@ -1,0 +1,19 @@
+OpenSkillSetWin32UI
+打开 PC 技能键盘设置
+
+语法
+
+SL:OpenSkillSetWin32UI(skillID)
+
+参数
+参数名	必选	类型	说明
+skillID	是	int	技能ID
+返回值
+
+无返回值
+
+示例代码
+
+SL:OpenSkillSetWin32UI(skillID)
+
+

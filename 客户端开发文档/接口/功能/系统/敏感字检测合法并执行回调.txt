@@ -1,0 +1,21 @@
+CheckSensitive
+敏感字检测合法并执行回调
+
+语法
+
+SL:CheckSensitive(str, callback, callback2)
+
+参数
+参数名	必选	类型	说明
+str	是	string	需要检测的文本
+callback	是	function	成功时回调
+callback2	是	function	失败时回调
+返回值
+
+无返回值
+
+示例代码
+
+无示例代码
+
+

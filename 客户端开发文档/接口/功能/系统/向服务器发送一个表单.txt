@@ -1,0 +1,50 @@
+SubmitForm
+向服务器发送一个表单
+
+特殊：每次都有被发包 服务端没做好验证的，包括数值超出了意料之外的小数,负数之类的导致被刷
+特殊：提交表单过程中以下违禁词不可用
+违禁词：lib function then end _G return index set load _
+正整数转换
+    ----最小为0的正整数 --向上取整
+    function math.ceilint(var)
+        local num = tonumber(var) or 0
+        if num <= 0 then
+            return 0
+        end
+        return math.ceil(num)
+    end
+
+    ----最小为0的正整数 --向下取整
+    function math.modfint(var)
+        local num = tonumber(var) or 0
+        if num <= 0 then
+            return 0
+        end
+        return math.modf(num)
+    end    
+
+
+
+语法
+
+SL:SubmitForm(filename, funcName, param)
+
+参数
+参数名	必选	类型	说明
+filename	是	string	文件名
+funcName	是	string	函数名
+param	否	string	参数(最大长度4000字符)
+返回值
+
+无返回值
+
+示例代码
+
+    多个参数可用#号拼接，过多参数建议传table
+    SL:SubmitForm("新手引导", "fzhuansheng", "1".."#".."2")
+
+    local table = SL:JsonEncode({1,2,3})
+    SL:SubmitForm("新手引导", "fzhuansheng", table)
+
+
+
