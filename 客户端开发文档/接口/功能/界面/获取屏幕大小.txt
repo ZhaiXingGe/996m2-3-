@@ -1,0 +1,25 @@
+GetScreenSize
+获取屏幕大小
+
+语法
+
+SL:GetScreenSize()
+
+参数
+
+无参数
+
+返回值
+
+类型：table
+屏幕的大小
+
+示例代码
+
+        local winSize = SL:GetScreenSize()
+        local x = winSize.width / 2  --屏幕横向中心点
+        local y = winSize.height / 2 --屏幕纵向中心点
+        local w = winSize.width
+        local h = winSize.height
+
+

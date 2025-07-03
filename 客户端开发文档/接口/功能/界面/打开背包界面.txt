@@ -1,0 +1,26 @@
+OpenBagUI
+打开背包界面
+
+语法
+
+SL:OpenBagUI()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+    --设置背包打开位置
+    SL:OpenBagUI({param = {pos = {x = ?, y = ?}}})
+    if Bag._UI_ScrollView and not tolua.isnull(Bag._UI_ScrollView) then
+    --关闭背包
+    if Bag._parent and not tolua.isnull(Bag._parent) then
+        GUI:Win_Close(Bag._parent)
+    end
+
+

@@ -1,0 +1,28 @@
+DownloadMiniMapRes
+下载小地图
+
+语法
+
+SL:DownloadMiniMapRes(mapId, callback)
+
+参数
+参数名	必选	类型	说明
+mapId	是	str	地图id
+callback	是	func	回调函数
+返回值
+
+无返回值
+
+路径：\scene\uiminimap
+
+示例代码
+    local function callBack(isOk, path) -- isOk 下载是否成功, path 返回小地图路径 
+        if isOk then 
+            print("下载成功")
+        else 
+            print("下载失败")
+        end 
+        print("小地图路径",path)
+    end 
+    --例如下方图片008000.png 就填 8001
+    SL:DownloadMiniMapRes("8001", callBack)

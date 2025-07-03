@@ -1,0 +1,21 @@
+RegisterWndEvent
+注册窗体控件事件
+
+窗口事件ID
+
+语法
+
+SL:RegisterWndEvent(widget, msg, msgtype, callback)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+msg	是	string	描述
+msgtype	是	int	窗体事件id
+callback	是	strfun	回调函数
+返回值
+
+无返回值
+
+示例代码
+        SL:RegisterWndEvent(SV1_btn1,"npc",WND_EVENT_MOUSE_LB_UP, function () print("2") end)

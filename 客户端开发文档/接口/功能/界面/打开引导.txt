@@ -1,0 +1,26 @@
+StartGuide
+打开引导
+
+语法
+
+SL:StartGuide(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	引导数据（参考示例）
+返回值
+
+无返回值
+
+示例代码
+            local dta = {}
+            dta.dir=8   -- 方向（1~8）从左按瞬时针
+            dta.guideWidget=btn_close   -- 当前节点
+            dta.guideParent=_parent -- 父节点（仅用于确定引导所在图层，不需要和子节点有直接联系）
+            dta.guideDesc="测试"    -- 文本描述
+            dta.clickCB= ceshi.test -- 回调
+            dta.autoExcute=3    -- 自动消失时间
+            dta.isForce=true    -- 强制引导
+            dta.isDoubleClick=false ---false 单 true 双
+            dta.notShowDir=true --不显示引导箭头、引导描述底图(如果引导文本没有配置的话  是不显示引导文本底图的)以及引导描述
+            SL:StartGuide(dta)

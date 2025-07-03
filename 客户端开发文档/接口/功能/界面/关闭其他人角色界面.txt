@@ -1,0 +1,20 @@
+CloseOtherPlayerUI
+关闭其他人角色界面
+
+语法
+
+SL:CloseOtherPlayerUI()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

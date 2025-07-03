@@ -1,0 +1,20 @@
+OpenAutoTradeUI
+打开摆摊界面
+
+语法
+
+SL:OpenAutoTradeUI()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+        无示例
+
+

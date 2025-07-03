@@ -1,0 +1,17 @@
+ShakeScene
+抖动屏幕
+
+语法
+
+SL:ShakeScene(time, distance)
+
+参数
+参数名	必选	类型	说明
+time	是	int	毫秒
+distance	是	int	幅度
+返回值
+
+无返回值
+
+示例代码
+        SL:ShakeScene(10000, 3)

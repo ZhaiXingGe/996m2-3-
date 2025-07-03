@@ -1,0 +1,27 @@
+RequestPay
+打开充值面板
+
+特殊：productIndex该参数服务端不接收！不接收！不接收！
+特殊：额外充值货币找自己商务申请
+特殊：若是做直购功能，还请用额外的货币ID来判断，并且后台设置好充值要求，服务端做好验证再给相应的奖励
+语法
+
+SL:RequestPay(channel, currencyID, price, productIndex)
+
+参数
+参数名	必选	类型	说明
+payChannel	是	int	支付渠道
+1=支付宝
+2=花呗
+3=微信
+-1不选择(手机端接入SDK不选择支付渠道)
+currencyID	是	int	货币ID
+price	是	int	支付金额
+productIndex	是	int	商品索引/商品ID，苹果商店充值档位id
+返回值
+
+无返回值
+
+示例代码
+    --具体可参考教学视频
+    SL:RequestPay(-1, 1, 7, 7)

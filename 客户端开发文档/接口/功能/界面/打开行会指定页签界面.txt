@@ -1,0 +1,20 @@
+OpenGuildMainUI
+打开行会指定页签界面
+
+语法
+
+SL:OpenGuildMainUI(page)
+
+参数
+参数名	必选	类型	说明
+page	否	int	行会界面
+(不填默认行会主界面)
+返回值
+
+无返回值
+
+示例代码
+
+    无示例代码
+
+

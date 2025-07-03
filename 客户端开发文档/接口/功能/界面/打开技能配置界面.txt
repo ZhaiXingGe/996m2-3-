@@ -1,0 +1,20 @@
+OpenSkillSettingUI
+打开技能配置界面
+
+语法
+
+SL:OpenSkillSettingUI()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+
+        无示例
+
+

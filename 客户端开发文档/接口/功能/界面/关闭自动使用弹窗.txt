@@ -1,0 +1,19 @@
+CloseAutoUsePop
+关闭自动使用弹窗
+
+语法
+
+SL:CloseAutoUsePop(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	{id = MakeIndex, pos = targetPos, isHero = isHero}
+返回值
+
+无返回值
+
+示例代码
+
+        可参考 AutoUsePop.lua
+
+

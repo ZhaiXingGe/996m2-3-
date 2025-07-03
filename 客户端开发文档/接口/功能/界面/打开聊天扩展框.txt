@@ -1,0 +1,19 @@
+OpenChatExtendUI
+打开聊天扩展框
+
+语法
+
+SL:OpenChatExtendUI(index)
+
+参数
+参数名	必选	类型	说明
+index	否	int	打开 指定分组 1 : 快捷命令 2 : 表情 3 : 背包
+返回值
+
+无返回值
+
+示例代码
+
+        无示例
+
+

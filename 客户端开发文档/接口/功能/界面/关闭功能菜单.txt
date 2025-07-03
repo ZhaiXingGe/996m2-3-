@@ -1,0 +1,17 @@
+CloseFuncDockTips
+关闭功能菜单
+
+语法
+
+SL:CloseFuncDockTips()
+
+参数
+
+无参数
+
+返回值
+
+无返回值
+
+示例代码
+      SL:CloseFuncDockTips()

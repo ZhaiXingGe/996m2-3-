@@ -1,0 +1,6 @@
+
+打开分辨率修改界面
+SL:OpenResolutionSetUI()
+
+关闭分辨率修改界面
+SL:CloseResolutionSetUI()

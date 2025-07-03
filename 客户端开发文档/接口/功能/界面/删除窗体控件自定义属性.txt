@@ -1,0 +1,22 @@
+DelWndProperty
+删除窗体控件自定义属性
+
+语法
+
+SL:DelWndProperty(widget, desc, key, value)
+
+参数
+参数名	必选	类型	说明
+widget	是	parent	控件对象
+desc	是	string	描述
+key	是	string	属性名称
+value	是	str/int	属性值
+返回值
+
+无返回值
+
+示例代码
+        SL:AddWndProperty(SV1_btn1, "test", "key1", 1)
+        local a = SL:GetWndProperty(SV1_btn1, "test", "key1")
+        print(a,type(a))
+        SL:DelWndProperty(SV1_btn1, "test", "key1")

@@ -1,0 +1,17 @@
+OpenCommonDescTipsPop
+通用tips弹窗
+
+语法
+
+SL:OpenCommonDescTipsPop(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	弹窗参数
+返回值
+
+无返回值
+
+示例代码
+   local data = {width = 1136, str = "测试文本", worldPos = {x = 568, y = 320}, anchorPoint = {x = 0, y = 1}}
+   SL:OpenCommonDescTipsPop(data)

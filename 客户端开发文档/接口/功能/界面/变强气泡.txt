@@ -1,0 +1,61 @@
+AddBeStrongItem
+变强气泡
+
+语法
+
+SL:AddBeStrongItem(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	气泡信息
+返回值
+
+无返回值
+
+示例代码
+
+    local parent = GUI:Attach_LeftBottom()
+    local layout_input = GUI:Layout_Create(parent, "layout_input", 300, 300, 200, 50, true)
+    GUI:Layout_debug(layout_input)
+    local TextField_input = GUI:TextInput_Create(layout_input, "TextField_input", 0, 0, 200, 50, 18)
+    GUI:TextInput_setInputMode(TextField_input, 2)
+
+
+    local handle_add = GUI:Text_Create(parent, "handle_add", 500, 330, 18, "#FFFFFF", "添加气泡")
+    GUI:setTouchEnabled(handle_add, true)
+    GUI:addOnClickEvent(handle_add, function()
+        local index = tonumber(GUI:TextInput_getString(TextField_input))
+        if not index then
+            return
+        end
+
+
+        local data = {}
+        data.id = index -- 唯一ID
+        data.name = "标题" .. index -- 名字
+        data.order = index -- 排序序号
+        data.clickCB = function() -- 按钮事件
+            SL:ShowSystemTips(string.format("我是%s", data.name))
+        end
+        SL:AddBeStrongItem(data)
+    end)
+
+
+    local handle_remove = GUI:Text_Create(parent, "handle_remove", 500, 300, 18, "#FFFFFF", "去除气泡")
+    GUI:setTouchEnabled(handle_remove, true)
+    GUI:addOnClickEvent(handle_remove, function()
+        local index = tonumber(GUI:TextInput_getString(TextField_input))
+        if not index then
+            return
+        end
+
+
+        SL:RmvBeStrongItem({
+            id = index
+        })
+    end)
+
+
+
+
+示例展示

@@ -1,0 +1,19 @@
+OpenSocialUI
+打开社交界面
+
+语法
+
+SL:OpenSocialUI(page)
+
+参数
+参数名	必选	类型	说明
+page	是	int	1附近玩家、2组队、3好友、4邮件
+返回值
+
+无返回值
+
+示例代码
+
+        SL:OpenSocialUI(4)        --打开邮箱
+
+

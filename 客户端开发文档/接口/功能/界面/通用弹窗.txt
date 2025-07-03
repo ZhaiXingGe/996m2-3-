@@ -1,0 +1,47 @@
+OpenCommonTipsPop
+通用弹窗
+
+语法
+
+SL:OpenCommonTipsPop(data)
+
+参数
+参数名	必选	类型	说明
+data	是	table	弹窗参数
+返回值
+
+无返回值
+
+示例代码
+    function ceshi.test(_type)
+        if _type == 1 then
+            SL:Print("拒绝")
+        elseif _type == 2 then
+            SL:Print("同意")
+        end
+    end
+    local data = {}
+
+    -- data.btnType = 2  --按钮类型 btnType=1 "确定" = 2  "确定","取消"
+    -- data.btnRes={{"res/01/010005.png","res/01/010006.png"},{"res/01/010005.png","res/01/010006.png"}}--按钮图片
+    -- data.btnStyle={1009,255}    --参考 cfg_colour_style 表  或者 data.data={size=16,colour="#ffe400"}自定义样式
+    -- data.str="<font color='#C0C0C0' size='16'>通用弹窗示例</font>"    --文本内容
+    -- data.callback=ceshi.test    --回调函数  参数 == 1 时为"确定"; 参数 == 2 为"取消"
+    -- data.editParams=9999    --输入框参数 可以不传{str, inputMode, maxLength}
+    -- data.showEdit=false    --是否显示输入框
+
+    --或者
+
+    data.btnDesc = {"拒绝","同意"}
+    data.btnRes={{"res/01/010005.png","res/01/010006.png"},{"res/01/010005.png","res/01/010006.png"}}--按钮图片
+    data.btnStyle={1009,255}    --参考 cfg_colour_style 表 
+    data.str="<font color='#C0C0C0' size='16'>通用弹窗示例</font>"          --文本内容
+    data.callback=ceshi.test    --回调函数  参数 == 1 时为"拒绝"; 参数 == 2 为"同意"
+    data.showEdit=true    --是否显示输入框
+    data.editParams={str="请输入",inputMonde=4,maxLength=5}    --输入框参数{str, inputMode, maxLength}可为空
+
+    --[[inputMode 输入框类型: 0 所有字符; 1 邮件地址; 2 整数; 3 电话号吗; 4 地址URL; 5 浮点数; 6 单行字符;]]
+
+    SL:OpenCommonTipsPop(data)
+
+    触发函数[参数1: 点击的按钮id 参数2: 额外参数 table: {editStr=输入框字符串}]
