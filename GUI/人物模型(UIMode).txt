@@ -1,0 +1,32 @@
+创建人物模型
+GUI:UIModelCell_Create(parent, ID, x, y, sex, feature, scale)
+参数	必选	类型	注释
+parent	是	obj	父节点对象
+ID	是	string	唯一ID
+x	是	int	位置 横坐标
+y	是	int	位置 纵坐标
+sex	是	int	0 男性 1 女性
+feature	是	table	模型属性
+scale	否	int	缩放比例(0-100)
+示例代码
+-- feature 使用方法
+local feature= {}
+feature.clothID                  -- 衣服
+feature.weaponID                 -- 武器id
+feature.headID                   -- 头盔id
+feature.headEffectID             -- 头盔特效id
+feature.weaponEffectID           -- 武器特效id
+feature.clothEffectID            -- 衣服特效id
+feature.capID                    -- 斗笠id
+feature.shieldID                 -- 盾牌id
+feature.shieldEffectID           -- 盾牌特效id
+feature.tDressID                 -- 时装id
+feature.tDressEffectID           -- 时装特效id
+feature.tWeaponID
+feature.tWeaponEffectID
+feature.capEffectID              -- 斗笠特效id
+feature.veilID                   -- 面巾id
+feature.veilEffectID             -- 面巾特效id
+feature.showNodeModel            -- 是否显示裸模
+feature.showHair                 -- 是否显示头发
+local UIModel = GUI:UIModel_Create(parent, "UIMODEL", 0, 0, 0, feature, nil)

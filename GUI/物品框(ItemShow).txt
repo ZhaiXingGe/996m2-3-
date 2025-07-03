@@ -1,0 +1,62 @@
+创建物品框
+GUI:ItemShow_Create(parent, ID, x, y, setData)
+参数	必选	类型	注释
+parent	是	obj	父节点对象
+ID	是	string	唯一ID
+x	是	int	位置 横坐标
+y	是	int	位置 纵坐标
+setData	是	table	物品数据
+示例代码
+local goodsData = {}
+goodsData.index = 1        -- 物品id
+goodsData.look = true            -- 是否查看详情
+goodsData.bgVisible = true       -- 是否显示背景
+local goodItem = GUI:ItemShow_Create(parent, "ui_icon", 0, 0, goodsData)
+
+设置物品框单事件
+GUI:ItemShow_addReplaceClickEvent(widget, eventCB)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+eventCB	是	function	单击事件函数
+设置物品框双击事件
+GUI:ItemShow_addDoubleEvent(widget, eventCB)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+eventCB	是	function	双击事件函数
+设置物品框长按事件
+GUI:ItemShow_addPressEvent(widget, eventCB)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+eventCB	是	function	长按事件函数
+设置物品框是否置灰
+GUI:ItemShow_setIconGrey(widget, value)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+value	是	bool	是否置灰
+设置物品框是否选中
+GUI:ItemShow_setItemShowChooseState(widget, value)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+value	是	bool	是否选中
+设置物品框是否拖动
+GUI:ItemShow_setMoveEable(widget, value)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+value	是	bool	是否拖动
+更新物品框是内容
+GUI:ItemShow_updateItem(widget, itemData)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+itemData	是	table	物品数据
+调用GUILayout/Item.lua中的函数
+GUI:ItemShow_OnRunFunc(widget, funcname, …)
+参数	必选	类型	注释
+widget	是	obj	物品框对象
+funcname	是	string	GUILayout/Item.lua中的函数名字
+…	否	any	可变参数
+
+例如
+
+    -- 设置ItemShow的显示道具数量为20
+    local ItemShow = GUI:ItemShow_Create(parent, "Item", 0, 0, itemData)
+    ItemShow_OnRunFunc(ItemShow, "SetCount", 20)

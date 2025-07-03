@@ -1,0 +1,93 @@
+创建文本
+GUI:Text_Create(parent, ID, x, y, fontSize, fontColor, str)
+参数	必选	类型	注释
+parent	是	obj	父节点对象
+ID	是	string	唯一ID
+x	是	int	位置 横坐标
+y	是	int	位置 纵坐标
+fontSize	是	int	字体大小
+fontColor	是	stirng	字体颜色
+str	是	string	文本
+示例代码
+  local Text_name = GUI:Text_Create(parent, "Text_name", 0, 0, 16, "#ffffff", "我的名字"))
+
+设置文本
+GUI:Text_setString(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	string	文本
+获取文本
+GUI:Text_getString(widget)
+参数	必选	类型	注释
+widget	是	obj	对象
+设置文本颜色
+GUI:Text_setTextColor(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	string	色值(“#000000”)
+设置字体大小
+GUI:Text_setFontSize(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	int	字体大小
+设置字体名字
+GUI:Text_setFontName(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	string	字体名字（”微软雅黑”）
+设置字体描边
+GUI:Text_enableOutline(widget, color, size)
+参数	必选	类型	注释
+widget	是	obj	对象
+color	是	string	色值(“#000000”)
+size	是	int	描边宽度
+设置是否启用下划线
+GUI:Text_enableUnderline(widget)
+参数	必选	类型	注释
+widget	是	obj	文本对象
+设置文本最大行宽
+GUI:Text_setMaxLineWidth(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	int	宽度
+禁用文本特效
+GUI:Text_disableEffect(widget, param)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	int	特效类型：
+0：正常
+1：描边
+2：阴影
+3：发光
+GUI:Text_disableNormal(widget)
+参数	必选	类型	注释
+widget	是	obj	对象
+取消描边
+GUI:Text_disableOutLine(widget)
+参数	必选	类型	注释
+widget	是	obj	对象
+GUI:Text_disableShadow(widget)
+参数	必选	类型	注释
+widget	是	obj	对象
+GUI:Text_disableGlow(widget)
+参数	必选	类型	注释
+widget	是	obj	对象
+设置文本垂直对齐
+GUI:Text_setTextVerticalAlignment(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	int	0：顶对齐
+1：垂直居中
+2：底对齐
+设置文本水平对齐
+GUI:Text_setTextHorizontalAlignment(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	int	0：顶对齐
+1：水平居中
+2：底对齐
+设置文本尺寸
+GUI:Text_setTextAreaSize(widget, value)
+参数	必选	类型	注释
+widget	是	obj	对象
+value	是	table	{width = 0, height = 0}
