@@ -1,0 +1,27 @@
+DownLoadRes
+自定义资源下载
+
+语法
+
+SL:DownLoadRes(path,url,downloadCB)
+
+参数
+参数名	必选	类型	说明
+path	是	object	路径
+url	是	object	地址
+downloadCB	是	fun	触发函数
+返回值
+
+无返回值
+
+示例代码
+
+SL:DownLoadRes("res/02.png", "http://engine-doc.996m2.com/Public/Uploads/2022-08-09/62f25c9fe04c0.png",test)
+
+ function test(...)
+    print("test",...)
+end
+
+
+
+路径
